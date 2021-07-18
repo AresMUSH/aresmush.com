@@ -2,6 +2,8 @@
 title: FS3.3 - Dice Mechanics
 description: 
 layout: fs3
+prev-article: mechanics-overview.html
+next-article: combat-mechanics.html
 ---
 
 For those who care about the nitty-gritty about what the Ability Ratings actually mean in terms of chance of success, this article is for you.

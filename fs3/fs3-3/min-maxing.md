@@ -2,6 +2,7 @@
 title: FS3.3 - Managing Min-Maxing
 description: 
 layout: fs3
+prev-article: tweaking-fs3.html
 ---
 
 One of the common complaints with FS3 is that it encourages min-maxing because it has linear chargen costs and exponential XP costs.  This article addresses why it is this way and what you can do to ensure that it doesn't get taken to extremes.

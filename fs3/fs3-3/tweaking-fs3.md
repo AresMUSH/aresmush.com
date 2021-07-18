@@ -2,6 +2,8 @@
 title: FS3.3 - Customizing FS3
 description: 
 layout: fs3
+prev-article: choosing-fs3.html
+next-article: min-maxing.html
 ---
 
 This article gives some tips to game designers for customizing and Customizing FS3.

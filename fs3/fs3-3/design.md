@@ -2,6 +2,7 @@
 title: FS3.3 - Designing a FS3 Game
 description: 
 layout: fs3
+next-article: choosing-fs3.html
 ---
 
 With just a few tweaks to fit the setting, FS3 can be used for anything from Wild West to Battlestar.  In this way, it is similar to generic RPG frameworks like D20 or FATE.

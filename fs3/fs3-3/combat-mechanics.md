@@ -2,6 +2,7 @@
 title: FS3.3 - Combat Mechanics
 description: 
 layout: fs3
+prev-article: mechanics.html
 ---
 
 For those who care about the nitty-gritty about how the combat system works, this article is for you.
