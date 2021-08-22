@@ -28,7 +28,7 @@ An Ember screen consists of three basic parts:
 In addition, Ember also has some utilities that are used by many screens.
 
 * **[Services](/tutorials/code/web-services.html)** provide centralized functionality - such as the ability to show notices on the screen or talk to the game server.
-* **[Mixins](/tutorials/code/web-mixins.html)** are like `inclues` in Ruby - they make common utilities available to screens that need them.
+* **[Mixins](/tutorials/code/web-mixins.html)** are like `includes` in Ruby - they make common utilities available to screens that need them.
 * **Helpers** and **Components** are little snippets you can use in other templates.  Helpers are very small - like a utility function call.  Components are self-contained screen widgets.
 
 Finally, the **[Game Api](/tutorials/code/web-game-api.html)** allows the Web Portal to communicate with the game engine.

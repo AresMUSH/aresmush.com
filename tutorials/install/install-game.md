@@ -24,7 +24,7 @@ You should use the 'ares' user for everything from now on, reserving the root us
 1. Log into your [Server Shell](/tutorials/install/server-shell.html) with the **'ares' user**.
 
 {:start="2"}
-2. Copy/paste the following commands into the shell to run them.
+2. Copy/paste the following commands into the shell to run them **one by one**.  Wait until one command has completed before pasting the next command.
 
         curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/install > install
         

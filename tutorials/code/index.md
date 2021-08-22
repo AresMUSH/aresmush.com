@@ -133,6 +133,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Formatters](/tutorials/code/formatters.html)
 * [Multi-Page Output (Paginator)](/tutorials/code/paginator.html)
 * [Templates](/tutorials/code/templates.html)
+* [Config Validation](/tutorials/code/config-validator.html)
 
 ### Web Portal
 

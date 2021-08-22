@@ -30,7 +30,7 @@ There's a separate web request when the user clicks the 'save' button on the web
 
 Edit `aresmush/plugins/profile/custom_char_fields.rb` and modify the `save_fields_from_profile_edit` method.
 
-      def save_fields_from_profile_edit(char, char_data)
+      def self.save_fields_from_profile_edit(char, char_data)
         char.update(goals: Website.format_input_for_mush(char_data[:custom][:goals]))
       end
 

@@ -14,7 +14,7 @@ All games come to an end eventually, and when that happens you don't want to los
 
 Ares allows you to export the key bits of the web portal to disk:  Characters, Scenes and Wiki.  
 
-See 'help wiki export' in your in-game help files for details.
+See 'help wiki archive' in your in-game help files for details.
 
 If you do have your archive available publicly, you may [contact Faraday](/feedback.html) to have it linked to the [AresCentral game archive](https://arescentral.aresmush.com/wiki).
 

@@ -54,4 +54,4 @@ This can be an involved process, so don't hesitate to [ask for help](/feedback.h
 
 ## Contributions
 
-See [Submitting Contributions](/tutorials/code/extra-contribs.html) if you want to contribute your own plugins or themes.
+See [Submitting Contributions](/tutorials/code/submit-contribs.html) if you want to contribute your own plugins or themes.

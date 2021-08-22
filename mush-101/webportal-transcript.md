@@ -78,7 +78,7 @@ Active scenes can involve players both on the web portal and on the game.  You c
 
 Although the scene directory and character gallery replicate a lot of what you'll find on most game wikis, the web portal also has an integrated wiki for things like policy and theme information.
 
-Wiki pages use markdown text, which is similar to what you'll find on most other wikis.  It also has extensions for things like a music player, dynamic page lists, tabs, inclues and more.  Games have been able to fully replace their mediawiki or wikidot sites using only the web portal.
+Wiki pages use markdown text, which is similar to what you'll find on most other wikis.  It also has extensions for things like a music player, dynamic page lists, tabs, includes and more.  Games have been able to fully replace their mediawiki or wikidot sites using only the web portal.
 
 ## Admin Features
 

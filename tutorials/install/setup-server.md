@@ -18,7 +18,7 @@ Ares needs a few things installed on the server.  For your convenience, a set of
 
 1. Log into your [Server Shell](/tutorials/install/server-shell.html).
 
-2. Copy/paste the following commands to run them:  
+2. Copy/paste the following commands to run them **one by one**.  Wait until one command has completed before pasting the next command.  
    
         curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/setup_server > setup_server  
     

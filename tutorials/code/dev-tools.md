@@ -55,7 +55,7 @@ If you have MacOS installed on your home PC, you can actually install your own c
 
 1. Install [Homebrew](https://brew.sh/), Mac's package manager.
 
-2. Copy/paste the following commands into a Mac terminal.
+2. Copy/paste the following commands into a Mac terminal **one by one**.  Wait until one command has completed before pasting the next command.
 
         curl https://raw.githubusercontent.com/aresmush/aresmush/master/bin/local_setup_mac > setup_ares
         
