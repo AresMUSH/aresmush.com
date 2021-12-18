@@ -22,6 +22,8 @@ The game must be shut down before you can run it in debug mode.  Otherwise you'l
 
 The regular 'devstart' is not compatible with HTTPS.  If your game is using HTTPS, you'll need to start debug mode using `bundle exec rake startares`.
 
+<a name="web-portal"></a>
+
 ## Web Portal Debug Mode
 
 The web portal also has a debug mode, which you can activate using `bin/devportal` from the ares-webportal directory.  The cool part about the portal's debug mode is that the website will automatically reload as you change the code.  This lets you easily test your changes.

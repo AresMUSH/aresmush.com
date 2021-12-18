@@ -19,10 +19,10 @@ To manage certain parts of your game, you will need to connect to the **Server S
 
 The very first time you log in (using any of the methods described below), you'll use the username "root" and the password that was emailed to you.  
 
-As part of the game installation, it will create an "ares" user and password.  Use the "ares" user for day-to-day operations and save the "root" user for things that require special permissions.
+As part of the game installation, it will create an "ares" user and password.  This is the one you should use for Ares-related activities.
 
 {% note %} 
-All of the command line tools you use once the game is set up, like starting the game and doing upgrades, are designed to be run as the **ares** user.  You'll need to either log in as that user or things won't work right.
+Once the game is set up, always use the **ares** user. If you try to do Ares things as root, you can mess up your game. You can use `sudo` with the ares user if a command (like a server reboot) needs higher level permissions.
 {% endnote %}
 
 ## How to Connect

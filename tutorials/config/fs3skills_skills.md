@@ -99,15 +99,13 @@ You can disable Advantages entirely by setting `use_advantages` to false.  This 
 
 This is the instructional blurb used in the abilities screen and in chargen help.  It supports markdown text.
 
-## Removing an Ability
+## Changing an Existing Ability
 
-If you remove an Action Skill, Attribute or Language from the game configuration while people have that ability, you'll get errors or weird results.
+If you remove, rename, or change the category of an ability (e.g., moving it from Action Skill to Background Skill or vice-versa), when characters *already* have that ability on their sheets, you will cause errors. Characters may not be able to change/remove the modified skills, or you might get configuration errors such as:
 
     Error: "Error in skills configuration -- action skill Archery not found."
 
-If your game is still in development and you've just got characters in chargen, having them do a 'reset' to wipe their abilities will fix this.
-
-Otherwise, **before** removing an ability from the game configuration, you must first run a [Tinker snippet](/tutorials/code/tinker.html) to remove that ability everyone's character sheet.  You can also do special handling, like refunding them some XP or transferring it to a background skill or something.  
+To avoid these problems, you will need to use a [Tinker snippet](/tutorials/code/tinker.html) to fix everyone's character sheet.
 
 For example, if we wanted to remove the Archery action skill, we would modify the tinker command to do:
 
@@ -120,4 +118,14 @@ For example, if we wanted to remove the Archery action skill, we would modify th
         end
       end
 
-After you have successfully removed the ability from everyone's sheet, *then* it is safe to remove the ability from the config file.
+If we were renaming Archery to Bows, we would want the tinker to do this instead:
+
+      def handle
+        FS3ActionSkill.all.each do |a|
+           if (a.name == 'Archery')
+             a.update(name: 'Bows')
+           end
+        end
+      end
+
+If you're trying to do some more advanced handling - like refunding XP, or changing skill categories - the processing needed in your tinker code will need to be more sophisticated. Don't be shy to [ask for help](/feedback.html) if you need to.

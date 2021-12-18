@@ -87,7 +87,7 @@ You'll need to edit the files in question to resolve the conflict.  You'll see l
 
     Some code.
     <<<<<<< HEAD
-    your oriignal version will be in this section
+    your original version will be in this section
     =======
     the upgraded main Ares code will be in this section
     >>>>>>> master

@@ -18,7 +18,7 @@ Now that we have our data being sent from the game to the website, we can actual
 
 First we're going to define the tab navigation control.  Edit `ares-webportal/app/templates/components/profile-custom-tabs.hbs` and add:
 
-        <li><a data-toggle="tab" href="#systemgoals">Goals</a></li> 
+        <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#systemgoals">Goals</a></li> 
 
 ## Define the Tab Contents
 

@@ -39,7 +39,10 @@ The first step in using GitHub for your own game code is to create your own semi
 
 1. Create an account on [GitHub](https://www.github.com).
 2. Browse to the main [AresMUSH repository](https://github.com/aresmush/aresmush).
-    {% include pretty_image.html file='/code/git.png' %}
+{% include pretty_image.html file='/code/git.png' %}
+
+{:start="3"}
+
 3. Click the "Fork" button (near the top right).
 
     You are now the proud owner of your own version of AresMUSH.  You can tell that you're on your version by looking at the repository name near the upper left.  The main Ares code is **aresmush/aresmush**.  Yours will be something like  **YOURUSERNAME/aresmush**.   
@@ -60,6 +63,26 @@ In the server shell:
 5. Repeat steps 2 and 3 in the webportal directory with the webportal clone url.
 
 Now your game will be set up to get code updates from your fork instead of from the main Ares repository.
+
+## Pushing Code from the Game Server
+
+Ideally code changes go from your PC/test environment to GitHub and then to the game.
+
+{% include pretty_image.html file='/code/git-pull.png' %}
+
+However, there are times when you make changes on the server itself. Perhaps you:
+
+* Had some custom code before you decided to set up your own fork.
+* Hand-tweaked something on the server while debugging.
+* Installed a community plugin.
+
+Whatever the reason, if you make changes on the game server directly, you'll want to get those changes into your fork.
+
+1. If you do not already have one, you'll need to create a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for your GitHub account with **repo** permissions. This token is like an extra password you can use from the git command line on your server shell. Keep it in a safe place. (Alternately you can set up a GitHub SSH key but that is beyond the scope of this tutorial.)
+2. Go to the aresmush directory.
+3. Type `git status` to ensure that all your custom changes are committed.  If they aren't, commit them.
+4. Type `git push` and enter your GitHub username and the personal access token for the password.
+5. Repeat steps 3 and 4 in the webportal directory.
 
 ## Git from the Game
 

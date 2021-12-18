@@ -24,11 +24,11 @@ This article details the system requirements to help you find the right server a
 The supported environment for the automated Ares installer is:
 
 * A [Digital Ocean droplet](/tutorials/install/digital-ocean.html).
-* At least 1GB RAM (larger games may need the 2GB droplet).
+* 2GB RAM recommended.  Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it will require some extra work during upgrades.
 * Ubuntu Linux 16.04 or 18.04.
 * **Nothing but the starter image** installed.   
 
-Hard drive space is not generally a concern.  In testing, a database with 1000 rooms, exits and characters was about 2MB in size.  Considering most modern servers have multiple GB, the amount used by Ares is insignificant.
+Hard drive space is not generally a concern. The base install will take only about 1GB of hard drive space, and database sizes are insignificant. Uploaded files (for theme/character images and the like) will be the bulk of variation in your hard drive usage.
 
 ## Custom Environments
 

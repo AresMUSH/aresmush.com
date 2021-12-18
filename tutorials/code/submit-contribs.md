@@ -46,30 +46,64 @@ All folders are optional, so just omit any that don't apply to your plugin.
 The automated install just copies _your_ plugin's files.  It cannot handle changes to _other plugins_ (for example, adding steps to the Chargen config or Chargen web portal screen). Your README should include instructions for doing those sorts of changes manually.
 {% endnote %}
 
-### Plugin Migrations
+### Plugin Versioning
 
-Sometimes your plugin will need a database field initialized, or a default config value set.  There is no way to do this automatically; you will need to include instructions for game runners to do that manually. 
+Versioning your plugin can make it easier to troubleshoot problems by identifying whether a given game is running your latest code.  To do this, just add a "version" method to your plugin module, as shown below, and update it whenever you release new code.
 
-The easiest way to do this is by including a code snippet that they can copy/paste into the [tinker](/tutorials/code/tinker) command handler. 
+```
+module AresMUSH
+  module Yourplugin
+    def self.version
+      "1.0"
+    end
+  end
+end
+```
 
-For example, if you wanted to initialize a database value at install time, you could tell them to do:
+### Plugin Database Migrations
 
-    Character.all.each { |c| c.update(your_db_field: 'default value') }
+Sometimes your plugin will need a database field initialized, or a default config value set. You could give game runners some [tinker](/tutorials/code/tinker) code snippets to run, but it can be easier to just define a method in your plugin to perform the installation steps.
+
+For example, you might create a method to initialize a database value at install time:
+
+```
+module AresMUSH
+  module Yourplugin
+    def self.install_setup
+      Character.all.each { |c| c.update(your_db_field: 'default value') }
+    end
+  end
+end
+```
+
+Then you just need to tell them to run `ruby Yourplugin.install_setup` after they've installed the plugin.
 
 {% tip %}
-This is particularly important for array/hash database fields. Your model class may set a default value (`[]` or `{}`), but that only applies to _new_ characters. For existing characters, these fields will be `nil` unless you take the time to initialize them.
+Installation setup is important array/hash database fields. Your model class may set a default value (`[]` or `{}`), but that only applies to _new_ characters. For existing characters, these fields will be `nil` unless you take the time to initialize them.
 {% endtip %}
 
-You can also provide tinker snippets to run when the code gets upgraded.  The database migrator class has some utilities for reading/writing config files that are particularly useful here.  For instance, if you added a new config option and want to set a default value, you could tell them to run:
+You can also provide something to run when the code gets upgraded.  The database migrator class has some utilities for reading/writing config files that are particularly useful here.  For instance, you might create a method that sets a new configuration option to a default value:
 
-    DatabaseMigrator.read_config_file("yourplugin.yml", config)
-    config['yourplugin']['someoption'] = 'some value'
-    DatabaseMigrator.write_config_file("yourplugin.yml", config)
+```
+module AresMUSH
+  module Yourplugin
+    def self.migrate_add_someoption
+      DatabaseMigrator.read_config_file("yourplugin.yml", config)
+      config['yourplugin']['someoption'] = 'some value'
+      DatabaseMigrator.write_config_file("yourplugin.yml", config)
+    end
+  end
+end
+```
 
-Make sure all hash values in the configuration use the arrow notation, **NOT** the symbol notation: 
+Then you can tell game runners to run `ruby Yourplugin.migrate_add_someoption` to update their configuration.
+
+{% note %}
+Make sure all hash values in migrations use the arrow notation, **NOT** the symbol notation: 
 
     RIGHT: 'someoption' => 'some value'
     WRONG:  someoption: 'some value'
+{% endnote %}
 
 ## Sharing Themes
 

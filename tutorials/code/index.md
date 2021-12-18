@@ -152,6 +152,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 
 * [Troubleshooting Issues](/tutorials/code/troubleshooting.html)
 * [Debug Mode](/tutorials/code/debug-mode.html)
+* [Debugging Custom Web Requests](/tutorials/code/web-debug.html)
 
 ## FS3
 

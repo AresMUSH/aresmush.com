@@ -1,5 +1,5 @@
 ---
-title: FS3.3 - Combat Quick Reference
+title: FS3.3 - Combat Interactive Walkthrough
 description: 
 layout: fs3combat
 prev-article: experience.html

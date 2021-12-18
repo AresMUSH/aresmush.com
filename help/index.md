@@ -39,7 +39,7 @@ These are quick links to the game help files for the current version of AresMUSH
 
 * [Scenes tutorial](https://mush.aresmush.com/help/scenes_tutorial)
 
-*Commands*: [Posing](https://mush.aresmush.com/help/posing) &bull; [Scenes](https://mush.aresmush.com/help/scenes) &bull; [Ooc](https://mush.aresmush.com/help/ooc) &bull; [Places](https://mush.aresmush.com/help/places) &bull; [Pose_format](https://mush.aresmush.com/help/pose_format) &bull; [Pose_order](https://mush.aresmush.com/help/pose_order)
+*Commands*: [Posing](https://mush.aresmush.com/help/posing) &bull; [Scenes](https://mush.aresmush.com/help/scenes) &bull; [Ooc](https://mush.aresmush.com/help/ooc) &bull; [Places](https://mush.aresmush.com/help/places) &bull; [Play](https://mush.aresmush.com/help/play) &bull; [Pose_format](https://mush.aresmush.com/help/pose_format) &bull; [Pose_order](https://mush.aresmush.com/help/pose_order)
 
 ## Community
 
@@ -51,7 +51,7 @@ These are quick links to the game help files for the current version of AresMUSH
 * [Who tutorial](https://mush.aresmush.com/help/who_tutorial)
 * [Wiki](https://mush.aresmush.com/help/wiki)
 
-*Commands*: [Achievements](https://mush.aresmush.com/help/achievements) &bull; [Admin](https://mush.aresmush.com/help/admin) &bull; [Census](https://mush.aresmush.com/help/census) &bull; [Events](https://mush.aresmush.com/help/events) &bull; [Friends](https://mush.aresmush.com/help/friends) &bull; [Handles](https://mush.aresmush.com/help/handles) &bull; [Icons](https://mush.aresmush.com/help/icons) &bull; [Profile](https://mush.aresmush.com/help/profile) &bull; [Relationships](https://mush.aresmush.com/help/relationships) &bull; [Who](https://mush.aresmush.com/help/who) &bull; [Whois](https://mush.aresmush.com/help/whois)
+*Commands*: [Achievements](https://mush.aresmush.com/help/achievements) &bull; [Admin](https://mush.aresmush.com/help/admin) &bull; [Census](https://mush.aresmush.com/help/census) &bull; [Events](https://mush.aresmush.com/help/events) &bull; [Friends](https://mush.aresmush.com/help/friends) &bull; [Handles](https://mush.aresmush.com/help/handles) &bull; [Icons](https://mush.aresmush.com/help/icons) &bull; [Profile](https://mush.aresmush.com/help/profile) &bull; [Relationships](https://mush.aresmush.com/help/relationships) &bull; [Tags](https://mush.aresmush.com/help/tags) &bull; [Who](https://mush.aresmush.com/help/who) &bull; [Whois](https://mush.aresmush.com/help/whois)
 
 ## FS3 Skills and Combat
 
@@ -59,11 +59,6 @@ These are quick links to the game help files for the current version of AresMUSH
 * [Fs3combat tutorial](https://mush.aresmush.com/help/fs3combat_tutorial)
 
 *Commands*: [Skills](https://mush.aresmush.com/help/skills) &bull; [Rolls](https://mush.aresmush.com/help/rolls) &bull; [Combat](https://mush.aresmush.com/help/combat) &bull; [Combat_org](https://mush.aresmush.com/help/combat_org) &bull; [Damage](https://mush.aresmush.com/help/damage) &bull; [Luck](https://mush.aresmush.com/help/luck) &bull; [Xp](https://mush.aresmush.com/help/xp)
-
-## Formatting Text
-
-
-*Commands*: [Ansi](https://mush.aresmush.com/help/ansi) &bull; [Formatting](https://mush.aresmush.com/help/formatting) &bull; [Markdown](https://mush.aresmush.com/help/markdown)
 
 ## Locations and Descriptions
 
@@ -85,13 +80,13 @@ These are quick links to the game help files for the current version of AresMUSH
 ## Utilities / Miscellaneous
 
 
-*Commands*: [Activity](https://mush.aresmush.com/help/activity) &bull; [Afk](https://mush.aresmush.com/help/afk) &bull; [Backup](https://mush.aresmush.com/help/backup) &bull; [Boot](https://mush.aresmush.com/help/boot) &bull; [Dice](https://mush.aresmush.com/help/dice) &bull; [Echo](https://mush.aresmush.com/help/echo) &bull; [Ic_time](https://mush.aresmush.com/help/ic_time) &bull; [Idle_out](https://mush.aresmush.com/help/idle_out) &bull; [Math](https://mush.aresmush.com/help/math) &bull; [Notes](https://mush.aresmush.com/help/notes) &bull; [Notices](https://mush.aresmush.com/help/notices) &bull; [Ooc_time](https://mush.aresmush.com/help/ooc_time) &bull; [Save](https://mush.aresmush.com/help/save) &bull; [Shortcuts](https://mush.aresmush.com/help/shortcuts) &bull; [Sweep](https://mush.aresmush.com/help/sweep) &bull; [Watch](https://mush.aresmush.com/help/watch) &bull; [Wiki_archive](https://mush.aresmush.com/help/wiki_archive)
+*Commands*: [Activity](https://mush.aresmush.com/help/activity) &bull; [Afk](https://mush.aresmush.com/help/afk) &bull; [Ansi](https://mush.aresmush.com/help/ansi) &bull; [Backup](https://mush.aresmush.com/help/backup) &bull; [Boot](https://mush.aresmush.com/help/boot) &bull; [Dice](https://mush.aresmush.com/help/dice) &bull; [Echo](https://mush.aresmush.com/help/echo) &bull; [Formatting](https://mush.aresmush.com/help/formatting) &bull; [Ic_time](https://mush.aresmush.com/help/ic_time) &bull; [Idle_out](https://mush.aresmush.com/help/idle_out) &bull; [Markdown](https://mush.aresmush.com/help/markdown) &bull; [Math](https://mush.aresmush.com/help/math) &bull; [Notes](https://mush.aresmush.com/help/notes) &bull; [Notices](https://mush.aresmush.com/help/notices) &bull; [Ooc_time](https://mush.aresmush.com/help/ooc_time) &bull; [Save](https://mush.aresmush.com/help/save) &bull; [Shortcuts](https://mush.aresmush.com/help/shortcuts) &bull; [Sweep](https://mush.aresmush.com/help/sweep) &bull; [Watch](https://mush.aresmush.com/help/watch) &bull; [Wiki_archive](https://mush.aresmush.com/help/wiki_archive)
 
 ## ~admin~ Building
 
 * [Building tutorial](https://mush.aresmush.com/help/building_tutorial)
 
-*Commands*: [Building](https://mush.aresmush.com/help/building) &bull; [Areas](https://mush.aresmush.com/help/areas) &bull; [Teleport](https://mush.aresmush.com/help/teleport) &bull; [Vistas](https://mush.aresmush.com/help/vistas) &bull; [Weather](https://mush.aresmush.com/help/weather)
+*Commands*: [Building](https://mush.aresmush.com/help/building) &bull; [Areas](https://mush.aresmush.com/help/areas) &bull; [Teleport](https://mush.aresmush.com/help/teleport) &bull; [Vistas](https://mush.aresmush.com/help/vistas)
 
 ## ~admin~ Coding
 

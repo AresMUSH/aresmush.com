@@ -149,7 +149,7 @@ You can also create templates containing starter text for various kinds of pages
 
 You can include an auto-generated table of contents with level 2 and 3 headers.  (Level 1 is excluded because it's always the page title.)
 
-`{% include toc.html %}`
+`[[toc]]`
 
 ## Spans, Divs, and Pre-Formatted Blocks
 

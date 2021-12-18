@@ -97,6 +97,21 @@ Many database properties have specialized update methods because their data stor
 Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the <b>object</b> but does not actually update the database.  You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
 {% endnote %}
 
+## Field Types
+
+Under the hood, all redis fields are stored as strings. The Ohm database library provides some utilities to let you tell the Ruby code to _interpret_ certain fields as different data types, as shown below:
+
+    attribute :team, :type => DataType::Integer
+    attribute :freshly_damaged, :type => DataType::Boolean
+    attribute :armor_specials, :type => DataType::Array, :default => []
+    attribute :prior_ammo, :type => DataType::Hash, :default => {}
+    attribute :starts, :type => DataType::Time
+    attribute :birthdate, :type => DataType::Date    
+
+{% note %}
+You may want to define default values for fields using other data types, especially hashes and arrays (which would otherwise be nil).
+{% endnote %}
+
 ## Finder Helpers
 
 There are a few convenient utilities to help with common searches.  All of these will search by name or (for players) by alias, and include the `me` or `here` keywords, so they require you to pass in the character doing the search.

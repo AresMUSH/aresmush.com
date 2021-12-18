@@ -1,3 +1,3 @@
 {% danger %} 
-The automated install scripts are **only** designed work on the supported environment, which is a [stand-alone Digital Ocean droplet](/tutorials/install/digital-ocean.html).  If you are using any other environment, **do not** just blindly run the installers.  They may not work, and may even adversely affect your system.  Refer to scripts as a guide for what needs to be done, and tailor the installation as needed for your environment.
+The automated install scripts are **only** designed work on the supported environment, which is a [stand-alone Digital Ocean droplet](/tutorials/install/digital-ocean.html).  If you are using any other environment, **do not** just blindly run the installers.  They may not work, and may even adversely affect your system.  Refer to the scripts as a guide for what needs to be done, and tailor the installation as needed for your environment.
 {% enddanger %}

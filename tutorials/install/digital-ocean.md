@@ -34,7 +34,7 @@ A "droplet" is just what DO calls a server.  To create a new droplet, log into y
 {% include pretty_image.html file='/install-ares/droplet.png' %}
 
 {:start="2"}
-2. Select a size.  The 1GB droplet meets all of Ares' minimum system requirements, including the Web Portal. You can always upgrade the droplet size later if you need to.
+2. Select a size. The 2GB droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it will require some extra work during upgrades.
 3. Don't add block storage.
 4. Select a region close to you.
 5. Don't add additional options.
