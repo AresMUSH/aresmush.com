@@ -89,6 +89,7 @@ AresMUSH won't run on Windows due to a limitation in the database driver, but yo
 Mudpuppy@AresCentral has contributed an automatic installer using [Ansible](https://forum.aresmush.com/t/ansible-installer/509).  This method is not officially supported, but you're still welcome to give it a try and see if it works for you.
 {% endtip %}
 
+
 1. Download and install [Oracle VirtualBox](https://www.virtualbox.org/).
 2. Install the VirtualBox Extension Pack (available from the same downloads page as VirtualBox itself).
 3. Create a VM in VirtualBox.  Use the following options:
@@ -104,9 +105,15 @@ Mudpuppy@AresCentral has contributed an automatic installer using [Ansible](http
 9. When the VM restarts, log in.
 10. Type `ifconfig`.  This will tell you the VM's **Private IP Address**.
 {% include pretty_image.html file='ifconfig.png' %}
+
+{:start="11"}
+
 11. Go to Devices -> Network -> Network Settings -> Adapter1 -> Advanced and select Port Forwarding.
 12. Create ports to forward from localhost (127.0.0.1) to the VM's Private IP for ports: 22, 4200, 4201, 4202 and 4203.  This is going to let your local PC connect to the VM.
 {% include pretty_image.html file='port-forwarding.png' %}
+
+{:start="13"}
+
 13. Now you should be able to connect to the VM using a SSH client like PuTTY ([Windows](http://www.putty.org/) / [Mac](https://www.ssh.com/ssh/putty/mac/)) by connecting to localhost port 22.  (Say yes to the security key message.)
 14. Using SSH, run the `setup_server` script as described in the [install instructions](/tutorials/install/setup-server.html).
 15. Then run the `install` script as described in the [install instructions](/tutorials/install/install-game.html).  Use the following options:

@@ -94,7 +94,11 @@ To notify all characters, you would do:
           true
         end
 
-You can put conditions into the block to limit the notification to only certain characters.  Here the notification is limited to those characters who can read a forum category:
+{% tip %}
+The type (e.g., `:shutdown`), is just a symbol identifying the notification. This allows the web portal to act differently for different types of notifications. Here it's not important because the notification is just a raw message, so the web portal's default handling will suffice.
+{% endtip %} 
+
+You can put conditions into the block to limit the notification to only certain characters. Here the notification is limited to those characters who can read a forum category:
 
       Global.notifier.notify_ooc(type, message) do |char|
         char & Forum.can_read_category?(char, category)

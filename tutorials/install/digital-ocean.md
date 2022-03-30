@@ -30,12 +30,24 @@ Digital Ocean's pricing lists both a monthly and hourly rate.  A MUSH server wil
 
 A "droplet" is just what DO calls a server.  To create a new droplet, log into your account and click **Create -> Droplet**.  
 
-1. Select the Ubuntu distribution image.  (Ares has been fully tested on Ubuntu 16.04 and 18.04.  Newer versions are probably fine too.)  Just use the regular Ubuntu, not any other image.
-{% include pretty_image.html file='/install-ares/droplet.png' %}
+1. Select the Ubuntu distribution image.  (Ares has been fully tested on Ubuntu 18.04 and 20.04.  Newer versions are probably fine too.)  Just use the regular Ubuntu, not any other image.
+{% include pretty_image.html file='/install-ares/install-droplet-1.png' %}
 
 {:start="2"}
-2. Select a size. The 2GB droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it will require some extra work during upgrades.
+
+2. Select a "Shared CPU" and "Regular" droplet, then choose a size. The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it can cause performance issues and extra reboots during version upgrades.
+
+{% include pretty_image.html file='/install-ares/install-droplet-2.png' %}
+
+{:start="3"}
+
 3. Don't add block storage.
-4. Select a region close to you.
-5. Don't add additional options.
+4. Select a region. This isn't particularly important, but New York is a good choice unless your players are predominately from outside the US.
+{% include pretty_image.html file='/install-ares/install-droplet-3.png' %}
+
+
+{:start="5"}
+
+5. Select an SSH key for logging in (if you don't know what that is, just select the password option) and any other options desired.
+* Do **NOT** enable IPv6; Ares does not support dual IP versions, and many PCs can still only access v4.
 6. Select 1 droplet, and enter a name for it (like 'ares').

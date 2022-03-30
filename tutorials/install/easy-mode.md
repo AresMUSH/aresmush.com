@@ -66,10 +66,10 @@ You have seven days to accept the transfer otherwise the request will be aborted
 {% include pretty_image.html file="install-ares/create-droplet-2.png" %}
 {:start="4"}
 4. Set up your droplet options:
-  * CThe 2GB droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it will require some extra work during upgrades.
+  * The 2GB droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it will require some extra work during upgrades.
   * Select 1 droplet, and enter a name for it (like 'ares').
   * All other options may be left as the defaults.
-  * Please do NOT add an SSH key to your droplet at this time, since I will then not be able to log in to complete the installation. You can add one later once the game is set up.
+  * Please do **NOT** add an SSH key to your droplet at this time, since I will then not be able to log in to complete the installation. You can add one later once the game is set up.
 5. You can keep the snapshot around as a backup until you're sure your server is up and running, but then you should delete it.
 
 ## Finalize the Hostname Settings
