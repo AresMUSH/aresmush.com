@@ -22,7 +22,7 @@ If you do have your archive available publicly, you may [contact Faraday](/feedb
 
 ## Archiving Wiki Markdown
 
-You can also export just the raw markdown files for the wiki itself:
+You can also export just the raw markdown files for just the wiki.  This is helpful if you ever want to use the wiki files again on another game, or just want a copy for local reading:
 
     bin/script export_wiki_markdown
 

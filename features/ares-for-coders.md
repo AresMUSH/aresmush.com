@@ -14,7 +14,7 @@ All Ares code uses mainstream languages: Ruby and Ember Javascript.  Both are ea
 
 ## Tutorials
 
-Ares offers a robust suite of [tutorials](/tutorials/code) to help you learn Ares code from the ground up. We also have a [Discord](/feedback.html) for code and game questions where you can get help.
+Ares offers a robust suite of [tutorials](/tutorials/code) to help you learn Ares code from the ground up. We also have a [Discord](/discord.html) for code and game questions where you can get help.
 
 ## Plugins
 

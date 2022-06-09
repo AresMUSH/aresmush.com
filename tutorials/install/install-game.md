@@ -6,7 +6,7 @@ installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
 prevstep: setup-server
-nextstep: next-steps
+nextstep: https
 tags:
 - install
 - config

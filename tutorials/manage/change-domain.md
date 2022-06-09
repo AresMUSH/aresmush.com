@@ -25,6 +25,6 @@ These instructions assume some technical know-how to edit files on the server sh
 7. Restart the nginx web server using `sudo service nginx restart`.
 8. If you had a security certificate installed:
     * Use `sudo certbot delete` to delete the current HTTPS certificate.
-    * Redo the [HTTPS security certificate installation](/tutorials/config/server.html#https-web-portal).
+    * Redo the [HTTPS security certificate installation](/tutorials/install/https.html).
 9. Reboot the server.  When it comes back up, you should be good to go with your new host name.
 

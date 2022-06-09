@@ -30,8 +30,8 @@ Here are a few things to get you started:
 </li>
 
         <li>
-                        <a href="http://forum.aresmush.com"><img src="/images/mars2.jpg"></a>
-<h2><a href="http://forum.aresmush.com">Forum</a></h2>
+                        <a href="https://forum.aresmush.com"><img src="/images/mars2.jpg"></a>
+<h2><a href="https://forum.aresmush.com">Forum</a></h2>
 <p>Join the discussion and get updates on the AresMUSH forum.</p>
 </li>
 

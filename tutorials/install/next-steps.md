@@ -5,7 +5,7 @@ layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
-prevstep: install-game
+prevstep: https
 tags:
 - install
 - customization

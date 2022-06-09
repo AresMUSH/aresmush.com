@@ -34,5 +34,5 @@ Here are some places you can look for games:
 
 * [AresCentral Game Directory](https://arescentral.aresmush.com/)
 * [Evennia Game Index](http://www.evennia.com/)
-* [Mu Soapbox](http://musoapbox.net/topic/2342/a-mildly-complete-list-of-current-games) - Contains advertisements and a curated list of some current games.
-* [Ares Demo Game](http://mush.aresmush.com) - You can stop by to see if there are any advertisements for recent games, or people who can share recommendations.
+* [Mustard MU Directory](https://mustard.mythicus.net/)
+* [Mu Soapbox](https://musoapbox.net/category/5/adver-tis-ments) - A MUSH forum containing an advertisement section.

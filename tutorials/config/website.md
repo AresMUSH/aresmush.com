@@ -221,7 +221,7 @@ See [Configuring the Wiki](/tutorials/config/wiki.html).
 
 ## HTTPS Web Portal
 
-If you want your web portal to use HTTPS for security, it requires some advanced server setup.  See [HTTPS Web Portal Setup](/tutorials/config/server.html#https-web-portal).
+It is highly recommended that you set up your web portal with a security certificate so players can connect using HTTPS for security. This is typically done during the install process, but can be added at any time.  See [HTTPS Web Portal Setup](/tutorials/install/https.html).
 
 ## Advanced Options
 
