@@ -26,6 +26,7 @@ layout: page
 * [FS3 vs Other Systems](/articles/fs3-vs-other-systems.html) - Comparison of FS3 and other RPGs.
 
 ## BSP Articles
+
 * [Battlestar Pacifica - Lessons Learned](/articles/battlestar-pacifica-lessons-learned.html) - A retrospective on running a game based on the Battlestar Galactica theme.
 * [Battlestar Pacifica - Director's Commentary](/articles/battlestar-pacifica-director-s-commentary.html) - A look back at the BSP episodes.
 * [BSP Video Blog](/articles/bsp-video-blog.html) - A pretend video blog of the game's "cast".

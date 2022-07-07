@@ -16,9 +16,9 @@ Here are the servers considered in this article:
 
 * [AresMUSH](http://www.aresmush.com)
 * [Evennia](http://www.evennia.com)
+* [RhostMUSH](https://github.com/RhostMUSH/trunk)
 * [PennMUSH](http://www.pennmush.org)
 * [TinyMUX](http://www.tinymux.org/)
-* [RhostMUSH](https://github.com/RhostMUSH/trunk)
 
 Ares, Evennia and Rhost are great modern platforms for making a MU. PennMUSH and TinyMUX are solid choices that have been around forever.
 
