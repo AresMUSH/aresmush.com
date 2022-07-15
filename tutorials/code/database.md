@@ -11,7 +11,7 @@ Most commands will need to read data from or save data to the database.  Ares us
 
 {% include toc.html %}
 
-## Models and Fields
+## Models
 
 Ohm lets you define ruby classes that interact with the database.  These are called **Models**, and you can identify them by the fact that they inherit from `Ohm::Model`.  Model classes define attributes that correspond to fields in the database.  For example, the `Character` class defines a name and alias: 
 
@@ -25,9 +25,13 @@ You've probably seen database fields used throughout the code, in examples like 
 
 You'll need to look in the code to find out what database fields are available.
 
-## Model Modules
+### Custom Models
 
+To create a custom database model, you just need to define a class that inherits from `Ohm::Model`.
+
+{% note %}
 All database models should live in the base AresMUSH module, not in individual plugins.
+{% endnote %}
 
 **CORRECT**
 
@@ -44,6 +48,102 @@ All database models should live in the base AresMUSH module, not in individual p
         end
       end
     end
+
+Once you have your model class, you can set up your own attributes. For example:
+
+
+    module AresMUSH
+      class MyThing < Ohm::Model
+        attribute :name
+        attribute :some_field
+      end
+    end
+
+### Game Model
+
+The Game model is special because there's only one game. You don't really need to search for it. You can access the one and only game model using:
+
+    Game.master
+
+## Instances
+
+The model class defines the data for _all_ objects of that type. For example, the `Character` model class defines the data for all characters and `MailMessage` defines the data for all mail messages.
+
+An **instance** is a specific occurrence of that model--a specific character, or a specific mail message.
+
+You can create an instance of a model using `ClassName.create`, and optionally pass attribute/field data. For example:
+
+    char = Character.create(name: "Jack")
+
+The variable `char` now refers to your new database object instance, so you can use that instance to read and update fields, as described in the next section.
+
+Deleting an object is as simple as:
+
+    char.delete
+
+{% note %}
+Deleting an object can't be undone - there is no "trash can" in Ares. Use caution.
+{% endnote %}
+
+Read on for more information about finding and updating objects.
+
+### Instance IDs
+
+All Ohm models have an implicit `id` field that identifies a specific instance. This is just an auto-incrementing integer.
+
+    char = Character.find_one_by_name("Bob")
+    client.emit "Their ID is #{char.id}!"
+    
+Unlike in older MUSH codebases, IDs are **per model type**. Character 9 is a completely different object than Room 9.
+
+## Fields
+
+Once you have a database object instance, you can use its properties (aka **fields** or **attributes**) as simple methods.  
+
+Fields are defined using the `attribute` keyword on the model class. For example, the Character class has a `name` field:
+
+    class Character < Ohm::Model
+      attribute :name
+      ...
+    end
+
+### Getting Field Data
+
+You can read properties just by using the attribute name like a method. For example:
+
+    char = Character.find_one_by_name("Bob")
+    client.emit "Hello #{char.name}!"
+
+### Updating Fields
+
+You can update the properties on a database object instance using the `update` method.  For example:
+
+    char = Character.find_one_by_name("Bob")
+    char.update(name: "Harry")
+
+Many database properties have specialized update methods because their data storage is not so straightforward.  Look around for helper methods in the plugin module:
+
+    char = Character.find_one_by_name("Bob")
+    Demographics.set_group(char, "Faction", "Navy")
+
+{% note %} 
+Do not attempt to change database properties directly (e.g. `char.name = "Harry"`)  This changes the property on the ruby object <b>in memory</b> but does not actually update the database unless you call `char.save` at the end to commit the changes to the database.
+{% endnote %}
+
+### Field Types
+
+Under the hood, all redis fields are stored as strings. The Ohm database library provides some utilities to let you tell the Ruby code to _interpret_ certain fields as different data types, as shown below:
+
+    attribute :team, :type => DataType::Integer
+    attribute :freshly_damaged, :type => DataType::Boolean
+    attribute :armor_specials, :type => DataType::Array, :default => []
+    attribute :prior_ammo, :type => DataType::Hash, :default => {}
+    attribute :starts, :type => DataType::Time
+    attribute :birthdate, :type => DataType::Date    
+
+{% note %}
+You may want to define default values for fields using other data types, especially hashes and arrays (which would otherwise be nil).
+{% endnote %}
 
 
 ## Queries
@@ -68,51 +168,7 @@ If your database isn't gigantic, you can also use the Ruby `select` statement to
 It is common to use  `select`  and  `map`  together like this.  Select will find a bunch of database objects, and map will get just the field you need from them (in this case the name).
 {% endtip %}
 
-### Game Model
-
-The Game model is special because there's only one game. You don't really need to search for it. You can access the one and only game model using:
-
-    Game.master
-
-## Accessing Fields
-
-Once you have a database object, you can use its properties as simple methods.  For example:
-
-    char = Character.find_one_by_name("Bob")
-    client.emit "Hello #{char.name}!"
-
-## Updating Fields
-
-You can update the properties on a database object using the `update` method.  For example:
-
-    char = Character.find_one_by_name("Bob")
-    char.update(name: "Harry")
-
-Many database properties have specialized update methods because their data storage is not so straightforward.  Look around for helper methods in the plugin module:
-
-    char = Character.find_one_by_name("Bob")
-    Demographics.set_group(char, "Faction", "Navy")
-
-{% note %} 
-Do not attempt to change database properties just by updating the object (e.g. `char.name = "Harry"`)  This changes the property on the <b>object</b> but does not actually update the database.  You can legitimately use this method to change multiple properties as a batch, but you have to do `char.save` at the end to commit the changes to the database.
-{% endnote %}
-
-## Field Types
-
-Under the hood, all redis fields are stored as strings. The Ohm database library provides some utilities to let you tell the Ruby code to _interpret_ certain fields as different data types, as shown below:
-
-    attribute :team, :type => DataType::Integer
-    attribute :freshly_damaged, :type => DataType::Boolean
-    attribute :armor_specials, :type => DataType::Array, :default => []
-    attribute :prior_ammo, :type => DataType::Hash, :default => {}
-    attribute :starts, :type => DataType::Time
-    attribute :birthdate, :type => DataType::Date    
-
-{% note %}
-You may want to define default values for fields using other data types, especially hashes and arrays (which would otherwise be nil).
-{% endnote %}
-
-## Finder Helpers
+### Finder Helpers
 
 There are a few convenient utilities to help with common searches.  All of these will search by name or (for players) by alias, and include the `me` or `here` keywords, so they require you to pass in the character doing the search.
 
@@ -130,7 +186,7 @@ All of the finder helpers do the error handling necessary to translate multiple 
        # Object was not found - do something with result.error
     end
 
-## Target Finder Block helpers
+### Target Finder Block helpers
 
 Several of the more commonly-used target finders have another level of helper utility you can use.  Here's how it works:
 
