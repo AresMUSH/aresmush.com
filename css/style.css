@@ -32,7 +32,7 @@ dark gray: 3D3D3D
 body {
     color: #000;    
     margin: 0% 2% 0% 2%;
-    background-color: #000;
+    background-color: #f6f6f6;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
@@ -356,6 +356,10 @@ ul.tags-box li {
     display: inline;
 }
 
+.ais-search-box {
+  margin-bottom: 20px;
+}
+
 /* ------------------------
    NAVBAR
    ------------------------
@@ -607,7 +611,6 @@ li {
 
 .footer {
     font-size: 12px;
-    color: #fff;
     padding: 5px;
     margin-top: 25px;
     font-weight: italic;
@@ -660,8 +663,8 @@ li {
 
 
 .fs3-sidebar {
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
     border-left: 1px dotted #F2622E;;
     border-bottom: 1px dotted #F2622E;
 /*    margin: 10px;   */
