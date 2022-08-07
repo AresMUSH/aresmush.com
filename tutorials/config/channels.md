@@ -70,7 +70,7 @@ Sets the number of messages available in the channel recall (and thus the web po
 
 These two options are used by the [Discord App](https://github.com/AresMUSH/ares-discord), an extension for AresMUSH that lets you connect your in-game chat channels to a Discord server.  If you don't have the app installed, they do nothing.
 
-## debug_discord
+## discord_debug
 
 Set this to 'true' if you're having trouble with your discord bot; it enables extra debugging that may help you diagnose the problem.
 
