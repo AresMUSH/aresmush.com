@@ -29,6 +29,8 @@ If someone is causing a ruckus, you can forcibly disconnect them using the `boot
 
 Normally this would be done by game admin, but the default Ares configuration allows all approved characters to use the boot command.  This helps players protect each other even when an admin is not available. All uses of the boot command are logged and require the player to specify the reason.
 
+Booting someone will prevent them from logging back in for a few minutes, depending on the game's configuration.
+
 ### Reporting Channel Abuse
 
 You can report abusive channel conversations using the `channel/report` command or the "Report Abuse" menu option in the web portal chat screen.  This will create an admin job with the channel recall buffer automatically included.
