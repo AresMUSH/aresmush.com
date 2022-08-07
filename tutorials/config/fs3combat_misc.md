@@ -33,6 +33,10 @@ For example, this BSG config sets up a Soldier type for ground marines and a Vip
         vehicle: Viper
         hitloc: Humanoid
         defense_skill: Piloting
+    Officer:
+        weapon: Pistol
+        hitloc: Humanoid
+        npc_type: Boss
 
 ### hitloc
 
@@ -76,6 +80,9 @@ For combatants with vehicles, armor is for the pilot, not the vehicle.  Vehicles
 
 (**Optional**) You may specify a vehicle type that the combatant will use.
 
+### npc_type
+
+(**Optional**) When adding a NPC combatant, this setting lets you specify what [NPC Type]({{site.baseurl}}/tutorials/config/fs3combat_npcs.html) they will use. 
 
 ## default_type
 
