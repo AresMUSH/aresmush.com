@@ -113,7 +113,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Database Relationships](/tutorials/code/db-relationships.html)
 * [Database Indices](/tutorials/code/db-indices.html)
 * [Editing the Database](/tutorials/code/edit-database.html)
-* [Removing a Database Field](/tutorials/code/remove-field.html)
+* [Removing a Database Field](/tutorials/code/db-remove-field.html)
 * [Database Migrations](/tutorials/code/db-migration.html)
 
 ### Plugins and Commands
@@ -171,4 +171,4 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Using Git](/tutorials/code/git.html) - Using the GitHub version control system to manage your code.
 * [Setting up a Development System](/tutorials/code/dev-tools.html) - Setting up a system to code and test.
 * [Running Tests](/tutorials/code/tests.html) - Running the automated unit tests.
-* [Telnet Extensions](/tutorials/code/telnet.html) - About telnet extensions and MCP.
+* [Telnet Extensions](/tutorials/code/telnet-extensions.html) - About telnet extensions and MCP.

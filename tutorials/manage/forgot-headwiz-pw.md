@@ -47,4 +47,4 @@ This is one of the rare instances where you'll actually want to use the root use
 
 ## Forgotten Root User Password
 
-Normally you don't need the root user password, because you should be using your ares user for everything.  But if you do ever forget it, you can reset it in your Digital Ocean droplet console. See the DO help article [reset droplet root passwords](https://www.digitalocean.com/docs/droplets/resources/reset-root-password/) for details.
+Normally you don't need the root user password, because you should be using your ares user for everything.  But if you do ever forget it, you can reset it in your DigitalOcean droplet console. See the DO help article [reset droplet root passwords](https://www.digitalocean.com/docs/droplets/resources/reset-root-password/) for details.

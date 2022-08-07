@@ -51,9 +51,9 @@ There are many SSH clients available.  A popular one is PuTTY, available for  [W
 When using a desktop client, it may ask you for a port number.  You'll want to use the default SSH port number (usually 22), and **not** your MUSH's game port number.
 {% endnote %}
 
-### Connecting through Digital Ocean
+### Connecting through DigitalOcean
 
-If you used the [Digital Ocean](/tutorials/install/digital-ocean.html) setup instructions, you can connect directly to your droplet using the Digital Ocean control panel.  The console is rudimentary and annoying, but it's a safe fallback if nothing else works for you.  Log into your Digital Ocean account and go to "Access->Launch Console."
+If you used the [DigitalOcean](/tutorials/install/digital-ocean.html) setup instructions, you can connect directly to your droplet using the DigitalOcean control panel.  The console is rudimentary and annoying, but it's a safe fallback if nothing else works for you.  Log into your DigitalOcean account and go to "Access->Launch Console."
 
 ## Directories
 

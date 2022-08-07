@@ -14,7 +14,7 @@ tags:
 
 Host names are optional - you can always connect to a game using its IP address.  But it's nice to have a host name (like yourmush.somemuhost.com) so people can remember your game address more easily.
 
-Most VPS servers (including Digital Ocean) don't include a host name. If you want a name, you'll have to set one up separately.
+Most VPS servers (including DigitalOcean) don't include a host name. If you want a name, you'll have to set one up separately.
 
 {% note %}
 Make sure that your hostname is set up before continuing with the installation. The game won't be able to run until the hostname is recognized. (For easy mode, we will work with you directly to take care of this.)

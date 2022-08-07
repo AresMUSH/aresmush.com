@@ -101,6 +101,6 @@ Removing a plugin completely is another story.
 
 Some optional plugins can simply be disabled through the game configuration.  See [Enabling and Disabling Plugins](/tutorials/config/plugins.html).
 
-For others, though, it takes some code surgery.  You'll need to hunt through the code looking for all references to its models and interfaces.  You'd also have to [remove the fields](/tutorials/code/remove-field.html) from the database itself.  
+For others, though, it takes some code surgery.  You'll need to hunt through the code looking for all references to its models and interfaces.  You'd also have to [remove the fields](/tutorials/code/db-remove-field.html) from the database itself.  
 
 This can be a pain, yes, but such is the price for having a fully-integrated MUSH-in-a-box system.

@@ -20,7 +20,7 @@ Hi.  This is Faraday from AresMUSH and in this tutorial I’m going to show you 
 
 Let’s assume we’ve followed the installation instructions and have our own Ares game running somewhere in the cloud.
 
-To connect to the game, we need to use SSH - which is basically the secure version of telnet.  There are a variety of ways to do this.  The easiest way is to download an SSH client application, such as PuTTY - which is one of the more popular ones that runs on both Windows and Mac.  On a Digital Ocean droplet, you can connect from the droplet management page.  You can also connect using the Mac terminal or Windows powershell.
+To connect to the game, we need to use SSH - which is basically the secure version of telnet.  There are a variety of ways to do this.  The easiest way is to download an SSH client application, such as PuTTY - which is one of the more popular ones that runs on both Windows and Mac.  On a DigitalOcean droplet, you can connect from the droplet management page.  You can also connect using the Mac terminal or Windows powershell.
 
 However we got there, we can navigate around the server shell by typing commands.  ls lists the files.  cd changes directories.  Most of the code we’re going to edit lives in the aresmush/plugins directory, where there are folders for each plugin.
 

@@ -1,10 +1,10 @@
 ---
-title: Digital Ocean One-Click Image
+title: DigitalOcean One-Click Image
 description: 
 layout: page
 tags:
 - install
-- digital ocean
+- DigitalOcean
 ---
 
 ** IN DEVELOPMENT; DO NOT USE**

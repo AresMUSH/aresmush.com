@@ -10,7 +10,7 @@ tags:
 
 You'll want to make sure that your game restarts if the server is ever rebooted. 
 
-If you followed the install tutorial on Digital Ocean, the install script should do that for you automatically.
+If you followed the install tutorial on DigitalOcean, the install script should do that for you automatically.
 
 If not, the exact instructions will vary depending on your machine's operating system. Please consult your system documentation for details, but the info here might help.
 

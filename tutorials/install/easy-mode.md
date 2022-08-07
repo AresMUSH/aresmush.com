@@ -1,5 +1,5 @@
 ---
-title: Digital Ocean Easy Mode
+title: DigitalOcean Easy Mode
 description: 
 layout: tutorial
 installTutorial: true
@@ -11,7 +11,7 @@ tags:
 - install
 ---
 
-If you're willing to use [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2) as your MU host, I'm happy to set up Ares for you.  
+If you're willing to use [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) as your MU host, I'm happy to set up Ares for you.  
 
 {% include toc.html %}
 
@@ -19,13 +19,13 @@ If you're willing to use [Digital Ocean](http://www.digitalocean.com/?refcode=5c
 
 Here's how it works:
 
-1. Submit a request and receive a Digital Ocean snapshot image.
+1. Submit a request and receive a DigitalOcean snapshot image.
 2. Clone your own server from the snapshot.
 3. Finalize your hostname settings.
 
 These steps are described in more detail in the next few sections.
 
-> **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral is not required for Easy Mode, but it is appreciated.
+> **Full Disclosure:** I get a referral bonus from DigitalOcean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral is not required for Easy Mode, but it is appreciated.
 
 ## Easy Mode Terms of Service
 
@@ -39,9 +39,9 @@ If requesting an AresMUSH.com subdomain, you must also agree to the [AresMUSH Su
 
 ## Submit a Request
 
-Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2) if you don't already have one.  Then [contact me](/feedback.html) and provide the following information:
+Create an account on [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) if you don't already have one.  Then [contact me](/feedback.html) and provide the following information:
 
-1. The email address associated with your Digital Ocean account.
+1. The email address associated with your DigitalOcean account.
 2. Your desired game port number. (Must be > 1024; default is 4201.)
 3. A name and description for your game.  (You can change this later.)
 4. Your desired hostname (yourgame.somewhere.com).  You can request an aresmush.com hostname or [register your own](/tutorials/install/getting-a-hostname.html).
@@ -49,18 +49,18 @@ Create an account on [Digital Ocean](http://www.digitalocean.com/?refcode=5c0717
 6. A statement affirming: "I have read and understood the Easy Mode terms of service, AresMUSH license agreement, and (if applicable) the AresMUSH subdomain terms of service."
 
 {% note %} 
-Your email is needed to transfer the server snapshot image to you.  It must match the email you used for your Digital Ocean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.
+Your email is needed to transfer the server snapshot image to you.  It must match the email you used for your DigitalOcean account.  I pledge not to do anything nefarious with your email.  See our [privacy policy](/privacy.html) for details.
 {% endnote %}
 
 ## Clone Your Server
 
-I will transfer a Digital Ocean snapshot image to your account. This image has everything you need to clone a droplet (aka server) with Ares installed on Ubuntu Linux.
+I will transfer a DigitalOcean snapshot image to your account. This image has everything you need to clone a droplet (aka server) with Ares installed on Ubuntu Linux.
 
 {% note %} 
 You have seven days to accept the transfer otherwise the request will be aborted.  You are responsible for the server costs once you accept the transfer.
 {% endnote %}
 
-1. Log into your Digital Ocean account.  
+1. Log into your DigitalOcean account.  
 2. Go to 'Images' and you should see a pending snapshot transfer request.  Click 'Accept'.
 3. Now on the 'Images' page you should see the snapshot.  Select 'Create Droplet' to turn that snapshot image into a droplet (aka server).
 {% include pretty_image.html file="install-ares/create-droplet-2.png" %}
@@ -76,7 +76,7 @@ You have seven days to accept the transfer otherwise the request will be aborted
 
 Hostnames are linked to IP addresses, so you can't fully set them up until you have cloned a droplet from the snapshot.  
 
-If you're using an aresmush.com hostname, simply [contact me](/feedback.html) with your droplet's IP address (visible on the 'Droplets' screen in your Digital Ocean account).  
+If you're using an aresmush.com hostname, simply [contact me](/feedback.html) with your droplet's IP address (visible on the 'Droplets' screen in your DigitalOcean account).  
 
 If you're using your own custom host name, you'll need to set up the DNS yourself. The steps will vary depending on the domain provider. See [Setting Up Domain Hosting With Namecheap](/tutorials/install/setting-up-dns.html) for an example.
 

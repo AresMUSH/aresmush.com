@@ -1,5 +1,5 @@
 ---
-title: Digital Ocean Self-Install
+title: DigitalOcean Self-Install
 description: 
 layout: tutorial
 installTutorial: true
@@ -12,19 +12,19 @@ tags:
 - hosting
 ---
 
-This article will walk you step-by-step through the process of setting up your hosting account through [Digital Ocean](http://www.digitalocean.com/?refcode=5c07173bc1f2).
+This article will walk you step-by-step through the process of setting up your hosting account through [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2).
 
 {% note %} 
-These instructions were correct at the time of writing, but Digital Ocean can change their screens at any time.  If you find that the instructions are wrong, please [let me know](/feedback.html)!
+These instructions were correct at the time of writing, but DigitalOcean can change their screens at any time.  If you find that the instructions are wrong, please [let me know](/feedback.html)!
 {% endnote %}
 
 ## Sign Up and Log In
 
 First you'll need to [sign up](http://www.digitalocean.com/?refcode=5c07173bc1f2) for an account.
 
-> **Full Disclosure:** I get a referral bonus from Digital Ocean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.
+> **Full Disclosure:** I get a referral bonus from DigitalOcean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but so do you!  You get starter credit (basically a month free), and the referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.
 
-Digital Ocean's pricing lists both a monthly and hourly rate.  A MUSH server will be up 24/7 all month long, so it uses the monthly rate.
+DigitalOcean's pricing lists both a monthly and hourly rate.  A MUSH server will be up 24/7 all month long, so it uses the monthly rate.
 
 ## Create a Droplet
 

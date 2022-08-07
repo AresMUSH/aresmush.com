@@ -37,9 +37,9 @@ This offers you some protection against someone messing up your database or acci
 
 For added backup security, you can FTP these files to your PC's hard drive; you just need to remember to do so.
 
-### Digital Ocean Automatic Backups
+### DigitalOcean Automatic Backups
 
-If you are using a Digital Ocean droplet, you can use their [Automatic Backup](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups) feature to create a weekly backup of your entire server.  This includes the database, the code, the server config - everything.  
+If you are using a DigitalOcean droplet, you can use their [Automatic Backup](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups) feature to create a weekly backup of your entire server.  This includes the database, the code, the server config - everything.  
 
 This is the most robust form of backup strategy, but it costs a little extra.  As of 2/18, automated weekly backups of the standard Ares droplet size cost $1/month.
 

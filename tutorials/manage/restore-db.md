@@ -12,9 +12,9 @@ Setting up [automatic backups](/tutorials/manage/backups.html) of your game is i
 
 {% include toc.html %}
 
-## Restoring from a Digital Ocean Weekly Backup
+## Restoring from a DigitalOcean Weekly Backup
 
-If you elected to use Digital Ocean's backup feature, see DO's [backups tutorial](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups) for help restoring.
+If you elected to use DigitalOcean's backup feature, see DO's [backups tutorial](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-backups) for help restoring.
 
 ## Restoring Game Files
 

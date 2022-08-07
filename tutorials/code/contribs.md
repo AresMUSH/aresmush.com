@@ -45,7 +45,7 @@ As long as you haven't modified the plugin's source code, you can upgrade it jus
 
 Ares plugins plug IN easily, but taking them out requires a bit of code fiddling. Some plugins have more detailed uninstall instructions in their README file, but in general you need to:
 
-1. [Remove the database fields](/tutorials/code/remove-field.html) and any associated database objects.
+1. [Remove the database fields](/tutorials/code/db-remove-field.html) and any associated database objects.
 2. Unload the plugin using the in-game command `unload <plugin name>`.
 3. Remove the code files.  You may remove the config files too, but you don't have to.
 4. Remove the plugin from the extras list in the `plugins.yml` config file.

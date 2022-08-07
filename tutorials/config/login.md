@@ -95,3 +95,7 @@ This cron job controls how often the old notifications are cleared out.  By defa
 ### random_guest_selection
 
 By default, guests are assigned in alphabetical order, so Guest-1 logs on first, then Guest-2, etc. Changing this setting to 'true' causes them to be assigned in random order.  You might want this if you change your guest names to something else, like "Blue-Guest", "Red-Guest", etc.
+
+### boot_timeout_seconds
+
+Controls how long someone is in timeout after being booted. This is meant as a short deterrent to discourage trolls, and is not meant as a long-term penalty. Remember that in the default configuration, all approved players are allowed to boot (to protect each other from disruptive guests/newbies), so you probably don't want to make it more than a few minutes.
