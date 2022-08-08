@@ -66,11 +66,21 @@ The clearing happens on the timetable specified by the cron config.  See the [Cr
 
 Sets the number of messages available in the channel recall (and thus the web portal chat) for all channels.
 
-## discord_gravatar_style and discord_prefix
+## Discord Integration
 
-These two options are used by the [Discord App](https://github.com/AresMUSH/ares-discord), an extension for AresMUSH that lets you connect your in-game chat channels to a Discord server.  If you don't have the app installed, they do nothing.
+The [Discord Integration](https://github.com/AresMUSH/ares-discord) is an optional add-on that you can install to link your in-game chat channels with channels in a Discord server. Messages sent from a linked channel will be echoed to its partner on the other side.
 
-## discord_debug
+> **Note:** The installation is not straightforward, so the Discord integration is only recommended with those with some technical savvy and patience.
+
+### discord_gravatar_style
+
+If the player doesn't have an icon, Discord will use a randomly-assigned one from Gravatar. Gravatar supports various styles such as 'robohash' (robots), 'retro' (blocky video game things), 'identicon' (geometric patterns) and more.
+
+### discord_prefix
+
+This is the prefix that shows up on the in-game chat to indicate that the message came from Discord.
+
+### discord_debug
 
 Set this to 'true' if you're having trouble with your discord bot; it enables extra debugging that may help you diagnose the problem.
 
