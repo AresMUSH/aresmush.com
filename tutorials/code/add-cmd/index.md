@@ -22,7 +22,7 @@ In this tutorial, we'll create a `goals` command that lets you record your chara
 
 ## What You'll Need
 
-This tutorial is interactive, so you'll need the Headwiz character or [coder permissions](/tutorials/manage/roles.html) on an actual Ares game.  You'll also need access to the [server shell](/tutorials/install/server-shell.html), as this tutorial goes beyond simple tinkering.
+This tutorial is interactive, so you'll need the Headwiz character or [coder permissions](/tutorials/manage/roles.html) on an actual Ares game.  You'll also need access to the [server shell](/tutorials/manage/server-shell.html), as this tutorial goes beyond simple tinkering.
 
 ## Getting Help
 

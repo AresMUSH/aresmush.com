@@ -15,7 +15,6 @@ This article lists some tools that you'll probably want to get if you're doing A
 
 Do yourself a favor and get a decent code editor for managing code on your local PC. Editors offer syntax highlighting, project browsing/searching, source control integration, and more. Here are some good ones:
 
-* [Atom](https://atom.io/) - Windows/Mac/Linux
 * [Visual Studio Code](https://code.visualstudio.com/) - Windows/Mac/Linux
 * [Sublime](http://www.sublimetext.com/) - Windows/Mac/Linux
 * [Textmate](https://macromates.com/) - Mac Only
@@ -52,7 +51,7 @@ You don't need a separate host name for the test game; you can just use the drop
 
 You can also run Ares on your local PC or Mac using Docker Desktop. Though not technically a "virtual machine", Docker's container service shares many similarities and essentially lets you run Ares in an Ubuntu Linux environment on your own PC.
 
-You will need to get the [Ares Docker](https://github.com/aresmush/ares-docker) files and follow the instructions there.
+You will need to get the [Ares Docker Image](https://github.com/aresmush/ares-docker) and follow the instructions there.
 
 ### Installing on Your Local PC or Mac using a VM
 
@@ -62,7 +61,7 @@ Virtual Machine (VM) software will let you run a full instance of Ubuntu Linux w
 Setting up a VM environment requires a fair bit of technical know-how and elbow grease. Docker is generally an easier option. VMs are not officially supported, but you're still welcome to ask for help from the community on either the forum or Discord.
 {% endnote %}
 
-You'll want to create a new VM using the Ubuntu base image. From there, you will need to [setup the server](/tutorials/install/setup-server.html) and [install the game](/tutorials/install/install-game.html) just as you would for a regular AresMUSH self-install. Use the VM's **Private IP** for your hostname. You can usually get this from the `ifconfig` command in the server shell.
+You'll want to create a new VM using the Ubuntu base image. From there, you can install the game using the same basic process described in the "Set Up the Server" and "Install the Game" steps [DigitalOcean Self Install]({{site.baseurl}}/tutorials/install/digital-ocean.html) tutorial. Use the VM's **Private IP** for your hostname. You can usually get this from the `ifconfig` command in the server shell.
 
 {% include pretty_image.html file='ifconfig.png' %}
 

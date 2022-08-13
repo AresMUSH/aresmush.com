@@ -18,4 +18,4 @@ If at any point you run into trouble, see [Getting Help](/feedback.html).
 {% include tutorial_warning.html %}
 
 
-{% include  install_tutorial.html %}
+{% include install_tutorial.html %}

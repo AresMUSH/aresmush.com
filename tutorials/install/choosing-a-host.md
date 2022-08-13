@@ -11,17 +11,20 @@ tags:
 - hosting
 ---
 
-A MUSH needs to be hosted on a server.  You have several options available.
+MUSHes need to be hosted on a cloud server to make the game accessible to the public.
 
-## Cloud Hosting
+With a built-in web portal/wiki, a database and more advanced coding tools, Ares cannot run on the limited accounts provided by most dedicated "MUSH hosting" services.  You'll need a Virtual Private Server (VPS) where you have admin privileges. I recommend [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral.html) and what the automated installer is designed for.
 
-Most MUs are hosted on a cloud server.  This is the best way to make your game accessible to the public.
+## Install Options
 
-With a built-in web portal/wiki, a database and more advanced coding tools, Ares cannot run on the limited accounts provided by most dedicated "MUSH hosting" services.  You'll need a Virtual Private Server (VPS) where you have admin privileges.  I recommend [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2).  It's what I use for [AresCentral](/arescentral.html) and what the automated installer is designed for.
+There are several ways to get Ares installed.
 
-* If you would like Faraday to set up Ares for you on DigitalOcean, see **[DigitalOcean Easy Mode](/tutorials/install/easy-mode.html)**.
-* If you would like to install Ares on DigitalOcean yourself, see **[DigitalOcean Self-Install](/tutorials/install/digital-ocean.html)** for step-by-step instructions.
-* If you prefer to find your own host, see **[Custom Server Install](/tutorials/install/custom-server.html)**.
+| Method | Description | Technical Knowledge Required |
+| ----- |
+| [DigitalOcean 1-Click Droplet](/tutorials/install/oneclick.html) | **\*\*Coming Soon\*\*** Quickly and easily create a DigitalOcean sever with everything you need pre-installed. All you have to do is configure your game information. | Low |
+| [DigitalOcean Easy Mode](/tutorials/install/easy-mode.html) | Faraday will set up an Ares game for you on DigitalOcean. May take 7-10 days depending on availability. | Lowest |
+| [DigitalOcean Self-Install](/tutorials/install/digital-ocean.html) | DIY instructions for installing a game on your own DigitalOcean server. | Medium |
+| [Custom Server Install](/tutorials/install/custom-server.html) | Install Ares in a custom environment using another hosting service. | Medium to High |
 
 ## Local Setup
 

@@ -569,6 +569,7 @@ pre {
 
 code {
 	font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+  color: #000;
 }
 
 
@@ -674,6 +675,10 @@ li {
 .fs3-sidebar h2 {
     font-size: 1em;
     border-bottom:1px solid #F2622E;
+}
+
+.fs3-sidebar h3 {
+  font-size: 1em;
 }
 
 .fs3-shortcut {

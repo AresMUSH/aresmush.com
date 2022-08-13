@@ -5,7 +5,7 @@ layout: tutorial
 installTutorial: true
 tutorialName: Installing AresMUSH
 tutorialIndex: tutorials/install
-prevstep: install-game
+prevstep: ports
 nextstep: next-steps
 tags:
 - install
@@ -13,7 +13,7 @@ tags:
 - https
 ---
 
-It is strongly recommended that you configure your web portal with a security certificate, so players can connect securely using HTTPS instead of HTTP.  Some browsers will issue security warnings if a website is not on HTTPS, which can turn away players. [CertBot](https://certbot.eff.org/) comes pre-installed in the default Ares installation; you just need to set it up for your domain.
+It is strongly recommended that you configure your web portal with a security certificate, so players can connect securely using HTTPS instead of HTTP. [CertBot](https://certbot.eff.org/) comes pre-installed in the default Ares installation; you just need to set it up for your domain.
 
 {% tip %}
 Using HTTPS requires a domain name. You can't do it if your game is running solely on an IP address.

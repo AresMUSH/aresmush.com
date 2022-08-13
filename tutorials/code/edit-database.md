@@ -27,7 +27,7 @@ Sometimes there won't be an admin command for what you need.  In those cases you
 
 It's rare when you can't do what you need with tinkering.  After all - tinkering can do everything the code can do.  
 
-But if you ever get into that situation, it's time to roll up your sleeves and dive into the database itself.  Log into your [Server Shell](/tutorials/install/server-shell.html) and run the following commands to open up a database command prompt:
+But if you ever get into that situation, it's time to roll up your sleeves and dive into the database itself.  Log into your [Server Shell](/tutorials/manage/server-shell.html) and run the following commands to open up a database command prompt:
 
     redis-cli
     auth YOUR_DATABASE_PASSWORD

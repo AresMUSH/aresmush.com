@@ -22,7 +22,7 @@ If that _still_ doesn't work, see "Hard Kill" below.
 
 Once the game is shut down, you can restart it from the server shell:
 
-1. Log into the [Server Shell](/tutorials/install/server-shell.html).
+1. Log into the [Server Shell](/tutorials/manage/server-shell.html).
 2. Type `cd aresmush`.
 3. Type `bin/startares`.
 
@@ -36,7 +36,7 @@ Always wait about 10 seconds or so between shutting the game down and restarting
 
 As a last resort, if none of the above steps work to shut down the game, you can kill the server process.  
 
-1. Log into your [Server Shell](/tutorials/install/server-shell.html).
+1. Log into your [Server Shell](/tutorials/manage/server-shell.html).
 2. Change into the aresmush folder using `cd aresmush`.
 3. Run the kill script: `bin/killares`.
 

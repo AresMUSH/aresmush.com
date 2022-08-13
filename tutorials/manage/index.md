@@ -35,7 +35,7 @@ These articles give a general overview of the various game systems.  For specifi
 
 ## Server Management
 
-* [Connect to the Server Shell](/tutorials/install/server-shell.html)
+* [Connect to the Server Shell](/tutorials/manage/server-shell.html)
 * [Starting the Game](/tutorials/manage/start.html)
 * [Shutting Down and Restarting the Game](/tutorials/manage/shutdown.html)
 * [Rebooting the Server](/tutorials/manage/reboot.html)

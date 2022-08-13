@@ -9,7 +9,7 @@ tags:
 
 If the game is ever stopped, you'll need to start it. 
 
-1. Log into your [Server Shell](/tutorials/install/server-shell.html) with the ares user.
+1. Log into your [Server Shell](/tutorials/manage/server-shell.html) with the ares user.
 2. Type `cd aresmush`.
 3. Type `bin/startares`.
 
@@ -19,7 +19,7 @@ Never try to start the game with the root user.
 
 If the game is already running and you want to restart it:
 
-1. Log into your [Server Shell](/tutorials/install/server-shell.html) with the ares user.
+1. Log into your [Server Shell](/tutorials/manage/server-shell.html) with the ares user.
 2. [Shut Down the Game](/tutorials/manage/shutdown.html) first.
 3. Wait about 10 seconds.  This ensures that everything has a chance to shut down fully.
 4. Type `cd aresmush`.

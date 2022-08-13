@@ -24,11 +24,11 @@ This article details the system requirements to help you find the right server a
 The supported environment for the automated Ares installer is:
 
 * A [DigitalOcean droplet](/tutorials/install/digital-ocean.html).
-* 2GB RAM recommended.  Giant games may need more RAM, but you can always upgrade later. You *can* get by on 1GB if need be, but it will require some extra work during upgrades.
-* Ubuntu Linux 16.04 or 18.04.
+* 2GB RAM recommended.  Giant games may need more RAM, but you can always upgrade later.
+* Ubuntu Linux (Are has been fully tested with versions 18.04 and 20.04).
 * **Nothing but the starter image** installed.   
 
-Hard drive space is not generally a concern. The base install will take only about 1GB of hard drive space, and database sizes are insignificant. Uploaded files (for theme/character images and the like) will be the bulk of variation in your hard drive usage.
+Hard drive space is not generally a concern. The base install will take only about 1GB of hard drive space, and database sizes are insignificant. Uploaded files (for theme/character images and the like) will be the bulk of your hard drive usage.
 
 ## Custom Environments
 
@@ -52,10 +52,10 @@ As well as various configuration/setup steps:
 
 * Create the ares user and give it the necessary permissions.
 * Copy over the default game configuration files and initialize the database.
-* Prompt you for some basic game settings.
+* Configure some basic game settings.
 * etc.
 
-All of these steps are detailed in the Ares install scripts. Use [`setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) and [`install`](https://github.com/AresMUSH/aresmush/blob/master/bin/install) as a **guide** when installing a game on a custom environment.  There are some examples of how to do this below.
+All of these steps are detailed in the Ares install scripts. Use [`aresmush/bin/setup_server`](https://github.com/AresMUSH/aresmush/blob/master/bin/setup_server) and [`aresmush/bin/install`](https://github.com/AresMUSH/aresmush/blob/master/bin/install) as a **guide** when installing a game on a custom environment.  There are some examples of how to do this below.
 
 {% include custom_install_warning.md %}
 
@@ -91,3 +91,7 @@ Here's another excerpt from the Ares install scripts that installs and uses Ruby
 RVM is a convenient way to install Ruby, but RVM might not be compatible with your custom environment.  You might instead use rbenv instead of compile Ruby from source.  
 
 The important thing is that the 'ares' user has access to the right version of ruby and can install gems (libraries) without any goofy permissions errors.
+
+{% note %}
+Bear in mind that the above are just examples. You are responsible for adapting the standard Ares install process for your a custom environment.
+{% endnote %}

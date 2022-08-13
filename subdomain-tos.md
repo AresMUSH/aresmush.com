@@ -1,13 +1,18 @@
 ---
 title: AresMUSH Subdomain Terms of Service
 description: 
-layout: page
+layout: tutorial
+installTutorial: true
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
+prevstep: getting-a-hostname
+nextstep: ports
 tags:
 - install
 - hosting
 ---
 
-You can request an AresMUSH subdomain (yourmush.aresmush.com) for your game by [contacting Faraday ("the author") directly](/feedback.html).
+You can request an AresMUSH subdomain (yourmush.aresmush.com) for your game by [contacting Faraday of Wordsmyth Creations ("the author") directly](/feedback.html).
 
 AresMUSH subdomains are provided free of charge with the following conditions:
 

@@ -1,29 +1,24 @@
 ---
 title: Connecting to the Server Shell
 description: 
-layout: tutorial
-installTutorial: true
-tutorialName: Installing AresMUSH
-tutorialIndex: tutorials/install
-prevstep: getting-a-hostname
-nextstep: setup-server
+layout: page
 tags:
-- install
 - hosting
 - manage
+- ssh
 ---
 
-To manage certain parts of your game, you will need to connect to the **Server Shell**, which is like a command prompt for your game server.  This is different than connecting with your MUSH client, because your'e connecting to the *server*, not the game.
+To manage certain parts of your game, you will need to connect to the **Server Shell**, which is like a command prompt for your game server.  This is different than connecting with your MUSH client, because your'e connecting to the **server**, not the game.
 
 ## The Ares User
 
-The very first time you log in (using any of the methods described below), you'll use the username "root" and the password that was emailed to you.  
+Your server comes with a **root** user. This is basically like the One/Headwiz/God user that has ultimate permissions on your server. You will use root when installing the game, but then tuck it away for safekeeping.
 
-As part of the game installation, it will create an "ares" user and password.  This is the one you should use for Ares-related activities.
+The game installation will create an **ares** user and password.  This is the one you should use from now on.
 
-{% note %} 
-Once the game is set up, always use the **ares** user. If you try to do Ares things as root, you can mess up your game. You can use `sudo` with the ares user if a command (like a server reboot) needs higher level permissions.
-{% endnote %}
+{% warning %} 
+Don't use the 'root' user for any Ares-related tasks once the game is installed. You can mess up your game.
+{% endwarning %}
 
 ## How to Connect
 
@@ -34,14 +29,14 @@ There are a variety of ways to connect to the server shell depending on your OS 
 On Windows 10 and up, you can connect using Windows Powershell:
 
 1. Open a Powershell window.  (You can use the Windows search to find the Powershell application.)
-2. Type `ssh ares@yourgame.somewhere.com`.
+2. Type `ssh USERNAME@yourgame.somewhere.com`.
 
 ### Using Mac Terminal
 
 On MacOSX, you can connect using the Terminal app:
 
 1. Open a Terminal window.  (It's usually under "Utilities" in the Applications menu.)
-2. Type `ssh ares@yourgame.somewhere.com`.
+2. Type `ssh USERNAME@yourgame.somewhere.com`.
 
 ### Using a Desktop Client
 
@@ -57,8 +52,16 @@ If you used the [DigitalOcean](/tutorials/install/digital-ocean.html) setup inst
 
 ## Directories
 
-**After** your game is installed, you will find the Ares code in your home directory.  It won't be there until you finish this install guide, but once it is, you can use the linux change directory command - `cd` - to change to the folder where the Ares code lives.
+Once your game is installed, you can use the linux change directory command - `cd` - to change to the folder where the Ares code lives.
 
     cd - Goes to your home folder.
     cd aresmush - From your home folder, changes to the game folder.
     cd ares-webportal - From your home folder, changes to the web folder.
+    
+The `ls` command will show you a list of files for your current directory.
+
+### sudo
+
+As mentioned before, never use the 'root' user for any Ares-related operation. Sometimes you may need to do things that require administrator permissions, like rebooting the game. If so, you can use the `sudo` command to execute a command with root/admin permissions.
+
+For example: `sudo reboot` will reboot the server.
