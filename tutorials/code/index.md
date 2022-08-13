@@ -8,6 +8,8 @@ These articles will teach you how to code for AresMUSH.
 
 {% include tutorial_warning.html %}
 
+{% include toc.html %}
+
 ## Introduction
 
 * [Ares Architecture](/tutorials/code/architecture.html) - All the moving parts that make up an Ares game.
@@ -126,6 +128,7 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Web Request Handling](/tutorials/code/web-requests.html)
 * [Custom Code](/tutorials/code/custom.html)
 * [Reloading Code](/tutorials/code/reload.html)
+* [Custom Code Hooks](/tutorials/code/custom-hooks.html) - Places where you can easily tie in your custom code.
 
 ### Utilities
 
@@ -159,6 +162,13 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [FS3 Code Roadmap](/tutorials/code/fs3-roadmap.html) - Overview of the FS3 code.
 * [Replacing FS3](/tutorials/code/replacing-fs3.html) - Replacing FS3 with your own skills system.
 
+## Local Development
+
+* [Setting up a Development System](/tutorials/code/dev-tools.html) - Setting up a system to code and test.
+* [Running Ares With Docker]({{site.baseurl}}/tutorials/code/docker.html) - Using the Docker image for local development.
+* [Using Git](/tutorials/code/git.html) - Using the GitHub version control system to manage your code.
+* [Running Tests](/tutorials/code/tests.html) - Running the automated unit tests.
+
 ## Contributions
 
 * [Community Contributions](/tutorials/code/contribs.html) - Using community plugins.
@@ -167,8 +177,4 @@ It's suggested that you refer to these as you need them rather than trying to le
 ## Miscellaneous
 
 * [Chopping Block](/tutorials/code/chopping-block.html) - Code that didn't make the cut.
-* [Custom Code Hooks](/tutorials/code/custom-hooks.html) - Places where you can easily tie in your custom code.
-* [Using Git](/tutorials/code/git.html) - Using the GitHub version control system to manage your code.
-* [Setting up a Development System](/tutorials/code/dev-tools.html) - Setting up a system to code and test.
-* [Running Tests](/tutorials/code/tests.html) - Running the automated unit tests.
 * [Telnet Extensions](/tutorials/code/telnet-extensions.html) - About telnet extensions and MCP.

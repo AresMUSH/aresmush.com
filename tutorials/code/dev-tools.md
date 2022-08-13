@@ -51,7 +51,7 @@ You don't need a separate host name for the test game; you can just use the drop
 
 You can also run Ares on your local PC or Mac using Docker Desktop. Though not technically a "virtual machine", Docker's container service shares many similarities and essentially lets you run Ares in an Ubuntu Linux environment on your own PC.
 
-You will need to get the [Ares Docker Image](https://github.com/aresmush/ares-docker) and follow the instructions there.
+See [Running Ares With Docker]({{site.baseurl}}/tutorials/code/docker.html) for details.
 
 ### Installing on Your Local PC or Mac using a VM
 
