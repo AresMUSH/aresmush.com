@@ -21,7 +21,7 @@ There are several ways to get Ares installed.
 
 | Method | Description | Technical Knowledge Required |
 | ----- |
-| [DigitalOcean 1-Click Droplet](/tutorials/install/oneclick.html) | **\*\*Coming Soon\*\*** Quickly and easily create a DigitalOcean sever with everything you need pre-installed. All you have to do is configure your game information. | Low |
+| [DigitalOcean 1-Click Droplet](/tutorials/install/oneclick.html) | Quickly and easily create a DigitalOcean sever with everything you need pre-installed. All you have to do is configure your game information. | Low |
 | [DigitalOcean Easy Mode](/tutorials/install/easy-mode.html) | Faraday will set up an Ares game for you on DigitalOcean. May take 7-10 days depending on availability. | Lowest |
 | [DigitalOcean Self-Install](/tutorials/install/digital-ocean.html) | DIY instructions for installing a game on your own DigitalOcean server. | Medium |
 | [Custom Server Install](/tutorials/install/custom-server.html) | Install Ares in a custom environment using another hosting service. | Medium to High |

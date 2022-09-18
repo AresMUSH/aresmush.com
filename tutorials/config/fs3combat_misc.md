@@ -37,6 +37,10 @@ For example, this BSG config sets up a Soldier type for ground marines and a Vip
         weapon: Pistol
         hitloc: Humanoid
         npc_type: Boss
+    Cavalry:
+        weapon: Sword
+        hitloc: Humanoid
+        mount: Horse
 
 ### hitloc
 
@@ -79,6 +83,10 @@ For combatants with vehicles, armor is for the pilot, not the vehicle.  Vehicles
 ### vehicle
 
 (**Optional**) You may specify a vehicle type that the combatant will use.
+
+### mount
+
+(**Optional**) The mount type the combatant will use. You can have either a vehicle or a mount, but not both.
 
 ### npc_type
 

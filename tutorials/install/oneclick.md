@@ -12,15 +12,7 @@ tags:
 - DigitalOcean
 ---
 
-
-<div class="text-center">
-  <p><h2>**Coming Soon**</h2></p>
-  <hr/>
-</div>
-
 The AresMUSH 1-Click Droplet lets you quickly set up your own Ares game through [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2). It gives you a server (aka droplet) with all the prerequisites already installed. All you need to do is provide your game information.
-
-> **Full Disclosure:** I get a referral bonus from DigitalOcean if you sign up for an account using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but you also get a starter credit. The referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral link is *not* required for the 1-Click Droplet, but is appreciated.
 
 {% include toc.html %}
 
@@ -30,6 +22,8 @@ Here's how it works in brief (full details follow in the rest of the article):
 
 1. You create a DigitalOcean droplet from the 1-click image, which comes with all the software you need already pre-installed.
 2. You configure your game.
+
+> **Full Disclosure:** I get a referral bonus from DigitalOcean if you sign up for an account using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but you also get a starter credit. The referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral link is *not* required for the 1-Click Droplet, but is appreciated.
 
 ## 1-Click Droplet Terms of Service
 
@@ -47,7 +41,7 @@ DigitalOcean does not support or endorse the Ares 1-Click Droplet.
 
 To get started:
 
-2. Go to the DigitalOcean Marketplace and find the AresMUSH 1-click droplet image.
+2. Get the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) from the DigitalOcean Marketplace.
 3. Click "Create Droplet" and use the following options:
   * Select a "Shared CPU" and "Basic" droplet.
   * The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB you may have performance issues and trouble upgrading.

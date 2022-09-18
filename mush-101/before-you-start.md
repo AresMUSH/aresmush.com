@@ -35,4 +35,4 @@ Here are some places you can look for games:
 * [AresCentral Game Directory](https://arescentral.aresmush.com/)
 * [Evennia Game Index](http://www.evennia.com/)
 * [Mustard MU Directory](https://mustard.mythicus.net/)
-* [Mu Soapbox](https://musoapbox.net/category/5/adver-tis-ments) - A MUSH forum containing an advertisement section.
+* [Grapevine MU Directory](https://grapevine.haus/)

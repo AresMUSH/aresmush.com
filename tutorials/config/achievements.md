@@ -26,19 +26,19 @@ Custom achievements must be defined in a plugin's configuration file.
 
 Some plugins already have some. For example, in the `forum.yml` config file, we define the forum-related achievements:
 
-    forum:
-      achievements:
-        forum_reply:
-          type: community
-          message: Replied to a forum post.
-        forum_post:
-          type: community
-          message: Created a forum post.
+(Under the config setting 'achievements')
 
-You can add to one of these lists. If it doesn't fit into an existing plugin achievement list, you can always use the one in `achievements.yml`.
+      forum_reply:
+        type: community
+        message: Replied to a forum post.
+      forum_post:
+        type: community
+        message: Created a forum post.
 
-    achievements:
-      achievements:
+You can add to one of these lists. If it doesn't fit into an existing plugin achievement list, you can edit use the one in `achievements.yml`.
+
+(Under the config setting 'achievements')
+
         player_of_the_month:
           type: social
           message: Recognized as Player of the Month.

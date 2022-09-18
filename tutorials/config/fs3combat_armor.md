@@ -39,6 +39,10 @@ The description is just ree-form text describing the armor.  It's best to use do
 
 You can specify different protection values for different locations, making weak spots or skipping areas that are completely uncovered. For example, the simple kevlar vest shown in the example above protects the chest and abdomen but nowhere else.  It protects the chest slightly more due to the heart-protector plate.
 
+{% note %}
+Any hit location not listed will have a protection of 0, meaning no armor. That means for a vest, for example, you only need to list chest and abdomen.
+{% endnote %}
+
 ### Defense
 
 Armor can impact defense compared to an un-armored person.  Clunky platemail might give a defense penalty, while agile power armor might give a defense bonus.

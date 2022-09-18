@@ -4,9 +4,13 @@ description: A New Breed of MUSH Server
 layout: page
 ---
 
-AresMUSH is a new kind of server for MUSH games.  What's a MUSH?  It's a unique style of text-based online gaming that blends role-playing games and collaborative writing.  Check out our [MUSH 101 Tutorial](/mush-101) to learn more.
+Virtual reality and 3D games may be the next big thing, but for almost thirty years, players have been creating their own online worlds using nothing but words and their imaginations on MUSHes. A MUSH is a text-based online multi-player game that blends creative writing, improv acting, and role-playing into a unique interactive storytelling experience. 
+
+AresMUSH is a next-gen server platform that brings modern features to MUSH games: a fully-featured web portal and wiki, automated scene logging, web-based character creation, and more. With AresMUSH, you can launch your own MUSH game with no coding experience.
 
 From a player's perspective, AresMUSH is a sibling of PennMUSH and TinyMUX.  Many players have mistaken it for a custom version of Penn rather than a completely new server!  From an admin's perspective, it is something completely different.
+
+New to MUSHing? Check out our [MUSH 101 Tutorial](/mush-101) to learn more.
 
 {% include tutorial_warning.html %}
 
