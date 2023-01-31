@@ -17,19 +17,17 @@ Ares makes it easier to play for new and veteran MUSHers alike.
 * Player handles, which bring a taste of social media to MUSHes.
 * A ground-up focus on making a pleasant user experience.
 
-Ares is designed to offer a familiar experience to both Penn and TinyMUX players, so experienced players will feel right at home. At the same time, a fully-integrated web portal and streamlined commands make the game easier to play for new players and old alike.
-
 Learn more at [Ares for Players](/features/ares-for-players.html).
 
 ## Make it Easier to Create a Game
 
-Existing MUSH clients effectively require you to have a coder on board before you can make a game.  Coding should be an afterthought, not your primary concern. Ares makes it easier to create a game.
+Existing MUSH clients effectively require you to have a coder on board before you can make a game.  Coding should be an afterthought, not your primary concern. Ares makes it easy to create a game.
 
 * Turnkey installation with automated scripts and step-by-step instructions.
 * A complete MUSH-in-a-box that can be installed and configured by people with no prior code experience.
 * A fully-integrated [Web Portal](/web-portal), so you don't need to manage a separate wiki.
 * Easy web-based configuration.
-* FS3 comes built-in, and several other [skill systems](/features/skills.html) are available as easy-to-install plugins.
+* FS3 comes built-in, and can be swapped for several other [skill system](/features/skills.html) plugins.
 
 Learn more at [Ares for Admins](/features/ares-for-admins.html).
 
@@ -45,4 +43,4 @@ Learn more at [Ares for Coders](/features/ares-for-coders.html).
 
 ## But Wait...
 
-As cool as Ares is, it's not the right choice for every game. Before choosing Ares, be sure to check out our [server comparison]({{site.baseurl}}/features/server-roundup.html).
+As cool as Ares is, it's not the right choice for every game. Before choosing Ares, be sure to check out [Choosing the Right MU Server]({{site.baseurl}}/features/server-roundup.html).

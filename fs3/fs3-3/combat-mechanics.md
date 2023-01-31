@@ -169,7 +169,6 @@ If a target is in cover, the attack has a chance of being stopped by cover inste
 The damage severity of a wound is based on a percentile dice roll modified by:
 
 * The weapon’s lethality statistic.
-* +30 if the target is a NPC, because they're not a hero and get badly wounded more easily.
 * +30 if the hit location was deemed a "Critical" one on the hit location chart.
 * +0 if the hit location was deemed a "Vital" one on the hit location chart.
 * -30 if the hit location is neither Critical nor Vital on the hit location chart.
@@ -177,6 +176,7 @@ The damage severity of a wound is based on a percentile dice roll modified by:
 * +30 if the attacker spent luck on attack
 * -30 if the defender spent luck on defense
 * +5 for every net success the attacker gets beyond the first.
+* Most NPCs receive a modifier since they're not the heroes. This is configurable, but by default scales from +30 (for goons) to +0 (for bosses).
 
 All modifiers are cumulative, and are added to the percentile roll to give a final result based on the damage table.  The damage table is configurable by each game.  Here is the standard one:
 
@@ -187,7 +187,32 @@ All modifiers are cumulative, and are added to the percentile roll to give a fin
 | 70 - 94 | Impaired |
 | 95 or higher | Incapacitated |
 
-Knockout is based on a composure roll, offset by the damage modifier.  PCs receive an automatic +3 bonus to the knockout roll.
+# Damage Modifier
+
+Wounded characters receive a damage modifier to subsequent attack and defense rolls. 
+
+| Wound Level | Damage Modifier |
+| ---- |
+| Graze | 0 |
+| FleshWound | 0.25 |
+| Impaired | 2 |
+| Incapacitated | 7 |
+
+**Each** wound contributes to the total modifier. So a character with an Impaired wound to their arm and a Flesh Wound to their leg would have a total modifier of 2.25.
+
+Once a wound has been treated, healed naturally, or mitigated by a combat/hero luck point, the damage modifier is reduced by 1/2.
+
+Damage modifiers are intended to only apply during combat, but storytellers may impose modifiers at their discretion to reflect lingering wounds the same as any other modifier.
+
+# Knockout
+
+At the end of a combat round, every character or vehicle who suffered damage *during that round* will make a knockout roll. This is a Composure roll, modified by:
+
+* If the character is a PC, they receive a configurable bonus (default +3).
+* If the character is in a vehicle, they receive a bonus based on the vehicle's Toughness rating.
+* TWICE the total damage modifier (so if a character has two impaired wounds, they would have a -4).
+
+If a KOed character is treated or rallied, they can make a KO roll again at +3 to become un-KOed.
 
 <a name="hit-location">
 

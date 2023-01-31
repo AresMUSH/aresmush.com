@@ -101,7 +101,14 @@ This is the instructional blurb used in the abilities screen and in chargen help
 
 ## Changing an Existing Ability
 
-If you remove, rename, or change the category of an ability (e.g., moving it from Action Skill to Background Skill or vice-versa), when characters *already* have that ability on their sheets, you will cause errors. Characters may not be able to change/remove the modified skills, or you might get configuration errors such as:
+If you want to remove, rename, or change the category of an existing ability (e.g., moving it from Action Skill to Background Skill or vice-versa), you will either need to:
+
+1. Make sure nobody has that ability.
+2. Use a code tinker to update existing abilities behind the scenes.
+
+You'll also need to update any chargen or combat configuration that references that ability (e.g., a weapon skill or CG starting skill).
+
+If you remove, rename, or change a skill category when characters *already* have that ability on their sheets, you will cause errors. Characters may not be able to change/remove the modified skills, or you might get configuration errors such as:
 
     Error: "Error in skills configuration -- action skill Archery not found."
 

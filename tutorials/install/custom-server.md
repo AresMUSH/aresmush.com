@@ -24,7 +24,7 @@ This article details the system requirements to help you find the right server a
 The supported environment for the automated Ares installer is:
 
 * A [DigitalOcean droplet](/tutorials/install/digital-ocean.html).
-* 2GB RAM recommended.  Giant games may need more RAM, but you can always upgrade later.
+* 2GB RAM required.  Giant games may need more RAM, but you can always upgrade later.
 * Ubuntu Linux (Are has been fully tested with versions 18.04 and 20.04).
 * **Nothing but the starter image** installed.   
 

@@ -37,7 +37,7 @@ Create a [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) accou
 
 {:start="2"}
 
-2. Select a "Shared CPU" and "Basic" droplet, then choose a size. The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB you may have performance issues and trouble upgrading.
+2. Select a "Shared CPU" and "Basic" droplet, then choose a size. The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB is not supported.
 
 {% include pretty_image.html file='/install-ares/install-droplet-2.png' %}
 

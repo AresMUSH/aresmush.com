@@ -17,3 +17,5 @@ There are a variety of ways to stay connected with Ares.
 {% note %}
 Please note that the staff of aresmush.com has no control over, and is not responsible for, the content of any individual Ares game. If you have concerns about a game's content or conduct, please contact the game owners directly.
 {% endnote %}
+
+{% include conduct.html %}

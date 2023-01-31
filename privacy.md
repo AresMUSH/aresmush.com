@@ -12,7 +12,7 @@ This article is about aresmush.com (including AresCentral).  For information abo
 
 Private AresCentral account information is only accessible by AresCentral technical staff.  Private information includes:
 
-* Email
+* Email (if provided)
 * Security questions (e.g. "Most memorable MU")
 * IP Addresses used to access your AresCentral account.
 

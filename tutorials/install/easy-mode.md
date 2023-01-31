@@ -14,7 +14,7 @@ tags:
 If you're willing to use [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) as your MU host, I'm happy to set up Ares for you. 
 
 {% note %}
-There is no installation fee for Easy Mode, but you will still pay DigitalOcean for hosting. Easy mode may take 7-10 days depending on availability.
+There is no installation fee for Easy Mode, but you will still pay DigitalOcean for hosting. Easy mode may take 7-10 days depending on my availability.
 {% endnote %}
 
 {% include toc.html %}
@@ -23,10 +23,9 @@ There is no installation fee for Easy Mode, but you will still pay DigitalOcean 
 
 Here's how it works in brief (full details follow in the rest of the article):
 
-1. You submit a request with your game information.
-2. You invite me to your DigitalOcean team temporarily.
-3. I will create a droplet with your game fully installed and ready to go.
-4. I will transfer the game info to you and leave your DigitalOcean team.
+1. You create a droplet (server) using the Ares 1-click image. You don't have to finish the setup, just create the skeleton.
+2. You send me a request with your game information.
+3. I will log into your droplet and set it up for you.
 
 > **Full Disclosure:** I get a referral bonus from DigitalOcean if you sign up using [this referral link](http://www.digitalocean.com/?refcode=5c07173bc1f2), but you also get a starter credit. The referral bonus helps keep the doors at [AresCentral](/arescentral.html) open.  Using the referral link is *not* required for Easy Mode, but is appreciated.
 
@@ -40,40 +39,49 @@ You are also responsible for complying with the game software's [License Agreeme
 
 If requesting an AresMUSH.com subdomain, you must also agree to the [AresMUSH Subdomain Terms of Service](/subdomain-tos.html).
 
+## Create the Droplet
+
+Unfortunately, Digital Ocean's tools do not allow me to transfer a completed droplet to you. You'll have to make one, and then I can set it up. To do that:
+
+Create an account on [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) if you don't already have one.  
+
+1. Go to the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) in the DigitalOcean Marketplace.
+2. Click "Create Droplet" and use the following options:
+  * Select a "Shared CPU" and "Basic" droplet.
+  * The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB is not supported.
+  * Don't add block storage.
+  * Select a region. New York is a good choice unless your players are predominately from outside the US.
+  * Use the **password option** and set a root user password. Save your root password in a safe place. (If you want to use a SSH key, you can set it up after easy mode is complete.)
+  * Do **NOT** enable IPv6; Ares does not support dual IP versions, and many PCs can still only access v4.
+  {% include pretty_image.html file='/install-ares/install-droplet-2.png' %}
+
+{:start="3"}
+3. Once your droplet is created, find the IP address on your DigitalOcean dashboard.
+
+For easy mode, you do not need to complete the rest of the 1-click setup instructions. Just create the droplet and I will do the rest. The [1-click instructions](/install/oneclick.html) are pretty straightforward, though, if you wanted to give it a try yourself.
+
+{% note %}
+You are responsible for all server charges for the droplet.
+{% endnote %}
+
+
 ## Submit a Request
 
-Create an account on [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) if you don't already have one.  Then [contact me](/feedback.html) and provide the following information:
+Once the droplet is created, [email me](/feedback.html) and provide the following information:
 
-1. The email address associated with your DigitalOcean account.
+1. The IP address AND root password for your droplet.
 2. Your desired game port number. (Must be > 1024; default is 4201.)
 3. A name and description for your game.  (You can change this later.)
 4. Your desired hostname (yourgame.somewhere.com).  You can [request an aresmush.com hostname](/tutorials/install/getting-a-hostname.html) or [register your own](/tutorials/install/getting-a-hostname.html).
-5. Whether you want me to install a security certificate for your web portal.  This is highly recommended to ensure security and enable browser notifications.  Setting up HTTPS will require me using your email to register the certificate with https://letsencrypt.org/.
+5. Whether you want me to install a security certificate for your web portal.  This is highly recommended to ensure security and enable browser notifications.  I will use your email address to register the certificate with https://letsencrypt.org/. 
 6. A statement affirming: "I have read and understood the Easy Mode terms of service, AresMUSH license agreement, and (if applicable) the AresMUSH subdomain terms of service."
-
-{% note %} 
-Your email is needed to transfer the server snapshot image to you.  It must match the email you used for your DigitalOcean account. See our [privacy policy](/privacy.html) for details on how your information is protected.
-{% endnote %}
-
-## Set Up the Server
-
-I will transfer a customized DigitalOcean snapshot image to your account and create a droplet from that image.
-
-1. Wait for the email indicating that your snapshot is ready.
-2. Invite me to your Digital Ocean team, as described in the [DigitalOcean Teams Guide](https://docs.digitalocean.com/products/teams/how-to/create/#invite-team-members){:target="blank"}.
-3. Once we are on the same team, I will transfer the snapshot to your account, create the game droplet, and finalize the installation setup.
-  * This step includes setting up the domain name if you have requested an aresmush.com subdomain. 
-  * If you are using a custom domain, you will need to set up the DNS yourself. The steps will vary depending on the domain provider. See [Setting Up Domain Hosting With Namecheap](/tutorials/install/setting-up-dns.html) for an example.
-  * It may take up to 24 hours for the domain name setup to register, and the game will not work until then.
-4. Once the game is ready, I will contact you with details on how to connect (including the ares user password). 
-5. I will leave your DigitalOcean team, and you take over managing the server.
-
-{% note %}
-You are responsible for all server charges once the snapshot image is transferred and game droplet created.
-{% endnote %}
 
 ## Next Steps
 
 After I have ensured everything is running properly, I will contact you with the ares user password. You may then begin using your game. 
+
+{% note %}
+It is strongly recommended that you immediately change both the root and ares user passwords as soon as the game is ready to go.
+{% endnote %}
 
 Check out [Next Steps](/tutorials/install/next-steps.html) to get started.

@@ -1,19 +1,29 @@
 ---
 title: Setting Up A Custom Domain with Namecheap
 description: 
-layout: page
+layout: tutorial
+installTutorial: true
+tutorialName: Installing AresMUSH
+tutorialIndex: tutorials/install
+prevstep: getting-a-hostname
+nextstep: ports
 tags:
 - install
 - hosting
 - dns
 ---
 
-If you don't already have a domain name provider of your own, consider [Namecheap](https://namecheap.com). They're affordable, and their tools are pretty straightforward. I don't get anything for recommending them; I just like them.  
+If you want a domain name for your game, you have two options:
 
-To set up your MUSH's domain on namecheap:
+* Request a free AresMUSH sub-domain (yourmush.aresmush.com), set up for you. See [Subdomain Terms of Service](/subdomain-tos.html) for details.
+* Set up your own domain (yourmush.com).
+
+For the second option, consider [Namecheap](https://namecheap.com). They're affordable, and their tools are pretty straightforward. I don't get anything for recommending them; I just like them.
+
+To set up your MUSH's domain on Namecheap:
 
 1. Create an account and purchase the domain.
-2. [Install the game](/tutorials/install) up to the point where you have the droplet IP address and need to set up the domain.
+2. [Create a droplet](/tutorials/install) -- you don't need to complete the install, just do the first step when you create the droplet and get an IP address.
 3. Go to your account dashboard.
 4. Click "Manage" next to your domain name.
 5. Click "Advanced DNS".
@@ -33,4 +43,4 @@ To set up your MUSH's domain on namecheap:
 The hostname may take up to 24 hours to be recognized.  
 {% endnote %}
 
-You can tell that the hostname is working when you're able to see the web portal when you go to `http://yourmushaddress`.  (There will be a Sad Picard error message, but that's OK for now.)  Once this happens, you can continue with the installation,  [restart the game](/tutorials/manage/shutdown.html) for everything to start working. 
+You can tell that the hostname is working by logging into the server shell and typing: `nslookup YOURDOMAINNAME`. When the "non-authoritative answer" lists your droplet's IP address, the DNS is working and you can continue with the game installation.

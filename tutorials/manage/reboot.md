@@ -30,7 +30,7 @@ It is highly recommended that you reboot your system as soon as possible when yo
 5. Your game should restart automatically after the server reboots. 
 
 {% warning %}
-It usually takes a few minutes, sometimes up to 30, for the OS to install the updates after a reboot. This is similar to what happens when you get the blue screen saying "Installing Windows updates. Don't turn off your computer." when you update your PC. You just can't see the server screen. Just be patient.
+It can take anywhere from 5 minutes to 45 minutes for the OS to install the updates after a reboot. This is similar to what happens when you get the blue screen saying "Installing Windows updates. Don't turn off your computer." when you update your PC. You just can't see the server screen. Just be patient. If you can't connect after 45 minutes you can cycle power to the droplet through your Digital Ocean control panel, but this can cause OS issues and should be a method of last resort.
 {% endwarning %}
 
 If your game doesn't restart automatically after the restart, there's probably some other error. See [troubleshooting](/tutorials/code/troubleshooting.html) or ask for help.

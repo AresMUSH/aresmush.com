@@ -32,6 +32,7 @@ These articles give a general overview of the various game systems.  For specifi
 * [Backing Up the Game](/tutorials/manage/backups.html)
 * [Restoring from a Backup](/tutorials/manage/restore-db.html)
 * [Resetting Forgotten Admin Passwords](/tutorials/manage/forgot-headwiz-pw.html)
+* [Restoring Deleted Scene Poses](/tutorials/manage/deleted-poses.html)
 
 ## Server Management
 

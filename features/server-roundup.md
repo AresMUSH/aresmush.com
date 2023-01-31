@@ -65,10 +65,10 @@ Obviously this is biased a bit from my perspective, but I have done my best to b
 |Finger / Profile |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 |IC Time |<i class="fa fa-check-square"></i> |<i class="fa fa-check-square"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 |Places |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
-|Weather|<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>||
+|Weather|<i class="fa fa-user"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>||
 |Scenes and Repose |<i class="fa fa-check-square"></i> ||<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|<i class="fa fa-user"></i>|
 
-It's worth considering that a built-in system is only useful if you like how it works.  If you plan on ripping it all out and writing it from scratch anyway, then it may be easier to start with a blank slate.
+Note that a built-in system is only useful if you like how it works.  If you plan on ripping it all out and writing it from scratch anyway, then it may be easier to start with a blank slate.
 
 ## Web Integration
 
@@ -123,7 +123,7 @@ Because Ares offers integral support for both temproom (off-grid) and asynchrono
 * Hidden/Restricted/Limited RP areas.
 * Secret societies/faction members.
 
-Doing anything resembling this is going to involve [knocking down some walls](#lego) and making massive changes to the core code. If these sorts of features are essential to your game, please give careful thought as to whether Ares is really the best choice for your game. You can also consult with [the community]({{site.baseurl}}/feedback.html) to get more advice about potential pitfalls for your specific ideas.
+Doing anything resembling this is going to involve [knocking down some walls](#lego) and making massive changes to the core code. If these sorts of features are essential to your game, please give careful thought as to whether Ares is really the best choice. You can also consult with [the community]({{site.baseurl}}/feedback.html) to get more advice about potential pitfalls for your specific ideas.
 
 ## Skill Systems
 
@@ -133,7 +133,7 @@ Several servers have community contributions for skill systems.  This list only 
 |---- |
 |[FS3, 3rd Edition](/fs3/fs3-3) |AresMUSH ||
 |[FS3, 2nd Edition](http://lynnfaraday.github.io/MUSH/) |PennMUSH |No longer in active development. |
-|Cortex |AresMUSH |An old, unsupported version exists for Penn/Tiny. |
+|Cortex |AresMUSH |An old, unsupported version also exists for Penn/Tiny. |
 |Fate |AresMUSH | |
 |FFG Genesys / Star Wars |AresMUSH | |
 |Dahan's Star Wars Sagas |PennMUSH, RhostMUSH |Probably also works on TinyMUX. |

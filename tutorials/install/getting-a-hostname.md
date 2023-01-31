@@ -20,7 +20,7 @@ If using a host name, make sure it's set up before continuing with the installat
 
 ## AresMUSH Domain
 
-You can request an AresMUSH sub-domain (yourmush.aresmush.com). See [Subdomain Terms of Service](/subdomain-tos.html) for details.
+You can request a free AresMUSH sub-domain (yourmush.aresmush.com). See [Subdomain Terms of Service](/subdomain-tos.html) for details.
 
 ## Custom Domain
 

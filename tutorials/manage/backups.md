@@ -51,7 +51,45 @@ AresMUSH can automatically perform daily backups to Amazon's S3 storage service 
 AWS is a great backup option, but AWS' menu options can be overwhelming for novice server admins.  Make sure you're familiar with their cost tiers.  Most games <b>should</b> fit comfortably into their 'free tier' and cost you nothing; however, it's your responsibility to understand their pricing tiers and know what you're signing up for.
 {% endnote %}
 
-#### Setting up S3
+
+## General Backup Configuration
+
+For the automated backup strategies (local or AWS), there are a few things you'll want to configure.
+
+1. Go to the Web Portal's Admin screen.  
+2. Select 'Setup'.
+3. Select `backup.yml`.
+
+### Backup Type
+
+Set the backup type to 'aws' for AWS backups and 'local' for local backups.
+
+### Number of Backups
+
+You can configure the number of backups the game keeps.  By default this is 5.  The game will only keep this many backup files.
+
+{% note %}
+If you _reduce_ the number of backups from its previous value, you need to manually remove any extra backup files.
+{% endnote %}
+
+### Backup Cron Job
+
+You can configure when backups are done.  By default it's early morning, after peak MU* times.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.
+
+### Database File Location
+
+If you used the standard install scripts, the game should already be configured with the proper database file location.  But if you performed a custom installation, you'll need to tell the game where the database file is.
+
+1. Go to the Web Portal's Admin screen.  
+2. Select 'Setup'.
+3. Select `database.yml`.
+4. Enter the path to redis' dump file.
+
+## Additional Amazon S3 Configuration
+
+In addition to the basic backup settings above, there are a few extra steps you'll need to do to configure backups through Amazon S3.
+
+### Setting up S3
 
 To set up automatic backups, you'll need:
 
@@ -65,52 +103,20 @@ You'll need to follow the Amazon tutorials, particularly [Getting Started With S
 Even if you use S3 for other things, create a separate bucket just for your AresMUSH backups.  Ares will delete older files to make room for new backups, and you don't want it to accidentally delete anything important!
 {% endnote %}
 
-#### Configuring the Game to Use S3
+### Configuring the Game to Use S3
 
 Once you have an S3 account, you'll need to configure the game to use it.
 
 1. Go to the Web Portal's Admin screen.  
 2. Select 'Setup'.
 3. Select 'secrets.yml'.
-
-Enter your AWS access key, bucket name and the code for the region your bucket is in into the AWS section.  You can find the AWS region codes [here](http://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region).
+4. Enter your AWS access key, bucket name and the code for the region your bucket is in into the AWS section.  You can find the AWS region codes [here](http://docs.aws.amazon.com/general/latest/gr/rande.html#apigateway_region).
+5. Set the backup type in `backup.yml` to `aws` as described in the previous section.
 
 #### Test the Backup
 
-There are many moving parts in the AWS backup process.  Once you have it all set up, we recommend that you test it once using the manual `dbbackup` command.  Make sure that the database file ends up in your S3 bucket successfully before relying on the automatic daily backups.
+There are many moving parts in the AWS backup process.  Once you have it all set up, we recommend that you test it once using the manual `db/backup` command.  Make sure that the database file ends up in your S3 bucket successfully before relying on the automatic daily backups.
 
-## General Backup Configuration
-
-For the automated backup strategies (local or AWS), there are a few things you'll want to configure.
-
-1. Go to the Web Portal's Admin screen.  
-2. Select 'Setup'.
-3. Select `backup.yml`.
-
-#### Backup Type
-
-Set the backup type to 'aws' for AWS backups and 'local' for local backups.
-
-#### Number of Backups
-
-You can configure the number of backups the game keeps.  By default this is 5.  The game will only keep this many backup files.
-
-{% note %}
-If you _reduce_ the number of backups from its previous value, you need to manually remove any extra backup files.
-{% endnote %}
-
-#### Backup Cron Job
-
-You can configure when backups are done.  By default it's early morning, after peak MU* times.  See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.
-
-#### Database File Location
-
-If you used the standard install scripts, the game should already be configured with the proper database file location.  But if you performed a custom installation, you'll need to tell the game where the database file is.
-
-1. Go to the Web Portal's Admin screen.  
-2. Select 'Setup'.
-3. Select `database.yml`.
-4. Enter the path to redis' dump file.
 
 ## Restoring Backups
 

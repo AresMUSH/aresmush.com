@@ -41,18 +41,18 @@ DigitalOcean does not support or endorse the Ares 1-Click Droplet.
 
 To get started:
 
-2. Get the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) from the DigitalOcean Marketplace.
-3. Click "Create Droplet" and use the following options:
+1. Go to the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) in the DigitalOcean Marketplace.
+2. Click "Create Droplet" and use the following options:
   * Select a "Shared CPU" and "Basic" droplet.
-  * The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB you may have performance issues and trouble upgrading.
+  * The cover: /1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below cover:  you may have performance issues and trouble upgrading.
   * Don't add block storage.
   * Select a region. New York is a good choice unless your players are predominately from outside the US.
   * Select an SSH key for logging in (if you don't know what that is, just select the password option) and any other options desired.
   * Do **NOT** enable IPv6; Ares does not support dual IP versions, and many PCs can still only access v4.
   {% include pretty_image.html file='/install-ares/install-droplet-2.png' %}
 
-{:start="4"}
-4. Once your droplet is created, find the IP address on your DigitalOcean dashboard.
+{:start="3"}
+3. Once your droplet is created, find the IP address on your DigitalOcean dashboard.
 
 ## Getting a Host Name
 
