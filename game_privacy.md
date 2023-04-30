@@ -9,17 +9,19 @@ tutorial: true
 
 It's up to each individual Ares game to determine their privacy policies.  Ideally this will be conveyed to players in the terms of service acknowledgement or a policy file on the wiki.  This article provides some **general** information about privacy on Ares games.
 
-> Note: This article is about the Ares game server.  For AresCentral and aresmush.com privacy practices, see the [website privacy policy](http://aresmush.com/privacy.html).
+{% note %}
+This article is about AresMUSH games.  For AresCentral and aresmush.com privacy practices, see the [aresmush.com website privacy policy](http://aresmush.com/privacy.html).
+{% endnote %}
 
-**Ares has no built-in commands to support admins spying on players.**  That means there's no SUSPECT flag or DARK power for spying, and no admin commands to view private scenes, mail, or private messages.  Just as with any online service, though, **any** data transmitted to the server and/or stored in the database is ultimately accessible to the game owner and anyone they choose to share it with. They may install custom loggers or custom commands, or crack open the database manually. Sensitive information is best kept off-game.
+**Ares has no built-in commands to support admins spying on players.**  That means there's no SUSPECT flag or DARK power for spying, and no admin commands to view private scenes, mail, or private messages.  Just as with any online service, though, **any** data transmitted to the server and/or stored in the database is ultimately accessible to the game owner and anyone they choose to share it with. Owners/coders may install custom loggers or custom commands, or crack open the database manually. Sensitive information is best kept off-game.
 
 ## What Data Is Stored
 
 It’s important to draw a distinction between *logged* and *stored* data.
 
-Debug logs are plain-text, accessible by any admin, to track and troubleshoot what happens on the game. *Certain commands are not logged for privacy reasons*: connect/create (due to passwords), mails, pages/pms, poses, oocs, channel chat, and others.
+Debug logs are plain-text, accessible by any admin, to track and troubleshoot what happens on the game. **Certain commands are not logged for privacy reasons**: connect/create (due to passwords), mails, pages/pms, poses, oocs, channel chat, and others.
 
-Stored data (in the database) is for the purpose of game features. This enables things like the web portal play screen, channel recall, sharing scenes on the wiki, etc. *All built-in commands limit stored data to people who should have access to it.* Game admin do not have ready access to everything, not even headwiz. See "Who Can View Your Data" below for details.
+Stored data (in the database) is for the purpose of game features. This enables things like the web portal play screen, channel recall, sharing scenes on the wiki, etc. **All built-in commands limit stored data to people who should have access to it.** Game admin do not have ready access to everything, not even headwiz. See "Who Can View Your Data" below for details.
 
 Here are the types of personal data that can be stored by the game:
 

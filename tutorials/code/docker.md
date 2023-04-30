@@ -41,7 +41,7 @@ To set up the container for the first time:
     docker-compose up
 ```
 
-6. In a **new** PowerShell/Terminal window, use this command to launch a shell connected to the container:
+6. In a **new** PowerShell/Terminal window, use this command to launch a shell connected to the container. Your docker image may be different than `ares-docker_game_1` depending on how Docker names it:
  
 ```
      docker exec -it ares-docker_game_1 /bin/bash -l
@@ -74,7 +74,7 @@ If you still have the ares container and shell running from the initial setup, y
     docker-compose up
 ```
 
-2. In a **new** PowerShell/Terminal window, launch a shell connected to the container:
+2. In a **new** PowerShell/Terminal window, launch a shell connected to the container. Your docker image may be different than `ares-docker_game_1` depending on how Docker names it:
 
 ```
     docker exec -it ares-docker_game_1 /bin/bash -l

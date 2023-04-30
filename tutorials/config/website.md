@@ -252,6 +252,9 @@ The main group is required, but you can set subgroup to an empty string (`""`) i
 
 If set to true, the sidebar appears on the left instead of the default right.
 
+### hide_searchbox
+
+Some games like to put search options into the menu, so you can use this setting to hide the default search box from the sidebar.
 
 ### auto_wiki_export and wiki_export_cron
 

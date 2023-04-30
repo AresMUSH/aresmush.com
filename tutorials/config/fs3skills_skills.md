@@ -103,7 +103,7 @@ This is the instructional blurb used in the abilities screen and in chargen help
 
 If you want to remove, rename, or change the category of an existing ability (e.g., moving it from Action Skill to Background Skill or vice-versa), you will either need to:
 
-1. Make sure nobody has that ability.
+1. Make sure no existing character has that ability.
 2. Use a code tinker to update existing abilities behind the scenes.
 
 You'll also need to update any chargen or combat configuration that references that ability (e.g., a weapon skill or CG starting skill).
@@ -112,27 +112,22 @@ If you remove, rename, or change a skill category when characters *already* have
 
     Error: "Error in skills configuration -- action skill Archery not found."
 
-To avoid these problems, you will need to use a [Tinker snippet](/tutorials/code/tinker.html) to fix everyone's character sheet.
+To avoid these problems, you will need to fix everyone's character sheet. 
 
-For example, if we wanted to remove the Archery action skill, we would modify the tinker command to do:
+* If you are just **removing** an ability, use the `wipeability <name>` admin command.
+* If you are just **renaming** an ability, use the `renameability <old name>=<new name>` admin command.
+* If you want the nuclear option, just have everyone do `reset` in chargen to clear all their abilities and start fresh.
+  
+If you need more advanced handling - like refunding XP, or changing skill categories - you will need to use a custom [Tinker snippet](/tutorials/code/tinker.html) to update everyone's sheets. For example, if you wanted to do something for everyone who had the "Archery" action skill:
 
-      def handle
-        FS3ActionSkill.all.each do |a|
-           if (a.name == 'Archery')
-             client.emit "Deleting Archery from #{a.character.name} -- was at rating #{a.rating}."
-             a.delete
-           end
-        end
-      end
+```
+def handle
+  FS3ActionSkill.all.each do |ability|
+     if (ability.name == 'Archery')
+       # Your code goes here
+     end
+  end
+end
+```
 
-If we were renaming Archery to Bows, we would want the tinker to do this instead:
-
-      def handle
-        FS3ActionSkill.all.each do |a|
-           if (a.name == 'Archery')
-             a.update(name: 'Bows')
-           end
-        end
-      end
-
-If you're trying to do some more advanced handling - like refunding XP, or changing skill categories - the processing needed in your tinker code will need to be more sophisticated. Don't be shy to [ask for help](/feedback.html) if you need to.
+Don't be shy to [ask for help](/feedback.html) if you need to.

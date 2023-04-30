@@ -98,7 +98,19 @@ While you're changing your own copy of the code, there's also work going on in t
 It's recommended that you keep up with updates as they happen.  Not only does it ensure that you have the latest features and bugfixes at all times, but it's easier to do updates one at a time.  If you let them stack up and your code gets too far behind, the upgrade will be more difficult.
 {% endtip %}
 
-How you update your fork will vary depending on what tool you're using, and you can find many GitHub tutorials online.  The [Using GitHub](/tutorials/code/git.html#video-tutorial) video tutorial gives an example walkthrough using GitHub Desktop. 
+How you update your fork will vary depending on what tool you're using, and you can find many GitHub tutorials online.  The [Using GitHub](/tutorials/code/git.html#video-tutorial) video tutorial gives an example walkthrough using GitHub Desktop. Here is a quick reference:
+
+
+1. Start with your game code repository.
+2. Commit any local changes you have on your PC.
+3. Update your local copy to `upstream/master`.
+4. Resolve any merge conflicts locally.
+5. Push the updated code to GitHub.
+6. Repeat 1-5 for your webportal code.
+7. Run upgrade/start in your game client.
+8. Make sure there are no errors in the command output.
+9. Run upgrade/finish in your game client.
+10. Test! When testing the web portal, clear the cache or use private/incognito mode to avoid javascript caching issues.
 
 {% note %} 
  Always remember to update **both** aresmush and ares-webportal when getting the latest code.

@@ -42,6 +42,10 @@ Scenes in grid rooms are automatically closed when there's nobody left in the ro
 
 There's also another cron job to periodically delete scenes that have been completed but not shared.  It also warns people about unshared scenes that are going to be deleted soon.  You can turn this feature on and off by setting `delete_unshared_scenes` to true or false.
 
+{% warning %}
+Disabling the unshared scene cleanup (or configuring the timeout too long) can cause memory bloat, especially on larger games. This can lead to game lag unless you increase your droplet RAM size to keep pace with the number of shared scenes.
+{% endwarning %}
+
 If it's set to true, there are a few other things you can configure:
 
 ### unshared_scene_cleanup_cron

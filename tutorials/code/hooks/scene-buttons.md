@@ -48,3 +48,13 @@ To handle the menu action, add code to `ares-webportal/app/components/live-scene
            // Code to give cookies.
            }
         }
+
+## Custom Scene Data
+
+Sometimes your scene pose buttons or menus may require custom data, such as an ability list for your custom skills plugin. You can pass custom scene data by modifying `aresmush/plugins/scenes/custom_scene_data.rb` and returning data from the `custom_scene_data` method.
+
+Custom scene data is available through `this.custom` in the following components:
+
+* live-scene-custom-play
+* live-scene-custom-scenepose
+* char-card-custom

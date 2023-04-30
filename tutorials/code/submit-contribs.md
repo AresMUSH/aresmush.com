@@ -43,7 +43,7 @@ For example:
 All folders are optional, so just omit any that don't apply to your plugin.
 
 {% note %} 
-The automated install just copies _your_ plugin's files.  It cannot handle changes to _other plugins_ (for example, adding steps to the Chargen config or Chargen web portal screen). Your README should include instructions for doing those sorts of changes manually.
+The automated install just copies _your_ plugin's files.  It cannot handle changes to _other plugins_ (for example, adding steps to the Chargen config or Chargen web portal screen). Nor can you include custom hooks like `custom_char_fields.rb`, because the game may already have other custom hooks installed. Your README should include instructions for doing those sorts of changes manually.
 {% endnote %}
 
 ### Plugin Versioning
