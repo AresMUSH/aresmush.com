@@ -18,7 +18,7 @@ Finally, we modify the web portal to let us enter some goals. A custom code hook
 
 First we're going to define the tab navigation control.  Edit `ares-webportal/app/templates/components/char-edit-custom-tabs.hbs` and add:
 
-        <li><a data-toggle="tab" href="#goals">Goals</a></li>
+        <li><a data-bs-toggle="tab" class="nav-link" href="#goals">Goals</a></li>
 
 ## Define the Tab Contents
 

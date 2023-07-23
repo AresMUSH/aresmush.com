@@ -73,12 +73,23 @@ p {
 .btn-primary {
     background-color: #F2622E;
     border-color: #F2622E;
+    color: white;
 }
 
-.btn-primary:hover, .btn-primary:focus { 
+a.btn-primary, a.btn-primary:visited, a.btn-primary:active {
+  color: white;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active { 
     background-color: white;
     border-color: #F2622E;
     color: #F2622E;
+}
+
+a.btn-primary:hover, a:visited.btn-primary:hover, a:active.btn-primary:hover,
+a.btn-primary:focus, a:visited.btn-primary:focus, a:active.btn-primary:focus {
+  color: #F2622E;
 }
 
 
@@ -531,6 +542,14 @@ div.highlighter-rouge, .alert, blockquote {
 }
 .alert {
   padding: 10px;
+}
+
+.alert-info a, .alert-info a:hover, .alert-info a:visited {
+  color: #8F3170;  
+}
+
+.alert-success a, .alert-success a:hover, .alert-success a:visited {
+  color: #763C75;  
 }
 blockquote{
     padding: 10px;

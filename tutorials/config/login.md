@@ -67,10 +67,13 @@ Set this to `true` if you want to require people to log in before they can acces
 
 ### Disabling Logins
 
-During development, maintenance, or other special times, you might want to disable player logins.  You can do this by controlling which roles have the 'login' permission.  By default, this permission is assigned to the 'everyone' role, meaning all characters can log in. 
+During development, maintenance, or other special times, you might want to disable player logins.  
 
-* Use the [Roles System](/tutorials/manage/roles.html) to remove the 'login' permission from the 'everyone' role.  Add it to any non-admin roles that you want to give login access to (e.g. builder).  Admins can log in even without the explicit permission.
-* Optionally set a message about why people can't log in using `login_not_allowed_message`.
+The quickest and broadest way to do that is the `disable_nonadmin_logins` option. Set it to true and only admins can log in.
+
+If you want more fine-grained control, you can use the [Roles System](/tutorials/manage/roles.html) to control which roles have the 'login' permission.  By default, this permission is assigned to the 'everyone' role, meaning all characters can log in.  During development, you may want to remove it from everyone and add it only to ancillary staff like builders or wiki developers. 
+
+The `login_not_allowed_message` is shown whenever people can't log in.
 
 ### Disabling Guests
 

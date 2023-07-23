@@ -103,7 +103,7 @@ You can pick a different focal point (other than center) and scale the image in 
 
 The `top_navbar` setting lets you customize your web portal's navigation bar.  The home, account and admin links are always fixed, so the navbar goes:
 
-    Home | Account (on small browsers) | CUSTOM NAV | Admin
+    Account (on small browsers) | CUSTOM NAV | Admin
 
 You control what appears in the CUSTOM NAV section, adding internal pages, external pages, and dividers. For example:
 
@@ -112,7 +112,7 @@ You control what appears in the CUSTOM NAV section, adding internal pages, exter
          - route: some-ember-route
            title: First Page Title
          - route: another-ember-route
-           title: Second Page Title
+           title: "<i class='fas fa-info-circle" /> Second Page Title"
     - title: Second Dropdown Menu Title
       menu:
          - route: random-ember-route
@@ -120,6 +120,8 @@ You control what appears in the CUSTOM NAV section, adding internal pages, exter
          - divider: true
          - url: http://somewhere.com
            title: Some Outside Page Title
+
+You can include HTML (such as font awesome icon codes) in the page titles.
 
 ### Internal Pages
 
@@ -151,16 +153,6 @@ You can also link to an external URL outside the web portal.  List the URL, a di
 For a dividing line, just use:
 
     - divider: true
-
-## Google Search
-
-Ares comes with a rudimentary search engine for the web portal, but you can also set up [Google Custom  Search Engine](https://cse.google.com/cse/all).  Just log in with your Google account and add your site.  The GCSE control panel will tell you your search engine ID, which will be a string of numbers and letters like:  `123456:abcdef`. 
-
-1. Select Admin -> Setup
-2. Edit `secrets.yml`.
-
-Enter your search engine ID under the gcse option.
-
 
 ## Configuring Recaptca
 

@@ -37,9 +37,12 @@ If you are using Advantages, you can configure the cost.  The default is 2 point
 
 ## max_skill_rating and max_attr_rating
 
-FS3 Attributes are rated from 1-4 (with 4 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may not want to allow characters at the top end of the spectrum by setting these values lower than the maximum possible ratings.
+FS3 Attributes are rated from 1-4 (with 4 being Exceptional) and Skills are rated from 1-8 (with 8 being Legendary).  Some games may want to limit the maximum starting rating by setting these values lower than the default.
 
-Note: This limit applies only to Chargen.  If you want to prevent people from advancing beyond a certain rating with XP, you'll need to set that up in your [XP configuration](/tutorials/config/fs3skills_xp.html).
+Two important notes:
+
+- No matter what you set this to, the system doesn't support ratings above 4 for attributes or 8 for skills.
+- This limit applies only to Chargen.  For XP limits, use the [XP configuration](/tutorials/config/fs3skills_xp.html).
 
 ## allow_incapable_action_skills
 

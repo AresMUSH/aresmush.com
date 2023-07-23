@@ -12,13 +12,9 @@ tags:
 - hosting
 ---
 
-You can request an AresMUSH subdomain (yourmush.aresmush.com) for your game.
+You can request an AresMUSH subdomain (yourmush.aresmush.com) for your game. Please read and accept the terms of service below and click on the button to fill out the [request form](https://form.jotform.com/231744260871052).
 
-[Email Faraday](/feedback.html) with the following information:
-
-1. The host name you're requesting (yourmush.aresmush.com).
-2. The IP address of your server.
-3. An acknowledgement of the terms of service below.
+<a href="https://form.jotform.com/231744670991161" class="btn btn-primary" target="_blank">Request Subdomain<a>
 
 ## Terms of Service
 

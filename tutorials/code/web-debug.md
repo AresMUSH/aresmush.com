@@ -9,6 +9,8 @@ tags:
 
 When making your own custom web portal pages and requests, inevitably something will go wrong. This tutorial will help you debug your own portal code.
 
+{% include toc.html %}
+
 ## Journey of a Web Request
 
 Before you start debugging, it's helpful to understand all the 'legs' that your data goes through on its trip from the web portal to the game and back again.
@@ -35,9 +37,6 @@ In Chrome, the dev tools are under View -> Developer -> Developer Tools.
 
 If you install the [Ember Inspector](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi?hl=en), your developer tools will include a special Ember tab that helps you debug EmberJS apps like the web portal.
 
-## Web Portal Debug Mode
-
-It can be helpful while testing to run the web portal in [Debug Mode](/tutorials/code/debug-mode.html#web-portal), so you don't have to re-deploy the portal every time you change the code.
 
 ## Debugging Tips
 
@@ -45,7 +44,13 @@ Here are some specific steps to go through when debugging the portal.
 
 ### Check the Logs
 
-Rule out the obvious first by checking both the [game debug log](/tutorials/code/troubleshooting.html) (in Admin -> Logs in the web portal) and the browser console.
+Rule out the obvious first.
+
+1. Check the game debug log under Admin -> Logs in the web portal (see [troubleshooting](/tutorials/code/troubleshooting.html)  for details)
+2. Check the browser console for errors.
+
+{% include pretty_image.html file='code/web-debug-console.png' %}
+
 
 ### Check the Game Handler
 
@@ -114,3 +119,8 @@ Common issues to check for:
 * The template is missing `this.` when accessing variables.
 * The HTML syntax is wrong; this can prevent the web portal from deploying.
 * The data is not in the place you expect - maybe it's using `model.foo` but should be `model.char.foo`.
+
+
+### Web Portal Debug Mode
+
+If you're running in a local test environment, it can be helpful while testing to run the web portal in [Debug Mode](/tutorials/code/debug-mode.html#web-portal), so you don't have to re-deploy the portal every time you change the code.

@@ -44,7 +44,7 @@ To get started:
 1. Go to the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) in the DigitalOcean Marketplace.
 2. Click "Create Droplet" and use the following options:
   * Select a "Shared CPU" and "Basic" droplet.
-  * The cover: /1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below cover:  you may have performance issues and trouble upgrading.
+  * The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB is not supported.
   * Don't add block storage.
   * Select a region. New York is a good choice unless your players are predominately from outside the US.
   * Select an SSH key for logging in (if you don't know what that is, just select the password option) and any other options desired.

@@ -14,7 +14,7 @@ To configure the Idle plugin:
 
 ## use_roster
 
-You can turn the roster system on or off by setting `use_roster` to true or false.
+You can turn the roster system on or off by setting `use_roster` to true or false. Note: You'll probably also want to edit the [web navbar]({{site.baseurl}}/tutorials/config/website.html#changing-the-navbar) to remove the Roster menu item.
 
 ## days_before_idle
 

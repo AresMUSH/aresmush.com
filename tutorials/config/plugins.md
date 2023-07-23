@@ -29,7 +29,6 @@ Disabling a plugin will:
 
 * Make all of its commands give a 'huh?' message when someone tries to use them.
 * Hide its help files.
-* Hide its web pages from menus.
 * Disable its event handling (so events like cron triggers and characters connecting will not do anything).
 
 ## What **Doesn't** Disabling a Plugin Do?

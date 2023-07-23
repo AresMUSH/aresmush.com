@@ -10,6 +10,10 @@ tags:
 
 Setting up [automatic backups](/tutorials/manage/backups.html) of your game is important.  In the unlikely event that disaster strikes, you'll have a backup copy of your game's database and files. This article describes how to restore the game from a backup.
 
+{% warning %}
+**Version Compatibility** These instructions assume that you're recovering from a recent backup that's from the same version your game is on. If you're trying to restore a backup from a much older version of code, it either will require special steps (ask for help) or may not work at all.
+{% endwarning %}
+
 {% include toc.html %}
 
 ## Restoring from a DigitalOcean Weekly Backup
@@ -28,9 +32,7 @@ To restore the database:
 2. Copy the `dump.rdb` file from your back copy into the database data path.  Typically this is `/var/lib/redis/dump.rdb`.  If you get a permission error, run `sudo chmod g+rwx /var/lib/redis/dump.rdb` from the server shell.  Sometimes redis resets the file permissions.
 3. Restart the database service by typing `sudo service redis-server start` in the server shell.
 
-{% note %} 
 If you used a non-standard installation, your database commands and file path may be different than what's shown above.
-{% endnote %}
 
 ## Restoring Code
 
