@@ -41,10 +41,6 @@ Most games will not need a test environment until after they open to the public.
 
 The simplest and quickest way to set up a test game is to just get a second droplet and install a new copy of the game using the standard [installation instructions](/tutorials/install). 
 
-{% tip %}
-Since your test game will not have many players connected, you can save money using a small droplet size. A general droplet with 1GB of RAM will suffice for most test games. You may even be able to get by on 500MB RAM.
-{% endtip %}
-
 You don't need a separate host name for the test game; you can just use the droplet's IP address as the host name.
 
 ### Installing on Your Local PC or Mac Using Docker

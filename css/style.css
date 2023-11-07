@@ -117,6 +117,10 @@ a.btn-primary:focus, a:visited.btn-primary:focus, a:active.btn-primary:focus {
 }
 
 
+.privacy-col {
+  width: 150px;
+}
+
 /* ------------------------
    COVER AND PREVIEW
    ------------------------

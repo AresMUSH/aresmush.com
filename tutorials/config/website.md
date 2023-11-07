@@ -105,8 +105,10 @@ The `top_navbar` setting lets you customize your web portal's navigation bar.  T
 
     Account (on small browsers) | CUSTOM NAV | Admin
 
-You control what appears in the CUSTOM NAV section, adding internal pages, external pages, and dividers. For example:
+You control what appears in the CUSTOM NAV section. Here's an example:
 
+    - title: Home
+      route: home
     - title: First Dropdown Menu Title
       menu:
          - route: some-ember-route
@@ -121,7 +123,11 @@ You control what appears in the CUSTOM NAV section, adding internal pages, exter
          - url: http://somewhere.com
            title: Some Outside Page Title
 
-You can include HTML (such as font awesome icon codes) in the page titles.
+Some things to note:
+
+* You can include HTML in the menu titles. Notably, this lets you use fontawesome icon codes in place of or alongside your menu text.
+* Top-level nav items can be a dropdown menu (use the `menu` option to list the menu's pages) or a single page link (omit the `menu` option)
+
 
 ### Internal Pages
 
@@ -153,6 +159,8 @@ You can also link to an external URL outside the web portal.  List the URL, a di
 For a dividing line, just use:
 
     - divider: true
+    
+This only makes sense inside a dropdown menu.
 
 ## Configuring Recaptca
 
