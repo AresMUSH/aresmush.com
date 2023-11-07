@@ -57,127 +57,47 @@ This section summarizes access to various kinds of game data.
 
 ### Channels
 
-<table class="table">
-  <tbody>
-    <tr>
-      <td class="privacy-col"><b>Who Can View</b></td>
-      <td>
-        Any player on the channel can view the chat history. New players may join the channel at any time and view past conversations.
-      </td>
-    </tr>
-    <tr>
-      <td><b>Reporting Issues</b></td>      
-      <td>
-        The chat report command/button can be used to report a channel conversation to the game admin in the case of harassment or abuse.
-      </td>
-    </tr>
-    <tr>
-      <td><b>How It's Deleted</b></td>
-      <td>
-        Channel chat cannot be deleted, though eventually old messages will be pushed out of the history buffer by new ones.
-      </td>
-    </tr> 
-    <tr>
-      <td><b>Admin Access</b></td>
-      <td>Admins may join any channel and see the chat history.</td>
-    </tr>       
-  </tbody>
-</table>
+
+Any player on the channel can view the chat history. New players may join the channel at any time and view past conversations.
+
+The chat report command/button can be used to report a channel conversation to the game admin in the case of harassment or abuse.
+
+Channel chat cannot be deleted, though eventually old messages will be pushed out of the history buffer by new ones.
+
+Admins may join any channel and see the chat history.
 
 ### Private Messages
 
 
-<table class="table">
-  <tbody>
-    <tr>
-      <td class="privacy-col"><b>Who Can View</b></td>
-      <td>
-        Any player involved in the conversation can view the message history. If someone is added mid-conversation, a new conversation is started (i.e. the new person will NOT see what came before).
-      </td>
-    </tr>
-    <tr>
-      <td><b>Reporting Issues</b></td>
-      <td>
-        The PM report command/button can be used to report a PM conversation in the case of harassment or abuse.
-      </td>
-    </tr>
-    <tr>
-      <td><b>How It's Deleted</b></td>      
-      <td>
-        Private messages time out on a game-configured interval, and are also deleted when a character idles out.
-      </td>
-    </tr>
-    <tr>
-      <td><b>Admin Access</b></td>
-      <td>There is no built-in command allowing game admins to view other players' private message conversations.</td>
-    </tr>           
-  </tbody>
-</table>
+Any player involved in the conversation can view the message history. If someone is added mid-conversation, a new conversation is started (i.e. the new person will NOT see what came before).
+
+The PM report command/button can be used to report a PM conversation in the case of harassment or abuse.
+
+Private messages time out on a game-configured interval, and are also deleted when a character idles out.
+
+There is no built-in command allowing game admins to view other players' private message conversations.
 
 ### Scenes
 
 
-<table class="table">
-  <tbody>
-    <tr>
-      <td class="privacy-col"><b>Who Can View</b></td>
-      <td>
-        <p>Open scenes are visible to everyone.  Private scenes are visible only to those who have been invited.  In both cases, scene logs include all poses and OOC chat.  </p>
-        <p>
-        Any scene participant may extend invitations, download the log, or share the log on the web portal when the scene is complete. In other words, don't assume a 'private' scene is going to _stay_ private.
-       </p>   
-      </td>
-    </tr>
-    <tr>
-      <td><b>Reporting Issues</b></td>
-      <td>
-        The scene report command/utton can be used to report a PM conversation in the case of harassment or abuse.
-      </td>
-    </tr>
-    <tr>
-      <td><b>How It's Deleted</b></td>      
-      <td>
-        Unshared scenes may be deleted (either by request or on a game-configurable timer). There is a warning before this happens, to give participants the chance to download, restart, or share the scene.        
-      </td>
-    </tr> 
-    <tr>
-      <td><b>Admin Access</b></td>
-      <td>There is no built-in command allowing game admins to view or join private scenes.</td>
-    </tr>  
-  </tbody>
-</table>
+Open scenes are visible to everyone.  Private scenes are visible only to those who have been invited.  In both cases, scene logs include all poses and OOC chat.  
+Any scene participant may extend invitations, download the log, or share the log on the web portal when the scene is complete. In other words, don't assume a 'private' scene is going to _stay_ private.
 
+The scene report command/utton can be used to report a PM conversation in the case of harassment or abuse.
+
+Unshared scenes may be deleted (either by request or on a game-configurable timer). There is a warning before this happens, to give participants the chance to download, restart, or share the scene.        
+
+There is no built-in command allowing game admins to view or join private scenes.
 
 ### Mail
 
-<table class="table">
-  <tbody>
-    <tr>
-      <td class="privacy-col"><b>Who Can View</b></td>
-      <td>
-        Mail messages are visible to recipients, and may be forwarded to others.
-       </p>   
-      </td>
-    </tr>
-    <tr>
-      <td><b>Reporting Issues</b></td>
-      <td>
-        The mail forwarding command can be used to report an abusive message.
-      </td>
-    </tr>
-    <tr>
-      <td><b>How It's Deleted</b></td>      
-      <td>
-        You can delete a mail you're received. Received mail is deleted when a character idles out.
-      </td>
-    </tr> 
-    <tr>
-      <td><b>Admin Access</b></td>
-      <td>There is no built-in command allowing game admins to view other players' mail messages.</td>
-    </tr>  
-  </tbody>
-</table>
+Mail messages are visible to recipients, and may be forwarded to others.
 
+The mail forwarding command can be used to report an abusive message.
+
+You can delete a mail you're received. Received mail is deleted when a character idles out.
+
+There is no built-in command allowing game admins to view other players' mail messages.
 
 ### Other Data
 
@@ -191,7 +111,7 @@ The Ares web portal sets a cookie to remember you when you log back in. You can 
 
 ## How to Delete Your Data
 
-Most data can be manually deleted, or is automatically deleted on idle-out or a timer. See above for details.
+Most data can be manually deleted, or is automatically deleted on idle-out or a timer as described above.
 
 If you want other personal information deleted, you will need to contact the game admins to request it.
 
