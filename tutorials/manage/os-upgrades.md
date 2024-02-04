@@ -12,7 +12,7 @@ The Ares installer will enable automatic installation of critical OS patches, in
 
 For most games, these updates alone should be sufficient to keep your game running smoothly.
 
-Sometimes you may see notices about there being a newer version of the Operating System (typically Ubuntu) available.  Should you upgrade?
+Sometimes you may see notices about there being a newer version of the Operating System (Ubuntu) available.  Should you upgrade?
 
 **In general, no.**
 

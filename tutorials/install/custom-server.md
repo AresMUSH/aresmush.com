@@ -25,7 +25,7 @@ The supported environment for the automated Ares installer is:
 
 * A [DigitalOcean droplet](/tutorials/install/digital-ocean.html).
 * 2GB RAM required.  Giant games may need more RAM, but you can always upgrade later.
-* Ubuntu Linux (Are has been fully tested with versions 18.04 and 20.04).
+* Ubuntu Linux (Ares' standard install is 20.04).
 * **Nothing but the starter image** installed.   
 
 Hard drive space is not generally a concern. The base install will take only about 1GB of hard drive space, and database sizes are insignificant. Uploaded files (for theme/character images and the like) will be the bulk of your hard drive usage.

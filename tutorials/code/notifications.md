@@ -141,7 +141,16 @@ As with the global notifier, we can limit the notification to only certain chara
         char && Channels.is_on_channel?(char, channel)
       end
 
-Notice that we're sending a bunch of data here (separated by pipe delimiters). Web client notifications contain data and not just a simple message for display.  The type (`:new_chat`) tells the web portal how to interpret the data.
+The type (`:new_chat`) tells the web portal how to interpret the data.
+
+`notify_web_clients` always expects its message parameter to be a string, even when sending data. Typically you will either use a pipe-delimited string of content (as illustrated above) or use `to_json` on a more complex object. Either way, you'll need to ensure that the receiver on the web side knows how to handle that data appropriately.
+
+      data = {
+         id: channel.id,
+         ...
+         is_page: false
+       }
+      Global.client_monitor.notify_web_clients(:new_chat, data.to_json, true) do |char|
 
 ## Game Channel
 

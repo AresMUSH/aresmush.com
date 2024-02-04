@@ -101,11 +101,9 @@ You can pick a different focal point (other than center) and scale the image in 
 
 ## Changing the Navbar
 
-The `top_navbar` setting lets you customize your web portal's navigation bar.  The home, account and admin links are always fixed, so the navbar goes:
+The `top_navbar` setting lets you customize your web portal's navigation bar. Note that the "Account" items (notifications, mail, etc.) will automatically move to the front of the navbar on small browsers.
 
-    Account (on small browsers) | CUSTOM NAV | Admin
-
-You control what appears in the CUSTOM NAV section. Here's an example:
+Here's an example of the navbar config:
 
     - title: Home
       route: home
@@ -128,6 +126,21 @@ Some things to note:
 * You can include HTML in the menu titles. Notably, this lets you use fontawesome icon codes in place of or alongside your menu text.
 * Top-level nav items can be a dropdown menu (use the `menu` option to list the menu's pages) or a single page link (omit the `menu` option)
 
+### Role-Restricted Menus
+
+You can use the `roles` option to restrict a top nav menu to certain roles. Specify a list of role names. Even if there's only a single role, still specify it like a list. For example:
+
+    - title: Admin
+      roles: 
+      - admin
+      - coder
+      menu:
+      - title: Jobs
+        route: jobs
+
+{% note %}
+This only works for the top menu items, and not individual pages within the submenu.
+{% endnote %}
 
 ### Internal Pages
 
@@ -140,11 +153,19 @@ For an internal page, list the page **route** and display title.  For example:
 The route must match the **internal coded route name** used by the web portal.  This is often **not** the same as the URL you see in the browser. For example, the character gallery is http://somegame.com/chars but the route is named 'characters'. You can get a complete list of routes by going to http://YOUR_WEB_PORTAL/routes.  If the one you want isn't listed, just [ask for help](/feedback.html).
 {% endnote %}
 
-Some routes, notably help-topic and wiki-page, require you to specify an identifier matching the help topic name or wiki page name.  For example:
+Some routes, notably help-topic and wiki-page, require you to specify a model identifier matching the help topic name or wiki page name.  For example:
 
     - title: Getting Started
       route: wiki-page
       id: getting_started
+      
+A few routes, notably the theme config files, require multiple model IDs. For these, use the `ids` parameter. For example:
+
+    - title: Custom Styles
+      route: textfile
+      ids:
+        - style
+        - custom_style.scss
 
 ### External URLs
 

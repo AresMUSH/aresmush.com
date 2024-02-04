@@ -81,9 +81,10 @@ There is no built-in command allowing game admins to view other players' private
 
 
 Open scenes are visible to everyone.  Private scenes are visible only to those who have been invited.  In both cases, scene logs include all poses and OOC chat.  
+
 Any scene participant may extend invitations, download the log, or share the log on the web portal when the scene is complete. In other words, don't assume a 'private' scene is going to _stay_ private.
 
-The scene report command/utton can be used to report a PM conversation in the case of harassment or abuse.
+The scene report command/button can be used to report a scene in the case of harassment or abuse, with a verified log. For unshared scenes, this will also include OOC text.
 
 Unshared scenes may be deleted (either by request or on a game-configurable timer). There is a warning before this happens, to give participants the chance to download, restart, or share the scene.        
 

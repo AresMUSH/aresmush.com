@@ -97,6 +97,10 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Shortcuts](/tutorials/code/shortcuts.html)
 * [Recovering from Config Errors](/tutorials/config/config-errors.html) - Rolling back defaults if your config gets messed up.
 
+### Custom Hooks
+
+* [Custom Code Hooks](/tutorials/code/custom-hooks.html) - Places where you can easily tie in your custom code.
+
 ### Engine
 
 * [Engine Ports](/tutorials/code/ports.html)
@@ -128,7 +132,6 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Web Request Handling](/tutorials/code/web-requests.html)
 * [Custom Code](/tutorials/code/custom.html)
 * [Reloading Code](/tutorials/code/reload.html)
-* [Custom Code Hooks](/tutorials/code/custom-hooks.html) - Places where you can easily tie in your custom code.
 
 ### Utilities
 

@@ -54,5 +54,5 @@ You'll want to use the markdown formatter for freeform text that might include a
 Once you've made the data available, use it in your web template like so:
 
 <pre>
-    &#x7b;&#x7b;char.custom.hooks}}
+    &#x7b;&#x7b;this.char.custom.hooks}}
 </pre>

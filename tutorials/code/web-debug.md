@@ -33,7 +33,7 @@ All major browsers have tools built in to help developers debug their Javascript
 * A network log of traffic between the game and the browser.
 * A code debugger.
 
-In Chrome, the dev tools are under View -> Developer -> Developer Tools.
+In Chrome, the dev tools are under View -> Developer -> Developer Tools. In other browsers, look for a "Developer" menu (or do a Google search for "(yourbrowser) developer tools").
 
 If you install the [Ember Inspector](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi?hl=en), your developer tools will include a special Ember tab that helps you debug EmberJS apps like the web portal.
 

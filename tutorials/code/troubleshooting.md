@@ -9,7 +9,7 @@ tags:
 
 Sometimes things go wrong, and you'll get the "Sorry! The code lost its mind while executing a command..." message or the Sad Picard screen on the web portal.  This article will help you diagnose the problem.
 
-If the information below doesn't help you, you can always ask for help on the [Ares Forums](/feedback.html).
+If the information below doesn't help you, you can always ask for help on the [Ares Forums or Discord](/feedback.html).
 
 {% include toc.html %}
 
@@ -30,6 +30,22 @@ Once you have the log file open, search for `ERROR`.  You'll see some code stuff
     "/home/ares/aresmush/engine/aresmush/commands/dispatcher.rb:125:in `block (2 levels) in on_web_request'", 
     "/home/ares/aresmush/engine/aresmush/commands/dispatcher.rb:119:in `each'"]
 
+The first line is the one that gives the specific error (in this case - an object was `nil` when it shouldn't have been). The remaining lines help identify what the code was doing at the time (in this case - inside the /players web handler).
+
+Check the list of common issues below to see if your error matches any of those. If not, you can always [ask for help](/feedback.html).
+
+<a name="browser-console"></a>
+
+## Browser Console
+
+All major browsers have tools built in to help developers debug their Javascript. This can help you diagnose web issues.
+
+In Chrome, the dev tools are under View -> Developer -> Developer Tools. In other browsers, look for a "Developer" menu (or do a Google search for "(yourbrowser) developer tools").
+
+{% include pretty_image.html file='code/web-debug-console.png' %}
+
+For help troubleshooting your custom web code, see [Debugging Custom Web Requests]({{site.baseurl}}/tutorials/code/web-debug.html).
+
 ## Common Issues
 
 ### YAML Issues
@@ -41,66 +57,64 @@ The configuration files use YAML, and there are several common issues that can r
 Sometimes you'll see an error in the logs like "Couldn't start the game: error=no acceptor (port is in use or requires root privileges)".  This usually means:
 
 1. Your game is already started.  Maybe it auto-started after a reboot and you're unnecessarily trying to start it again.
-2. There is a problem with the IP or hostname you specified.  For an IP, make sure you gave the external IP and not just 'localhost'.  For a hostname, make sure that the DNS is properly configured and that `nslookup YOURHOSTNAME` returns the correct IP address.  It can take up to 24 hours for a new DNS record to be visible to the droplet, and Ares won't work until that happens.
+2. There is a problem with the IP or hostname you specified.  For an IP, make sure you gave the public IP address.  For a hostname, make sure that the DNS is properly configured and that `nslookup YOURHOSTNAME` returns the correct IP address.  It can take up to 24 hours for a new DNS record to be visible to the droplet, and Ares won't work until that happens.
 3. You have an issue with your Ares port configuration. Remember that Ares needs multiple ports, and they all have to be different.  You can't use the same port number for both your telnet server and engine API, for instance.
 
-It's almost always one of those three issues.  If none of that helps, [ask for help](/feedback.html).  There are some other weird errors possible, like another app trying to use your port, or a weird IP configuration that requires you to use a separate binding address.
+If none of that helps, [ask for help](/feedback.html). There are some other unusual configuration issues that can cause that issue.
 
 ### Server Won't Start
 
 Sometimes you'll get a 'connection refused' error in your MU client or a 'This site can't be reached' error in your web browser.  When this happens, there are a few things to check:
 
-* Make sure your hostname is correct and your DNS is set up.  Ares can't start if the hostname is inaccessible
-* Try starting the game in debug mode using `bin/devstart` instead of startares.  This will run until you hit CTRL-C, and you will see log messages live on your screen.
-* Try changing your hostname (in server.yml) to 'localhost' or the machine's IP address to rule out DNS issues.
-* If you have a firewall running, make sure that all four Ares server ports are allowed through the firewall.  (Not just the port you connect to with a MUSH client, but the back-end ports for web portal communication as well.)
+* Make sure your hostname is correct and your DNS is set up.  Ares can't start if the hostname is inaccessible.
+* Try starting the game in [Debug Mode](/tutorials/code/debug-mode.html) and see if there are any additional errors on the server console.
 
 ### Database Issues
 
 If your game can't connect to the database you'll see an error like:  "Error connecting to database. Check your database configuration."   Here are a few things to try:
 
-* Check your database config file (database.yml) and make sure you have the correct URL and password.  You can compare these values to the 'port', 'bind' and 'requirepass' parameters in your redis configuration file.  In the standard install, this file is located at `/etc/redis/redis.conf`.
+* Check your database config file (database.yml) and make sure you have the correct URL (usually "127.0.0.1:6379").
+* Check your secrets config file (secrets.yml) and make sure your database password has been set.
 * Make sure your database service is running.  You can use the server shell command `service redis-server status`.
+* Check your redis configuration. In the standard install, this file lives in `/etc/redis/redis.conf`. The last few lines typically look like this, with a password matching what's in secrets.yml.
 
-### Multiple Copies of the Game
-
-Having multiple copies of the game running on different ports with the same database can cause some *really* wacky effects.  This is not a normal configuration, but some people do it accidentally or intentionally while testing.  If you're getting weird errors and think you may have done this, check to see if you've got multiple copies of the game running.  Use `ps -aux | grep ares` on the server shell and look for multiple entries with 'startares' or 'devstart'.  For example:
-
-    ares     27590  0.0  5.5 1373916 113564 ?      Sl   Jan14   2:12 /home/ares/.rvm/rubies/ruby-2.5.1/bin/rake startares[]
+```
+  aof-rewrite-incremental-fsync yes
+  # Generated by CONFIG REWRITE
+  requirepass YOURPASSWORD
+```
 
 ### Web Portal Unavailable
 
 If you get a 'page not found' error for your web portal, here are some things to check:
 
 * Make sure that your web server is running.  You can use the server shell command `service nginx status`.
-* Make sure that the website code successfully deployed to `/var/www/html`.  You should see index.html and other files there.
-* Make sure your web server has a site configured to use that directory and the web portal port in `server.yml`.  In nginx, this site configuration should be in `/etc/nginx/sites-available/deault`.
+* Make sure that the website code successfully deployed. Run a `website/deploy` command from the client and see if there are any errors.
+
+If none of that helps, [ask for help](/feedback.html) and we can walk you through checking your web server configuration.
 
 ### Web Portal Can't Connect to the Game
 
 Sometimes you'll get a Sad Picard message saying the web portal can't connect to the game.  
-
-* Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.  
+  
 * Make sure the game is actually running and you can connect to it with a MU client.
-* Make sure there's a symbolic link from your web portal directory to your game directory.  If you do `ls -l` in your `/var/www/html` directory, you should see an entry like this: 
-
-        ares ares   24 Apr  2 01:01 game -> /home/ares/aresmush/game
+* Try it in a private/incognito browser window to avoid any Javascript cache issues.
 
 ### Web Portal Sad Picard
 
-Most of the time, problems on the web portal are actually problems in the web request on the game side.  You'll see those errors in the game log and troubleshoot them in the same way you would any other game error.  Occasionally, though, the problem will be in the web portal Javascript code.  
+Web portal errors are reported with the Sad Captain Picard screen saying "Oops! Something went wrong with the website." Most of the time, problems on the web portal are actually problems in the web request on the game side.  You'll see those errors in the game log and troubleshoot them in the same way you would any other game error.  Occasionally, though, the problem will be in the web portal Javascript code.  
 
-* Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.  
-* Troubleshoot using the web browser's debugging tools.  In Chrome, for instance, you can open `View -> Developer -> Developer Tools` to see the Javascript console, which will tell you the error.
+* Make sure the game is actually running and you can connect to it with a MU client.
+* Try it in a private/incognito browser window to avoid any Javascript cache issues.
+* Check the [Browser Console](#browser-console) for errors.
 
 ### Web Sockets Not Working
 
 If you get a warning saying "The website is not receiving live updates from the game", it means that the websocket connection allowing real-time updates between the web page and the game isn't working.  Regular page requests will be fine, but 'live' updates like scene poses or alerts about new mail messages won't come through.
 
 * Try a [force-refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) in your web browser.
-* Try shutting down and restarting the game engine.
-* Troubleshoot using the web browser's debugging tools.  In Chrome, for instance, you can open `View -> Developer -> Developer Tools` to see the Javascript console, which will tell you the error.
-* Check for a certificate error, explained in the next section.
+* Check the [Browser Console](#browser-console) for errors.
+* If nobody's websockets are working, try shutting down and restarting the game engine.
 
 ### Certificate Expired
 
@@ -114,14 +128,14 @@ Sometimes you'll do an upgrade and you'll see mismatched versions between the ga
 
     AresMUSH game v0.70, portal v0.69
 
-This is a problem because the web portal and game engine always have to have the same version.  If they don't, you will get unpredictable errors.
+The web portal and game engine always have to have the same version.  If they don't, you will get unpredictable errors.
 
 There are several possible causes:
 
-1. **Browser Cache** - Try a force-refresh in your browser, and/or open the web portal in a private/incognito browser window.  Sometimes your browser is stubbornly holding onto the old Javascript and needs a kick.
+1. **Browser Cache** - Try to open the web portal in a private/incognito browser window.  Sometimes your browser is stubbornly holding onto the old Javascript and needs a kick.
 2. **Deploy Failed** - Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.  This will tell you if you missed any weird errors when the website was published.
 3. **Update Fork** - If your own private code fork, make sure you updated the webportal code too.  Sometimes folks forget and only update the game engine code.
-4. **Restart Server** - Try restarting your entire server as described [here](https://aresmush.com/tutorials/manage/reboot.html). Sometimes operating system updates hog so much memory that there isn't enough to deploy the web portal.
+4. **Restart Server** - Try restarting your entire server as described [here](https://aresmush.com/tutorials/manage/reboot.html).
 
 A successful website deploy will end with a list of files, like this:
 
@@ -145,9 +159,10 @@ This means your welcome messages are configured to use a group that doesn't exis
 
 ### Error Using Includes
 
-When using includes, sometimes your wiki page will say: There was a problem including (some include page).  Make sure the page exists and all required variables are set.
+When using includes, sometimes your wiki page will say: "There was a problem including (some include page)."  
 
-Mostly this is the result of a missing variable. The error message will hopefully give you a tip as to what variable is missing.
+* Make sure the include page exists and there are no typos in the name.
+* Make sure you are passing all necessary variables to the include. The error message will hopefully give you a tip as to what variable is missing.
 
 Sometimes you get this strange error: Error loading include (some include page) : malformed format string - %;
 
@@ -190,7 +205,7 @@ found 69 vulnerabilities (11 low, 26 moderate, 32 high)
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
-The NPM audit warnings come from off-the-shelf javascript libraries.  They either apply to features that Ares doesn't use, or are obscure enough edge cases that we're not going to worry about it.  (Seriously - MUSH clients use open unsecured telnet to connect; someone hacking some wacky javascript vulnerability is the least of your security issues.)
+The NPM audit warnings come from off-the-shelf javascript libraries. We do our best to keep up with security issues, but most of these come out of EmberJS and its dependencies and are not Ares-specific. Others apply to features Ares isn't using, so we don't need to worry about them.
 
 ## Debug Mode
 

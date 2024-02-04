@@ -26,7 +26,7 @@ Next we'll define the contents of the tab.  This lives in a _different file_, so
 
 <pre>
     &lt;div id="systemgoals" class="tab-pane fade">
-        &#x7b;&#x7b;&#x7b;ansi-format text=char.custom.goals}}}
+        &#x7b;&#x7b;&#x7b;ansi-format text=this.char.custom.goals}}}
      &lt;/div>
 </pre>
 

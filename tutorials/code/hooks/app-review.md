@@ -32,6 +32,38 @@ For example, if we wanted to restrict the 'knight' position to nobles, we could 
       return Chargen.format_review_status "Checking groups.", msg
     end
 
+{% tip %} 
+Custom app review doesn't actually _prevent_ someone from choosing nonsensical values, it just flags it on the app review screen.
+{% endtip %}
+
+## Multiple Checks
+
+If you have multiple things to check, you can concat them together into a single string. For example:
+
+    def self.custom_app_review(char)
+      faction = char.group("Faction")
+      position = char.group("Position")
+      
+      messages = []
+      error_found = false
+      
+      if (something)
+        messages << Chargen.format_review_status("Something", "Something's Wrong")
+      else
+        messages << Chargen.format_review_status("Something",  t('chargen.ok'))
+      end
+      
+      if (something)
+        messages << Chargen.format_review_status("Something Else", "Something's Wrong")
+      else
+        messages << Chargen.format_review_status("Something Else",  t('chargen.ok'))
+      end
+      
+      return messages.join("\n")      
+    end
+
+
+## Formatting Status Checks
 
 Notice how we're using the `format_review_status` helper.  This is how most of the lines in the app review are formatted.  It will display like this:
 

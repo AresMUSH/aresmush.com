@@ -94,10 +94,76 @@ You can set up canned responses or response templates for your jobs. Each is giv
     - name: Plot Approved
       text: "Your plot is wonderful. Go for it."
 
+## scheduled_jobs
+
+You can set up the system to create jobs on a particular schedule, like reminders to do a task weekly or monthly. `scheduled_jobs` is a list, with each item being a hash containing the following fields:
+
+* `category` - The job category to post to.
+* `title` - Job title
+* `message` - Job message (may include markdown).
+* `cron` - The cron specifier for how often the job should run. See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html)
+
+```
+-
+  category: APP
+  title: Test
+  message: Reminder to do a thing the first of every month.
+  cron:
+    day: 
+    - 1
+    hour: 
+    - 00
+    minute: 
+    - 00
+-
+  category: CODE
+  title: Another Test
+  message: Reminder to do the [code](/help) thing (with a markdown link) every Saturday.
+  cron:
+    day_of_week: 
+    - Sat
+    hour: 
+    - 21
+    minute: 
+    - 00
+```
+
+## custom_fields
+
+If you want to store extra fields in your jobs, you can set up custom job fields.
+
+Each field has the following data:
+
+* `name` - A unique name for the field. This is displayed to the player.
+* `field_type` - One of `text`, `dropdown`, or `date`.
+* `dropdown_values` - For fields of type dropdown, this is a list of available fields. You must include an empty string `""` in the list if you want to be able to clear the value.
+
+```
+  custom_fields:
+    -
+      name: Notes
+      field_type: text
+    -
+      name: Severity
+      field_type: dropdown
+      dropdown_values: 
+        - ""
+        - Low
+        - Medium
+        - High
+    -
+      name: Due
+      field_type: date
+```
+
+{% note %}
+If you want to change the name of a field after jobs have data for that field, it will require a customized tinker to move the existing data over to the new name.
+{% endnote %}
+
 ## archive_job_days and archive_cron
 
 Jobs are automatically archived a certain number of days after they're closed.  Archived jobs are not included in the basic jobs list, but can still be searched.  The delay between closing and archiving gives other staffers a chance to read the final job comment.
 
-You can configure how long to wait before closing the job, and also configure the cron job for when the job archiving happens (by default weekly). See the [Cron Job Tutorial](http://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.
+You can configure how long to wait before closing the job, and also configure the cron job for when the job archiving happens (by default weekly). See the [Cron Job Tutorial](https://www.aresmush.com/tutorials/code/cron.html) for help if you want to change this.
 
 

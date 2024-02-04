@@ -17,7 +17,7 @@ The `ruby` command is handy, but often you'll want to run code that's too involv
 To change the tinker code:
 
 1. Log into the Web Portal with your coder character.
-2. Go to Admin -> Tinker.
+2. Go to Code -> Tinker.
 3. Edit the handle method to do the desired processing (see below for details).
 4. Click Save.
 5. Back in the MUSH client window, type `tinker` to execute the code.

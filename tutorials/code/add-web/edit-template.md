@@ -26,7 +26,7 @@ Next we'll define the contents of the tab.  This lives in a _different file_, so
 
 <pre>
         &lt;div id="goals" class="tab-pane fade in">
-          &#x7b;&#x7b;markdown-editor text=char.custom.goals}}
+          &#x7b;&#x7b;markdown-editor text=this.char.custom.goals}}
         &lt;/div>
 </pre>
 

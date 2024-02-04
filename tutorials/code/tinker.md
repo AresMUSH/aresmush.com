@@ -27,7 +27,7 @@ Doing a lot of code on a single line can be cumbersome.  That's where the `tinke
 
 Tinkering involves three steps:
 
-1. Log into the Web Portal with a coder character and select Admin -> Tinker.  
+1. Log into the Web Portal with a coder character and select Code -> Tinker.  
 2. Edit the code to do what you want and save it.
 3. Type `tinker` in-game to run the code.
 

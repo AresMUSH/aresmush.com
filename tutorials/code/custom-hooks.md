@@ -25,6 +25,10 @@ There are, however, several places that are designed with **custom code hooks**,
 * [Scene Buttons](/tutorials/code/hooks/scene-buttons.html) - Actions added to the Play menu or pose buttons on active scenes.
 * [Character Cards](/tutorials/code/hooks/char-cards.html) - Custom appearance for the mini character profiles that show up during active scenes when you select a character's icon.
 
+## Job Hooks
+
+* [Custom Job Menu](/tutorials/code/hooks/job-menu.html) - Adding custom job menu actions.
+
 ## FS3 Combat Hooks
 
 * [Combat Actions](/tutorials/code/hooks/fs3-actions.html) - Adding new combat actions to FS3.
@@ -33,3 +37,4 @@ There are, however, several places that are designed with **custom code hooks**,
 ## Web Portal Hooks
 
 * [Custom Routes](/tutorials/code/hooks/custom-routes.html) - Adding custom routes (pages) to the web portal.
+
