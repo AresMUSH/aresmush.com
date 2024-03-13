@@ -190,7 +190,7 @@ All of the finder helpers do the error handling necessary to translate multiple 
 
 Several of the more commonly-used target finders have another level of helper utility you can use.  Here's how it works:
 
-    ClassTargetFinder.with_a_character(name, client) do |model|
+    ClassTargetFinder.with_a_character(name, client, enactor) do |model|
         # Do something with model if it's found
     end
 

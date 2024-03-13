@@ -40,7 +40,7 @@ As a last resort, if none of the above steps work to shut down the game, you can
 2. Change into the aresmush folder using `cd aresmush`.
 3. Run the kill script: `bin/killares`.
 
-If for some reason the process ID isn't there or the kill command doesn't work, you'll need to figure out the game process.  On most servers, you can execute the command `ps -aux | grep startares` and see something like this:
+If for some reason the process ID isn't there or the kill command doesn't work, you'll need to figure out the game process.  On most servers, you can execute the command `ps -aux | grep rake` and see something like this:
 
     ares     25742  0.0  6.5 233656 69084 ?        Sl   06:29   0:04 ruby /home/ares/.rvm/gems/ruby-2.1.5/bin/rake startares
 

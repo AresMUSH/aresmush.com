@@ -16,14 +16,31 @@ To configure the Chargen plugin:
 
 You can configure the messages that are put into the approval job when characters are approved or rejected.  Commonly you will edit the approval message to tell new players anything special they need to know to get started.
 
-* `approval_message` - This message is sent when they're approved.
-* `rejection_message` - This message is sent when they're rejected.
-* `post_approval_message` - The system will also create a job *after* someone is approved, to remind the game admin to do any ancillary tasks, like adding them to lists, or making sure they have a log icon.  You can configure the todo list in the job message.
-* `welcome_message` - This message is posted to the forum when a character is approved.  You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
+### approval_message and rejection_message
+
+These messages are added to the approval job in response to the approve/reject commands.
+
+### post_approval_message
+
+The system will create a new admin-only job *after* someone is approved. This job will remind the game admin to do any ancillary tasks, like adding the new character to lists, or making sure they have a log icon or a home.  You can configure the list of reminders.
 
 {% tip %}
-Make sure the groups used in the welcome message actually exist, or you'll get an error when you try to approve someone. 
+Leave the message blank to disable creation of the post-approval job.
 {% endtip %}
+
+### welcome_message and arrivals_category
+
+The system will post a welcome message to the forum (in `arrivals_category`) to announce approval of a character.
+
+{% tip %}
+The welcome post will not be created for NPCs or characters who are added to the roster before they're approved. Leave the arrival category blank to disable the creation of the welcome post entirely.
+{% endtip %}
+
+You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
+
+{% note %}
+Make sure the groups used in the welcome message actually exist, or you'll get an error when you try to approve someone. 
+{% endnote %}
 
 ## Web Chargen Blurbs
 
@@ -53,10 +70,6 @@ You can configure which commands execute when you do `app/review`.  Just supply 
     - profile %{name}
     - bg %{name}
 
-## arrivals_category
-
-You can configure which forum category the welcome message is posted to.  Making it a forum that doesn't exist will effectively disable the welcome post.
-
 ## Application  Jobs
 
 You can edit the categories and states that the chargen system uses for its application jobs.
@@ -68,6 +81,10 @@ You can edit the categories and states that the chargen system uses for its appl
 ## hooks_required
 
 You can configure whether RP hooks must be set in chargen or not.
+
+## max_bg_length
+
+Used to specify a maximum length of a background, in characters. Set it to 0 to allow bgs of unlimited length. Note: This is not a hard stop, but shows up in app review during chargen.
 
 ## stages
 

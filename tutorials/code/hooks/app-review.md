@@ -11,9 +11,9 @@ tags:
 
 The standard chargen ensures that values are _set_, but doesn't do much to see if the values _make sense_ (i.e. that commoners can't be knights or that civilians shouldn't have Pilot Fighter Jet).  Doing these kinds of checks requires custom code, and there's a built-in hook where you can put that code.  
 
-{% tip %} 
-Custom app review doesn't actually _prevent_ someone from choosing stupid values, it just flags it on the app review screen.
-{% endtip %}
+{% include toc.html %}
+
+## Adding a Custom Check
 
 Edit `aresmush/plugins/chargen/custom_app_review.rb` and make the `custom_app_review` method do whatever checks you want.
 
@@ -33,7 +33,7 @@ For example, if we wanted to restrict the 'knight' position to nobles, we could 
     end
 
 {% tip %} 
-Custom app review doesn't actually _prevent_ someone from choosing nonsensical values, it just flags it on the app review screen.
+Custom app review doesn't actually _prevent_ someone from choosing stupid values, it just flags it on the app review screen.
 {% endtip %}
 
 ## Multiple Checks
