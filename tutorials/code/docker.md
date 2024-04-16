@@ -32,6 +32,7 @@ To set up the container for the first time:
       - data
 ```
 
+{:start="4"}
 4. Copy the `aresmush/install/game.distr` directory to create a new folder `aresmush/game`.
 
 5. In a Windows PowerShell or Mac Terminal window, start the container:
@@ -41,12 +42,14 @@ To set up the container for the first time:
     docker-compose up
 ```
 
+{:start="6"}
 6. In a **new** PowerShell/Terminal window, use this command to launch a shell connected to the container. Your docker image may be different than `ares-docker_game_1` depending on how Docker names it:
  
 ```
      docker exec -it ares-docker_game_1 /bin/bash -l
 ```
 
+{:start="7"}
 7. Within the **docker shell** you just launched, run these commands to set up the game:
  
 ```

@@ -12,8 +12,6 @@ From a player's perspective, AresMUSH is a sibling of PennMUSH and TinyMUX.  Man
 
 New to MUSHing? Check out our [MUSH 101 Tutorial](/mush-101) to learn more.
 
-{% include tutorial_warning.html %}
-
 Here are a few things to get you started:
 
 <div class="gallery">

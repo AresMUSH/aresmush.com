@@ -6,8 +6,6 @@ layout: page
 
 These articles will help you learn how to play AresMUSH.  If you're brand new to MUSHing, start with the [MUSH 101 Tutorial](/mush-101).
 
-{% include tutorial_warning.html %}
-
 ## Basics
 
 * [Ares for Vets](/tutorials/play/ares-for-vets.html) - Overview of Ares for veteran MU\* players.

@@ -6,8 +6,6 @@ layout: page
 
 These articles will help you administer/manage an Ares game.  It assumes your game is already set up and configured.  See the other [Tutorials](/tutorials) for help with those activities.
 
-{% include tutorial_warning.html %}
-
 {% tip %} 
 These articles give a general overview of the various game systems.  For specific in-game commands, see the game help files. For example: `help manage apps` tells you all about the application commands.
 {% endtip %}

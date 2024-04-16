@@ -14,7 +14,7 @@ tags:
 If you're willing to use [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) as your MU host, I'm happy to set up Ares for you. 
 
 {% note %}
-There is no installation fee for Easy Mode, but you will still pay DigitalOcean for hosting. Easy mode requests typically take 3-7 days to process, depending on my availability.
+There is no installation fee for Easy Mode, but you will still pay DigitalOcean for hosting. Easy mode requests typically take about a week to process, depending on my availability.
 {% endnote %}
 
 {% include toc.html %}
