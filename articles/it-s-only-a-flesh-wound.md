@@ -3,7 +3,11 @@ title: It's Only A Flesh Wound
 description: Commentary on injuries and MUSHes.
 layout: story
 author: Faraday
+date: 3/2001
 ---
+
+{% include old_editorial_warning.html %}
+
 
 I was involved in a decent sized combat scene on one MUSH the other night, and it got me thinking of a problem I've seen time and time again - plausible illness, injury, and recovery on MUSHes. I've played on consent MU\*'s, non-consent MU\*s with coded/judged combat, non-consent MU*'s without coded combat, and the symptoms are always the same.
 

@@ -3,7 +3,10 @@ title: Building the Perfect MUSH
 description: Tips and things to consider when creating a MUSH.
 layout: story
 author: Faraday
+date: ~2001
 ---
+
+{% include old_editorial_warning.html %}
 
 ## The Perfect MUSH
 

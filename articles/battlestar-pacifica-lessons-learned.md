@@ -3,6 +3,7 @@ title: Battlestar Pacifica - Lessons Learned
 description: A retrospective on running a game based on the Battlestar Galactica theme.
 layout: story
 author: Faraday
+date: ~2008
 ---
 
 A little over a year ago, I saw a post by Zarquon seeking out staff for a Battlestar Galactica game he was building. I love BSG, and Zarquon had some really cool ideas for the game. I was very excited, and signed on to be their coder. Eventually, Zarquon's RL reared its head and he stepped down, leaving me as headwiz.
@@ -29,11 +30,11 @@ Extreme #2 - GM says: "You wake up chained to a radiator in an unfamiliar room, 
 
 Extreme #1 leaves everything entirely up to the players. That's great if you have players that will make their own plots and run with ideas, but not all players are self-starters like that. Many will just sit around and twiddle their thumbs waiting for "something to happen".
 
-Extreme #2 takes all control out of the players' hands. They had no choice about getting kidnapped; it happened because it was important to the plot. It's an interesting setup and can create lots of drama, but it can also frustrate the hell out of the players who want control over their own destinies.
+Extreme #2 takes all control out of the players' hands. They had no choice about getting kidnapped; it happened because it was important to the plot. It's an interesting setup and can create lots of drama, but it can also frustrate the heck out of the players who want control over their own destinies.
 
 We've done both extremes on BSP and neither worked. We started out leaving everything up to the players, and the fleet wandered aimlessly and nearly starved to death because nobody thought to worry about: "Hey, how are we going to eat?" (except one lone engineer). Then we did a few plots that were heavily scripted, and people got frustrated (even angry, in some cases) because they couldn't affect the outcome. Now we try to find a happy middle ground - have some things 'scripted' to create situations for the players to react to, but also give them the ability to influence the direction overall. Sometimes it works better than others.
 
-## Military Themes Suck
+## Military Themes (Can) Suck
 
 Players on military games, in my experience, fall on two sides of the river. On the one side, you've got the folks wanting a "realistic" military. They're obsessed with protocol, organization, uniforms, and other bits of military life. On the other side, you've got the folks wanting a "Hollywood" military. They want to have drunken brawls in the mess hall, hotshot pilots with no regards for the rules, arguments with their superior officers, etc.
 
@@ -46,6 +47,15 @@ Also, on a somewhat unhappy note, giving characters such authority over others t
 I'm not saying a military theme can never work. You can do some things to compensate, like making everybody a grunt, or shoving them all into the same department, or whatever. But I think on the whole they're more trouble than they're worth.
 
 There's not much to be done about this with BSP - the Battlestar is by nature a military environment. But if I had it to do over I would probably have picked a more paramilitary setting (like the Greatest Generation's Finnish Guerillas) or something where there were military people but it wasn't quite as strict of an environment (like Babylon 5).
+
+> 2024 Update:
+> Since this was written back in ~2008, my stance on military games has mellowed. The basic issues I outlined above still exist, but the problem is not as insurmountable as it felt back then. Some things I've done on various military games to mitigate these concerns:
+>
+> * **Flexible Organization** - Whether it's a paramilitary organization, special forces unit, or whatever—having an IC excuse for flexibility can go a long way to avoiding some of the issues created by military rigidity.
+> * **Clear Vision** - Make it clear whether you're going the Hollywood or realism route so everyone's on the same page.
+> * **Make Exceptions the Rule** - Most players want to be the Big Darn Heroes, the cook-turned-Navy-SEAL, etc. Leaning into that lets everyone be awesome in their own way.
+> * **NPC Leadership** - Command positions tend to become status symbols with an almost FC-like status. I avoid that and minimize power struggles by just making them all NPCs.
+
 
 ## Isolated Themes Are Hard
 

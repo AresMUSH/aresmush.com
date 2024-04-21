@@ -43,7 +43,7 @@ To get started:
 
 1. Go to the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) in the DigitalOcean Marketplace.
 2. Click "Create Droplet" and use the following options:
-  * Select a "Shared CPU" and "Basic" droplet.
+  * Select a "Shared CPU" and "**Basic**" droplet.
   * The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB is not supported.
   * Don't add block storage.
   * Select a region. New York is a good choice unless your players are predominately from outside the US.
@@ -83,7 +83,7 @@ The very first time you connect, you will use the "root" user. If you set up a S
 Next you will configure your game settings.
 
 1. Connect to your game using the server shell using the **root** user, as described above.
-2. Make sure your domain registration has gone through by typing `nslookup YOURDOMAINNAME`. You should see your IP address returned.
+2. If you're using a domain name, make sure your domain registration has gone through by typing nslookup YOURDOMAINNAME. You should see your IP address returned. You don't need to do this if you're just using an IP address for your game.
 3. Run the following commands: 
 
         cd /etc/aresmush
@@ -97,6 +97,10 @@ The installation will take several minutes.  There will be a lot of spam, but ev
 ## Add a Security Certificate
 
 If you are using a domain name, it is strongly recommended that you configure your web portal with a security certificate, so players can connect securely using HTTPS instead of HTTP. 
+
+{% tip %}
+You can't use a security certificate without a domain name. If you're just using a raw IP address, skip to the next section.
+{% endtip %}
 
 1. Log in to your server shell, but this time use the **ares** user.
 2. Run the following commands:

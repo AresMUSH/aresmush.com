@@ -36,7 +36,7 @@ The system will post a welcome message to the forum (in `arrivals_category`) to 
 The welcome post will not be created for NPCs or characters who are added to the roster before they're approved. Leave the arrival category blank to disable the creation of the welcome post entirely.
 {% endtip %}
 
-You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
+You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{nick}` for the formatted name/nickname, `%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
 
 {% note %}
 Make sure the groups used in the welcome message actually exist, or you'll get an error when you try to approve someone. 
@@ -116,3 +116,10 @@ With custom code, you can automate certain actions to be taken when a character 
 ## Custom Character Fields
 
 With custom code, you can add new fields to the character profile and/or chargen.  See [Custom Character Fields](/tutorials/code/hooks/char-fields.html).
+
+## Public Backgrounds
+
+Backgrounds are private by default. Characters may copy their BG (or an abridged version) into a character profile field if they wish.
+
+If you want backgrounds to be visible to everyone automatically, just give everyone the `view_bgs` permission. See [Roles and Permissions](/tutorials/manage/roles.html) for details.
+

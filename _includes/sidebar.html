@@ -16,5 +16,19 @@
 
   <p>Important updates are posted on the <a href="https://forum.aresmush.com">forum</a> and <a href="/discord.html">discord</a>.
     
+  <div class="sidebar-title">Latest Blog Posts</div>
     
+  <ul class="blog-list">
+  {% for post in site.posts limit:10 %}
+    <li>
+      <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+    </li>
+    {% endfor %}
+    
+  </ul>
+  
+  <p><a href="/blog">[ All Blog Posts ]</a></p>
+  
 </div>

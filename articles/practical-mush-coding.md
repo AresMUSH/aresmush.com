@@ -5,6 +5,10 @@ layout: story
 author: Faraday
 ---
 
+{% note %}
+This is a very old article written for PennMUSH, not AresMUSH, and its principles are pretty dated. It is archived here for posterity.  For AresMUSH code tutorials, see the [code](/code) section.
+{% endnote %}
+
 When I began coding on Star Wars MUSH in 1993, I was armed with Amberyl's MUSH Manual and a copy of the PennMUSH help files, painstakingly printed out on my dot-matrix printer. I fancied myself a pretty decent coder after a few weeks; I could code a Falcon controller with the best of them, and even tried my hand at a hovercar object. I remember being so proud when I completed my first real project - a little datapad object that let you store, remove, and edit files. But when I stumbled into my first wizard position, on a fledgling MUSH that needed coders, I had the opportunity to work alongside a true "Master Psychocoder". I realized then just how little about MUSH coding I actually knew.
 
 Over the next few years, I slowly began to learn. I place the emphasis on 'slowly' because, much to my dismay, I discovered that there really wasn't a guide anywhere that taught you how to code (at least, not beyond the basics covered in Amberyl's wonderful manual). Fortunately, I had help. A code wiz was there to answer my questions, point out problems in my code, and tell me a few of the tricks and tips that weren't written anywhere. In time, I got the hang of it, and I eventually took up the reins as head coder of Babylon 5 MUSH, a position I held for 2 1/2 years before retiring.

@@ -60,7 +60,7 @@ You can configure which category this goes to by setting `arrivals_category`.  A
 
 ### roster_arrival_msg
 
-You can configure the contents of the arrival announcement.  You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
+You can configure the contents of the arrival announcement.  You can use `%{name}` in the message where you want the char's name to go.  You can also use `%{nick}` for the formatted name/nickname,`%{rp_hooks}` for their RP Hooks, or any group name.  For example:  `"Welcome %{name} - the newest %{position} in %{faction}.\n\nRP Hooks:\n%{rp_hooks}"`  (The quotes there are important.)
 
 {% tip %}
 Make sure the groups used in the message actually exist, or you'll get an error when you try to approve someone. 

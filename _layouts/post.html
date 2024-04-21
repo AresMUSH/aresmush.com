@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="row">
+
+                         
+    <div class="col col-sm-9">   
+
+                               
+             <div class="page">
+
+                 <h1>{{page.title}}</h1>
+                 
+                 
+                 <img class="post-image" src="/images/postpics/{{page.preview_image}}">
+                 
+                 <div class="post-info">
+                   {{page.date | date: "%Y-%m-%d"}} by {{page.author}}
+                 </div>
+                 
+                     {{ content }}
+
+              <div class="post-nav">
+                    {% if page.previous.url %}
+                        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                    {% else %}
+                        &nbsp;
+                    {% endif %}
+                    
+                    <div><a href="/blog">Home</a></div>
+                    
+                    {% if page.next.url %}
+                        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+                    {% else %}
+                      &nbsp;
+                    {% endif %}
+            </div>
+                 
+             </div>             
+   </div>
+   
+   <div class="col col-sm-3">
+       {% include sidebar.html %}
+
+   </div>
+</div>
+

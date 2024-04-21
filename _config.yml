@@ -3,8 +3,9 @@ title: AresMUSH
 timezone: UTC
 collections:
   posts:
-    title: Posts
+    title: Blog Posts
     output: true
+    permalink: /blog/:title.html
   uploads:
     title: Uploads
     output: true
@@ -18,8 +19,11 @@ twitter_username: lynnnoton
 github_username: lynnfaraday
 markdown: kramdown
 theme: minima
+paginate: 12
+paginate_path: "/blog/:num/"
 plugins:
 - jekyll-feed
+- jekyll-paginate
 highlighter: rouge
 algolia:
   application_id: NI38C577BA

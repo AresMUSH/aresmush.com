@@ -6,6 +6,10 @@ layout: page
   <i>{{page.description}}</i>
   <br/>
   <i>by {{page.author}}</i>
+  {% if page.date %}
+  <br/>
+  <i>Published: {{page.date}}</i>
+  {% endif %}
 </p>
 
 <div class="row-fluid">

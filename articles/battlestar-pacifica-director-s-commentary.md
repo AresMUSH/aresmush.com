@@ -3,6 +3,7 @@ title: Battlestar Pacifica - Director's Commentary
 description: A look back at the Battlestar Pacifica episodes.
 layout: story
 author: Faraday
+date: ~2009
 ---
 
 ## Introduction

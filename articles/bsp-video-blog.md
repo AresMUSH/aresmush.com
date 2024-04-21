@@ -3,6 +3,7 @@ title: Battlestar Pacifica - Video Blog
 description: A pretend video blog involving the BSP 'cast'.
 layout: story
 author: Krieger @ BSP MUSH
+date: ~2008
 ---
 
 Wrote this in the spirit of the video blogs from BSG. Enjoy. :)

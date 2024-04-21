@@ -5,6 +5,10 @@ layout: story
 author: Faraday
 ---
 
+{% note %}
+This is a very old article written for PennMUSH, not AresMUSH, and its principles are pretty dated. It is archived here for posterity.  For AresMUSH code tutorials, see the [code](/code) section.
+{% endnote %}
+
 Awhile back, I wrote an article about how to design large-scale softcode systems.  It was based on the "Waterfall" model of software development.  Since then, I've come to learn a lot more about Agile software development practices, which are a much better way to go about doing things.  This new version of the article talk about how to adapt Agile practices to the design of large-scale MUSH systems.
 
 ## The Epic

@@ -19,13 +19,18 @@ layout: page
 * [Give Your RP Sparkle](/articles/give-your-rp-sparkle.html) - Delivering RP that sparkles.
 * [Joys of Tinyplotting](/articles/joys-of-tinyplotting.html) - How to run a MUSH plot.
 
-## Admin Articles
 
-* [IC vs RL Time](/articles/ic-vs-rl-time.html) - Comparison of various time ratios.
+## Old MUSH Editorials
+
+Note: These were published over 20 years ago, so their principles are pretty dated. They may still be of some historical interest.
+
 * [Building the Perfect MUSH](/articles/building-the-perfect-mush.html) - Tips and things to consider when creating a MUSH.
-* [FS3 vs Other Systems](/articles/fs3-vs-other-systems.html) - Comparison of FS3 and other RPGs.
+* [IC vs RL Time](/articles/ic-vs-rl-time.html) - Comparison of various time ratios.
+* [Suspension of Disbelief](/articles/suspension-of-disbelief.html) - Comparison of various time ratios.
+* [It's Only a Flesh Wound](/articles/it-s-only-a-flesh-wound.html) - Handling injuries.
 
-## BSP Articles
+
+## Old BSP Articles
 
 * [Battlestar Pacifica - Lessons Learned](/articles/battlestar-pacifica-lessons-learned.html) - A retrospective on running a game based on the Battlestar Galactica theme.
 * [Battlestar Pacifica - Director's Commentary](/articles/battlestar-pacifica-director-s-commentary.html) - A look back at the BSP episodes.
@@ -33,8 +38,8 @@ layout: page
 
 ## Old PennMUSH Coding Articles
 
-Note:  These articles apply to PennMUSH, not AresMUSH, but are archived here for posterity.  For AresMUSH code tutorials, see the [code](/code) section.
+Note: These articles apply to PennMUSH, not AresMUSH, but are archived here for posterity.  For AresMUSH code tutorials, see the [code](/code) section.
 
 * [Practical MUSH Coding](/articles/practical-mush-coding.html) - A guide to MUSH Coding intended for mid-level coders.
 * [Large Scale System Design](/articles/large-scale-system-design.html) - A guide for building large-scale MUSH softcode systems.
-
+* [FS3 vs Other Systems](/articles/fs3-vs-other-systems.html) - Comparison of FS3 and other RPGs.
