@@ -26,8 +26,9 @@ If you do decide to upgrade your server OS and run into trouble (like the game n
 
 * Use `rvm reinstall <ruby version>` to reinstall ruby. You may also need to do `rvm reload`. Worst case, you can remove and reinstall RVM entirely.
 * There may be new libraries you need to install, particularly `ruby-dev`.
-* Clear out your `tmp` and `node_modules` directories in the web portal.
+* Run `bin/update-npm` from the webportal directory to clear out temporary NPM files. 
 * Check your redis config file and ensure that the password matches the one the game’s using.
 * Sometimes Apache gets turned on automatically, which will prevent the Ares web server from starting. Disable Apache using `sudo systemctl disable apache2`.
+* If you have trouble deploying the web portal, you may need to reinstall NPM, node, and/or ember. (refer to the install scripts for commands or ask).
 
 If you have questions, feel free to reach out and I’ll try my best to help. But since this is all at the OS level and not really Ares-specific, my ability to help may be limited.

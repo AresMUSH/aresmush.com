@@ -8,10 +8,8 @@ layout: page
 
 * [MUSHing 101](/mush-101) - An introduction to MUSHing.
 * [Creating MUSH Characters](/articles/creating-mush-characters.html) - A guide to help you flesh out your MUSH characters.
-* [Suspension of Disbelief](/articles/suspension-of-disbelief.html) - Reality and MUSHing.
-* [It's Only a Flesh Wound](/articles/it-s-only-a-flesh-wound.html) - Commentary on injuries and MUSHes.
 
-## Other People's RP Articles
+### Other People's RP Articles
 
 > *These are not mine.  I have them archived here because they're awesome and sometimes they disappear on the Internet.*
 
@@ -22,7 +20,7 @@ layout: page
 
 ## Old MUSH Editorials
 
-Note: These were published over 20 years ago, so their principles are pretty dated. They may still be of some historical interest.
+> Note: These were published over 20 years ago, so their principles may be somewhat dated.
 
 * [Building the Perfect MUSH](/articles/building-the-perfect-mush.html) - Tips and things to consider when creating a MUSH.
 * [IC vs RL Time](/articles/ic-vs-rl-time.html) - Comparison of various time ratios.
@@ -38,7 +36,7 @@ Note: These were published over 20 years ago, so their principles are pretty dat
 
 ## Old PennMUSH Coding Articles
 
-Note: These articles apply to PennMUSH, not AresMUSH, but are archived here for posterity.  For AresMUSH code tutorials, see the [code](/code) section.
+> Note: These articles apply to PennMUSH, not AresMUSH, but are archived here for posterity.  For AresMUSH code tutorials, see the [code](/code) section.
 
 * [Practical MUSH Coding](/articles/practical-mush-coding.html) - A guide to MUSH Coding intended for mid-level coders.
 * [Large Scale System Design](/articles/large-scale-system-design.html) - A guide for building large-scale MUSH softcode systems.

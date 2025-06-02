@@ -43,12 +43,17 @@ As long as you haven't modified the plugin's source code, you can upgrade it jus
 
 ## Uninstalling Plugins
 
-Ares plugins plug IN easily, but taking them out requires a bit of code fiddling. Some plugins have more detailed uninstall instructions in their README file, but in general you need to:
+Ares plugins plug IN easily, but taking them OUT again requires a bit of code fiddling. Some plugins have more detailed uninstall instructions in their README file, but in general you need to:
 
-1. [Remove the database fields](/tutorials/code/db-remove-field.html) and any associated database objects.
-2. Unload the plugin using the in-game command `unload <plugin name>`.
-3. Remove the code files.  You may remove the config files too, but you don't have to.
-4. Remove the plugin from the extras list in the `plugins.yml` config file.
+1. [Remove the plugin's database fields]({{site.baseurl}}/tutorials/code/db-remove-field.html) and wipe the data and any associated database objects. 
+  * Many plugins have instructions to help you do this. See the plugin's README for details.
+2. Remove the code from your game server (and GitHub fork, if applicable).  This includes:
+  * the plugin directory (`aresmush/plugins/myplugin`)
+  * the config files (`aresmush/game/config/myplugin_*.yml`)
+  * the web portal files (these vary by plugin - see the plugin repo for details)
+  * any modifications to [custom code hooks]({{site.baseurl}}/tutorials/code/index.html#custom-code-hooks) that reference the plugin
+4. Remove the plugin from the extras list in the `plugins.yml` config file. If you now have no extras, make it an empty list: `[]`.
+5. [Restart the game server]({{site.baseurl}}/tutorials/manage/shutdown.html).
 
 This can be an involved process, so don't hesitate to [ask for help](/feedback.html) if you need it.
 

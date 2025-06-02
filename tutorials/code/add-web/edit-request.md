@@ -28,9 +28,9 @@ Edit `aresmush/plugins/profile/custom_char_fields.rb` and modify the `get_fields
 
 There's a separate web request when the user clicks the 'save' button on the web portal.  This handler does the actual *updating* of the character data.  We can use *yet another* helper method to format our input for MUSH.  This converts line breaks back into %r's and does a few other things to make the website entry suitable for storage.
 
-Edit `aresmush/plugins/profile/custom_char_fields.rb` and modify the `save_fields_from_profile_edit` method.
+Edit `aresmush/plugins/profile/custom_char_fields.rb` and modify the `save_fields_from_profile_edit2` method.
 
-      def self.save_fields_from_profile_edit(char, char_data)
+      def self.save_fields_from_profile_edit2(char, enactor, char_data)
         char.update(goals: Website.format_input_for_mush(char_data[:custom][:goals]))
       end
 

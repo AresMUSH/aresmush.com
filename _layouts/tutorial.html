@@ -4,51 +4,6 @@ layout: default
 
 <div class="row">
 
-                  <div class="col col-sm-3">
-                      
-                      
-                      <a name="toc"></a>
-                      <div class="sidebar fs3-sidebar"> 
-                      
-                    {% include searchbox.html %}
-
-                      <h2>{{page.tutorialName}}</h2>
-                      
-                     {% if page.addCmdTutorial %}
-                                          {% include add_command_tutorial.html %}
-                                          {% endif %}
-                      
-                                          {% if page.addWebTutorial %}
-                                          {% include add_web_tutorial.html %}
-                                          {% endif %}
-                      
-                                          {% if page.installTutorial %}
-                                          {% include install_tutorial.html %}
-                                          {% endif %}
-                      
-                                          {% if page.quickstartTutorial %}
-                                          {% include quickstart_tutorial.html %}
-                                          {% endif %}
-                      
-                                          {% if page.mush101Tutorial %}
-                                          {% include mush101_tutorial.html %}
-                                          {% endif %}
-                      
-                                          {% if page.createPluginTutorial %}
-                                          {% include create_plugin_tutorial.html %}
-                                          {% endif %}
-                      
-                                          {% if page.editCodeTutorial %}
-                                          {% include edit_code_tutorial.html %}
-                                          {% endif %}
-                                          
-                                          {% if page.essentialConfigTutorial %}
-                                          {% include essential_config_tutorial.html %}
-                                          {% endif %}
-                      
-                  </div>
-              </div>
-                         
                          
     <div class="col col-sm-9">   
 
@@ -90,6 +45,52 @@ layout: default
                  </div>
                  
              </div>             
-                           </div>
+       </div>
+       
+       
+       <div class="col col-sm-3">
+           
+           
+           <a name="toc"></a>
+           <div class="sidebar fs3-sidebar"> 
+           
+         {% include searchbox.html %}
+
+           <h2>{{page.tutorialName}}</h2>
+           
+          {% if page.addCmdTutorial %}
+                               {% include add_command_tutorial.html %}
+                               {% endif %}
+           
+                               {% if page.addWebTutorial %}
+                               {% include add_web_tutorial.html %}
+                               {% endif %}
+           
+                               {% if page.installTutorial %}
+                               {% include install_tutorial.html %}
+                               {% endif %}
+           
+                               {% if page.quickstartTutorial %}
+                               {% include quickstart_tutorial.html %}
+                               {% endif %}
+           
+                               {% if page.mush101Tutorial %}
+                               {% include mush101_tutorial.html %}
+                               {% endif %}
+           
+                               {% if page.createPluginTutorial %}
+                               {% include create_plugin_tutorial.html %}
+                               {% endif %}
+           
+                               {% if page.editCodeTutorial %}
+                               {% include edit_code_tutorial.html %}
+                               {% endif %}
+                               
+                               {% if page.essentialConfigTutorial %}
+                               {% include essential_config_tutorial.html %}
+                               {% endif %}
+           
+       </div>
+   </div>
 </div>
 

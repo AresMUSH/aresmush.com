@@ -13,7 +13,7 @@ tags:
 
 Below the pose editor in a live scene is a row of buttons including "Add Pose" and "Add OOC".  With custom code, you can add custom buttons here that make use of the contents of the scene pose window--for instance, for sending a text message.
 
-Add the button itself to `ares-webportal/app/templates/components/live-scene-custom-scenepose.hbs`.  
+Add the button itself to `ares-webportal/app/components/live-scene-custom-scenepose.hbs`.  
 
 <pre>
   <button &#x7b;&#x7b;action 'addTxt'}} class="btn btn-default">Send Txt</button>
@@ -33,7 +33,7 @@ To handle the button action, add code to `ares-webportal/app/components/live-sce
 
 You can also add new menu items to the live scene's "Play" menu with custom code. You might do this if you're designing a new "extra" for a skill system, for instance.
 
-Add the menu item itself to `ares-webportal/app/templates/components/live-scene-custom-play.hbs`.  
+Add the menu item itself to `ares-webportal/app/components/live-scene-custom-play.hbs`.  
 
 <pre>
 &lt;li><a href="#" &#x7b;&#x7b;action 'giveCookies'}}>Give Cookies</a></li> 

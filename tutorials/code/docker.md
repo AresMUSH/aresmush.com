@@ -108,7 +108,7 @@ If you still have the ares container and shell running from the initial setup, y
 You should now be able to connect to your game on localhost:4201 and connect to the web portal at http://localhost:4200.
 
 {% tip %}
-If you have trouble connecting, try setting the `bind_address` field in `server.yml` to "0.0.0.0" and then restart the game.
+If you have trouble connecting, try setting the `hostname` field in `server.yml` to "0.0.0.0" and then restart the game. If that still doesn't work, you can also try setting it to "127.0.0.1". Some systems have trouble routing "localhost". If that STILL doesn't work, ask for help.
 {% endtip %}
 
 # Reloading Code

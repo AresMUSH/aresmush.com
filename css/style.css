@@ -46,6 +46,10 @@ body {
 
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   line-height: calc(1ex / 0.32);
   padding-bottom: 10px;
@@ -241,6 +245,10 @@ a:active {color:#105585;}  /* selected link */
 ul.nav a:hover {  !important; 
     background-color: #F2622E;
     color: #FFF;
+}
+
+.navbar-nav {
+  margin: 0px;
 }
 
 ul.nav a:active, 
@@ -716,7 +724,7 @@ li {
 
 
 
-.fs3-sidebar {
+.fs3-sidebar, .tutorial-sidebar {
     padding-left: 10px;
     padding-top: 10px;
     border-left: 1px dotted #F2622E;;
@@ -725,12 +733,12 @@ li {
 }
 
 
-.fs3-sidebar h2 {
+.fs3-sidebar h2, .tutorial-sidebar h2 {
     font-size: 1em;
     border-bottom:1px solid #F2622E;
 }
 
-.fs3-sidebar h3 {
+.fs3-sidebar h3, .tutorial-sidebar h2 {
   font-size: 1em;
 }
 
@@ -825,5 +833,12 @@ pre.prettyprint {
       display: none;
     }
     
-
+    .post-image {
+      max-width: 100%;
+    }
+    
+    .fs3-sidebar, .tutorial-sidebar {
+      display: none;
+    }
+    
 }

@@ -102,10 +102,10 @@ Attributes are rated from 1-4.
 
 | Rating | Summary | Description |
 | ---- |
-|1|Poor|You are below average.  (less than 40th percentile)|
-|2|Average |You are about average.  (40-60th percentile)|
-|3|Good|You’re better than average.  (60-80th percentile)|
-|4|Exceptional|You’re considerably above average. (more than 80th percentile)|
+|1|Poor|You are significantly below average. There is no cost advantage to taking this rating - it is only for RP purposes to indicate a significant challenge.|
+|2|Average |You are about average.|
+|3|Good|You’re better than average.|
+|4|Exceptional|You’re considerably above average.|
 
 ### Sample Attributes
 

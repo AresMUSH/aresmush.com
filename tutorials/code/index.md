@@ -67,6 +67,13 @@ Learn how to add things - in this case, the character goals from Tutorial #3 - t
 {% include add_web_tutorial.html %}
 </div>
 
+## Custom Code Hooks
+
+Normally, modifying the base Ares code exposes you to *merge conflicts*.  This is an annoying process that forces you to reconcile your changes with the base code changes whenever you upgrade. There are, however, several places that are designed with **custom code hooks**, which let you hook in custom code without actually touching the core code.
+
+{% include custom_hooks.md %}
+
+
 ## Advanced Coding Topics
 
 Once you've completed the initial tutorials, there are a wealth of other topics available for reference. 
@@ -94,10 +101,6 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml.html)
 * [Shortcuts](/tutorials/code/shortcuts.html)
 * [Recovering from Config Errors](/tutorials/config/config-errors.html) - Rolling back defaults if your config gets messed up.
-
-### Custom Hooks
-
-* [Custom Code Hooks](/tutorials/code/custom-hooks.html) - Places where you can easily tie in your custom code.
 
 ### Engine
 

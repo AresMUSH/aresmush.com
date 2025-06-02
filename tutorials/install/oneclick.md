@@ -120,3 +120,16 @@ After all of the installation is complete, type `sudo reboot` to reboot the serv
 ## Next Steps
 
 Your game should be up and running.  Check out [Next Steps](/tutorials/install/next-steps.html) to learn about connecting to it and testing it out.
+
+## Starting Over
+
+If at any point you need to start over with your oneclick image:
+
+1. Open the Digital Ocean droplet management dashboard.
+2. Go to Destroy -> Rebuild Droplet. 
+3. Select the AresMUSH image from the image list. (You may need to search for 'aresmush' if it doesn't show up automatically.)
+4. Click "Rebuild".
+
+It will take a few minutes, but then your droplet will be restored to the original oneclick image and you can start the install all over again. This will not affect the droplet's size/region/etc. and shouldn't impact its IP address or domain either.
+
+{% include pretty_image.html file='install-ares/oneclick-rebuild.png' %}

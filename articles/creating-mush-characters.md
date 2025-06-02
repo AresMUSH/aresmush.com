@@ -6,8 +6,6 @@ author: Faraday
 date: ~2000
 ---
 
-{% include old_editorial_warning.html %}
-
 > "Characters must be true to their own past and their beliefs, not shoved about simply in service of plot." Christina Skye, Building Believable Characters
 
 Creating a character on a MUSH can be a complex, challenging, and fascinating task. An important step in that process is writing your character's background, even if your MUSH does not require you to formally submit one.

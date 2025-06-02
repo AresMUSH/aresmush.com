@@ -32,7 +32,7 @@ These steps are described in more detail in the next few sections.
 
 Create a [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) account if you don't already have one. From your account dashboard, select **Create -> Droplet**.  
 
-1. Select the Ubuntu distribution image.  (Ares' standard install is 20.04.)  Just use the regular Ubuntu, not any other image.
+1. Select the Ubuntu distribution image.  (Ares' standard install is 22.04.)  Just use the regular Ubuntu, not any other image.
 {% include pretty_image.html file='/install-ares/install-droplet-1.png' %}
 
 {:start="2"}

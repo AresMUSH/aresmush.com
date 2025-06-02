@@ -5,7 +5,13 @@ title: The origins of AresMUSH (2007)
 tutorial: true
 ---
 
-AresMUSH is a brand new MUSH server in development.  From the player's perspective, it will be in the same family as PennMUSH and TinyMUX.  From the game administrator's perspective, it will be something completely different.
+{% note %}
+This page is a historical archive of the earliest design vision for AresMUSH. It's fun to see how some things have stayed constant even as others (like SQL) evolved.
+{% endnote %}
+
+## Intro
+
+From the player's perspective, AresMUSH will be in the same family as PennMUSH and TinyMUX.  From the game administrator's perspective, it will be something completely different.
 
 ## Goals
 

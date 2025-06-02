@@ -16,7 +16,7 @@ Templates are a special code class that handle complex information display.  The
 A template consists of two parts:
 
 1. The **Template Renderer**, which sets up the template and contains methods to help format everything.
-2. The **ERB Template**, which uses Ruby's [ERB Template system](http://www.stuartellis.name/articles/erb/) to mingle text with embedded Ruby code to control the actual display. (Similar to embedded Python for those familiar with that.)
+2. The **ERB Template**, which uses Ruby's [ERB Template system](https://github.com/ruby/erb) to mingle text with embedded Ruby code to control the actual display. (Similar to embedded Python for those familiar with that.)
 
 {% tip %} 
 Template files are located in a 'templates' folder within each plugin - for example `aresmush/plugins/describe/templates/character.erb`.

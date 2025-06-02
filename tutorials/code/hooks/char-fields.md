@@ -19,8 +19,8 @@ You can mix and match the three sections: Profile Display, Profile Editing, Char
 
 You can add a new tab for your custom data to the "System" section of the profile.
 
-* Define the tab navigation control: `ares-webportal/app/templates/components/profile-custom-tabs.hbs`
-* Define the tab contents: `ares-webportal/app/templates/components/profile-custom.hbs`
+* Define the tab navigation control: `ares-webportal/app/components/profile-custom-tabs.hbs`
+* Define the tab contents: `ares-webportal/app/components/profile-custom.hbs`
 * Add any buttons or actions, if needed: `ares-webportal/app/components/profile-custom-tabs.js`
 * Add the code to return data to the web: `aresmush/plugins/profile/custom_char_fields.rb` (`get_fields_for_viewing`)
 
@@ -28,16 +28,16 @@ You can add a new tab for your custom data to the "System" section of the profil
 
 You can add a new tab with controls to edit your custom data in the profile edit screen.
 
-* Define the tab navigation control: `ares-webportal/app/templates/components/char-edit-custom-tabs.hbs`
-* Define the tab contents: `ares-webportal/app/templates/components/char-edit-custom.hbs`
+* Define the tab navigation control: `ares-webportal/app/components/char-edit-custom-tabs.hbs`
+* Define the tab contents: `ares-webportal/app/components/char-edit-custom.hbs`
 * Add any buttons or actions, as well as packaging the new data to send to the game: `ares-webportal/app/components/char-edit-custom.js`
-* Add the code to return data to the web and save the data from the web: `aresmush/plugins/profile/custom_char_fields.rb` (`get_fields_for_editing` and `save_fields_from_profile_edit`)
+* Add the code to return data to the web and save the data from the web: `aresmush/plugins/profile/custom_char_fields.rb` (`get_fields_for_editing` and `save_fields_from_profile_edit2`)
 
 ## Chargen
 
 You can add a new tab to chargen with controls to set your custom data.
 
-* Define the tab navigation control: `ares-webportal/app/templates/components/chargen-custom-tabs.hbs`
-* Define the tab contents: `ares-webportal/app/templates/components/chargen-custom.hbs`
+* Define the tab navigation control: `ares-webportal/app/components/chargen-custom-tabs.hbs`
+* Define the tab contents: `ares-webportal/app/components/chargen-custom.hbs`
 * Add any buttons or actions, as well as packaging the new data to send to the game: `ares-webportal/app/components/chargen-custom.js`
 * Add the code to return data to the web and save the data from the web: `aresmush/plugins/profile/custom_char_fields.rb` (`get_fields_for_chargen` and `save_fields_from_chargen`)

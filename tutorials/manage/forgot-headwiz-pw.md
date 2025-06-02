@@ -24,11 +24,13 @@ The Master Admin (named Headwiz by default) is equivalent to the "God" character
 
 If you have access to an admin with coder privileges, you can use code to change it.  (This is why you should only give coder privileges to trusted individuals; they have full control over the database.)
 
-Just have your coder execute this command in-game:
+Just have your coder execute these commands in-game:
 
-    ruby  Login.set_random_password(Game.master.master_admin)
+    ruby Login.set_random_password(Game.master.master_admin)
+    
+This will generate a new temporary password. If you've locked out the account due to too many failed logins, you can also run:
 
-This will generate a new temporary password.
+    ruby Game.master.master_admin.update(login_failures: 0)
 
 ### Shell Method
 
@@ -42,7 +44,7 @@ If you don't have a coder character available, log into the server shell and cha
 If you've forgotten your ares user password to the server shell, you can use the 'root' user to reset it.  Just login as 'root' and use `passwd ares` and enter a new password.
 
 {% tip %}
-This is one of the rare instances where you'll actually want to use the root user.  Most other Ares operations should be done with the 'ares' user.
+This is one of the rare instances where you'll actually want to use the root user.  Normally, Ares operations should be done with the 'ares' user.
 {% endtip %}
 
 ## Forgotten Root User Password

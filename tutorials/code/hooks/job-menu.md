@@ -11,7 +11,7 @@ tags:
 
 This hook allows you to add a new item/action to the menu that appears when viewing a job.
 
-Add the menu itself to `ares-webportal/app/templates/components/job-menu-custom.hbs`.  
+Add the menu itself to `ares-webportal/app/components/job-menu-custom.hbs`.  
 
 <pre>
   &lt;li><a href="#"  &#x7b;&#x7b;action 'yourAction'}}  class="dropdown-item">Your Action</a></li>

@@ -28,17 +28,19 @@ For example:
 
     import DefaultRoute from 'ares-webportal/mixins/default-route';
     export default Route.extend(DefaultRoute, {
+      
+### Authenticated Controller
 
-## Reloadable Route
+The `AuthenticatedController` mixin provides some utility methods like `isApproved` that can be used in templates to control whether certain actions are allowed.
 
-A reloadable route is one that is designed to be refreshed without leaving the screen, usually after sending a request to the game.  The Controller can issue a refresh request by calling `this.send('reloadModel');`
+## Reload Model
 
-For example, the chargen screen reloads itself after the player clicks the "Reset Abilities" button.
+Sometimes you want to refresh a route without leaving the screen, usually after sending a request to the game that updates a bunch of data.  For example, the chargen screen reloads itself after the player clicks the "Reset Abilities" button.
+
+Any Controller can issue a refresh request by calling `this.send('reloadModel');`
 
 ## Route Reset On Exit
 
-Some routes have form data that you want to clear when the player leaves the screen, such as the event creation form.  Otherwise it's a little weird if the player comes back six hours later and the form still has their previous data.  If the route incorporates this Mixin, it will trigger the `resetController` method on the controller whenever the player leaves the screen.  The Controller must implement that method to clear out whatever data is necessary.
+Some routes have form data that you want to clear when the player leaves the screen, such as the event creation form.  Otherwise it's a little weird if the player comes back six hours later and the form still has their previous data.  
 
-## Authenticated Controller
-
-The `AuthenticatedController` mixin provides some utility methods like `isApproved` that can be used in templates to control whether certain actions are allowed.
+Any controller can implement a `resetController` method on the controller to clear out its data whenever the player leaves the screen.  

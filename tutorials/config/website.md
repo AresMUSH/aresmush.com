@@ -183,34 +183,24 @@ For a dividing line, just use:
     
 This only makes sense inside a dropdown menu.
 
-## Configuring Recaptca
+## Configuring Captcha
 
-You can use Google's [Recaptcha](https://www.google.com/recaptcha/intro/) to keep bots from creating accounts.  This is optional, but if you don't turn it on you should disable `allow_web_registration`.  Otherwise you'll get bot accounts for sure.
+You can use either CloudFlare [Turnstile](https://www.cloudflare.com/application-services/products/turnstile/) or Google's [ReCaptcha v2](https://www.google.com/recaptcha/intro/) to discourage bots from creating accounts.  If you don't want to use either one, you may want to disable `allow_web_registration`. 
 
-Sign up for your own Recaptcha key by clicking "Get Recaptcha" from the [Recaptcha site](https://www.google.com/recaptcha/intro/).
+You'll need to consult the specific Turnstile/ReCaptcha docs for detailed instructions, but in general the steps are the same for both:
 
-1. Create a new "Recaptcha v2" key.
-2. List your game's website domain under the domains list.  You can also list 'localhost' if you're doing local testing.
-3. Google will show your key info.
+1. Create a free account.
+2. Add a Turnstile/ReCaptcha widget.
+3. Add your domain name to the widget. (You can also add "localhost" if you're doing local testing.)
+4. Get your "site key" and "secret". 
 
-Under 'Client Side Integration' you'll find a code snippet like this:
+Depending on the provider, you might have to hunt a bit to find the site key and secret. For example, in ReCaptcha you might need to look at the code snippets like: `<div class="g-recaptcha" data-sitekey="ABCD123"></div>`.
 
-`<div class="g-recaptcha" data-sitekey="ABCD123"></div>`
-
-The 'ABCD123" is your Recaptcha Site.
-
-Under 'Server Side Integraton' you'll see an entry like this:
-
-`secret(required): DEFGH789`
-
-The 'DEFGH789 is your Recaptcha Secret.
-
-To configure the recaptcha information:
+To configure the captcha information:
 
 1. Select Admin -> Setup
 2. Edit `secrets.yml`.
-
-Enter the Recaptcha Site and Secret you got from the code snippet above.
+3. Enter **either** the Turnstile site key and secret, or the ReCaptcha one. You can't use both.
 
 ## Custom CSS Style
 
