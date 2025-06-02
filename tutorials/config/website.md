@@ -270,3 +270,7 @@ Some games like to put search options into the menu, so you can use this setting
 ### auto_wiki_export and wiki_export_cron
 
 The game automatically creates a downloadable export of the wiki and web portal scenes/characters/etc. for players to access offline. If you want to disable this, set the auto export to false.  You can also control what time the export happens.  (Just don't schedule it at the same time as your usual backup, as this may cause undue strain on the system.)
+
+### char_backup_cleanup_cron
+
+This cron job cleans up character backup files.  By default it's nightly.  You shouldn't change this.

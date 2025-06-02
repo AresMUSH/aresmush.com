@@ -37,47 +37,61 @@ The TOS can contain all the usual MUSH formatting codes, but you don't need to p
 If you ever make important changes to the terms of service, you probably want to force existing characters to read them again.  To do this, use the  `tos/reset`  command in-game.  Everyone will be forced to acknowledge the new terms of service the next time they log in.
 {% endtip %}
 
+## Allowing Logins
+
+There are several ways to configure who can create characters and connect. For each setting, there is a corresponding message option that lets you provide an optional reason why it's not allowed. For example: "Logins are disabled at this time. YOUR REASON GOES HERE"
+
+1. Select Admin -> Setup.
+2. Edit `login.yml`
+
+
+| Config Option | Purpose | Reason Option |
+| `allow_web_registration` | Whether players can use the Register page to create a new character from the web portal. | `registration_not_allowed_message` |
+| `allow_game_registration` | Whether players can use the `create` command to make a new character from a MU client. | `registration_not_allowed_message` |
+| `disable_nonadmin_logins` | Set this true if you need to shut down connections to everyone except game admins. | `login_not_allowed_message` | 
+| `portal_requires_registration` | Requires a login for everything on the portal, even normally public things like the wiki and scene logs. | n/a |
+
+If you want more fine-grained control, you can use the [Roles System](/tutorials/manage/roles.html) to control which roles have the 'login' permission.  By default, this permission is assigned to the 'everyone' role, meaning all characters can log in.  During development, you may want to remove it from everyone and add it only to ancillary staff like builders or wiki developers. 
+
+<a name="guests"></a>
+
+## Configuring Tours (Guests)
+
+Ares no longer supports pre-made shared guest characters. Instead, the `tour` command (aliased to `connect guest`) and web portal Tour button let players create a temporary character with an auto-generated name and password. Other than the way their name/password is set, these characters are identical to new characters created from the Register screen/`create` command. They can be made into permanent characters just by changing their name/password.
+
+### Guest Names
+
+You can configure what names are used for temporary characters.
+
+1. Select Admin -> Setup.
+2. Edit `names.yml`
+3. Edit the `guests` list.
+
+{% note %}
+Temporary characters are recycled with the idle purge just like any other new character. If all the guest names are in use, the system will just use a name like `Guest-1` with an incrementing number. To avoid this, just make sure you have enough names on the list to cover you between idle purges. You can also run an idle purge at any time.
+{% endnote %}
+
+### Enabling Tours
+
+You can configure where guests are allowed and customize the message shown if they're disabled.
+
+1. Select Admin -> Setup.
+2. Edit `login.yml`
+
+| Config Option | Purpose | Reason Option |
+| `allow_web_tour` | Whether players can use the Tour feature from the web portal. | `tour_not_allowed_message` |
+| `allow_game_tour` | Whether players can use the Tour feature from the `tour` or `connect guest` commands. | `tour_not_allowed_message` |
+
+### tour_welcome_message
+
+This message is sent via mail when someone creates a temporary guest character and will include the `%{name}` and `%{password}` variables to tell them their temporary name and password.
+
 ## Other Configuration
 
 To configure the rest of the Login plugin:
 
 1. Select Admin -> Setup.
 2. Edit `login.yml`
-
-### allow_creation and creation_not_allowed_message
-
-The default behavior allows players to create their characters right from the login screen.  You might want to disable this if you have a roster-only game or require email registration or an invitation.
-
-{% note %} 
-Allowing creation from the web portal is a different setting, `allow_web_registration`, described below.
-{% endnote %}
-
-To disable character creation from the login screen:
-
-* Set `allow_creation` to false.
-* Optionally set a message about your game's registration policy in `creation_not_allowed_message`.  If no message is set, players will just see a generic message.
-
-### allow_web_registration
-
-By default, players can create characters from the Web Portal.  If you wish to lock this down, you can set `allow_web_registration` to `false`.  If you allow web registration, be sure to configure Recapta to prevent bots, as explained below.
-
-### portal_requires_registration
-
-Set this to `true` if you want to require people to log in before they can access the Web Portal at all.  Often coupled with `allow_web_registration` to require people to create a character from the game itself instead of registering on the Web Portal.
-
-### Disabling Logins
-
-During development, maintenance, or other special times, you might want to disable player logins.  
-
-The quickest and broadest way to do that is the `disable_nonadmin_logins` option. Set it to true and only admins can log in.
-
-If you want more fine-grained control, you can use the [Roles System](/tutorials/manage/roles.html) to control which roles have the 'login' permission.  By default, this permission is assigned to the 'everyone' role, meaning all characters can log in.  During development, you may want to remove it from everyone and add it only to ancillary staff like builders or wiki developers. 
-
-The `login_not_allowed_message` is shown whenever people can't log in.
-
-### Disabling Guests
-
-The system looks for characters with the role set in `guest_role` when finding a guest character.  If you don't want to allow guests, set that role to blank.  You can also optionally set `guest_disabled_message` to explain why guests are disabled.
 
 ### use_terms_of_service
 
@@ -94,10 +108,6 @@ This cron job controls how often the site blacklist is updated.  By default it's
 ### notice_cleanup_cron and notice_timeout_days
 
 This cron job controls how often the old notifications are cleared out.  By default it's monthly.  You shouldn't need to change this. You can also configure how long old notifications are kept before they're deleted.
-
-### random_guest_selection
-
-By default, guests are assigned in alphabetical order, so Guest-1 logs on first, then Guest-2, etc. Changing this setting to 'true' causes them to be assigned in random order.  You might want this if you change your guest names to something else, like "Blue-Guest", "Red-Guest", etc.
 
 ### boot_timeout_seconds
 
