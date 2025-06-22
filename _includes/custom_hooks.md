@@ -23,3 +23,4 @@
 
 * [Custom Routes](/tutorials/code/hooks/custom-routes.html) - Adding custom routes (pages) to the web portal.
 * [Sidebar](/tutorials/code/hooks/sidebar.html) - Adding custom sections to the web portal sidebar.
+* [Wiki Char Export](/tutorials/code/hooks/wiki-export.html) - Adding custom output to the wiki character export.

@@ -48,12 +48,12 @@ The automated install just copies _your_ plugin's files.  It cannot handle chang
 
 ### Plugin Versioning
 
-Versioning your plugin can make it easier to troubleshoot problems by identifying whether a given game is running your latest code.  To do this, just add a "version" method to your plugin module, as shown below, and update it whenever you release new code.
+Versioning your plugin can make it easier to troubleshoot problems by identifying whether a given game is running your latest code.  To do this, just add a "plugin_version" method to your plugin module, as shown below, and update it whenever you release new code.
 
 ```
 module AresMUSH
   module Yourplugin
-    def self.version
+    def self.plugin_version
       "1.0"
     end
   end

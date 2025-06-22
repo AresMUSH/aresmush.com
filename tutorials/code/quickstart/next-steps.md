@@ -5,7 +5,7 @@ layout: tutorial
 quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
-prevstep: apis
+prevstep: ruby-cmd
 ---
 
 Congratulations!  You've completed the AresMUSH Code Quickstart Tutorial.  

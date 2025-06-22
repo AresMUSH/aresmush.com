@@ -36,8 +36,12 @@ There's a separate article on [Localization](/tutorials/code/localization.html) 
 
 Try out a translation:
 
-    ruby t('db.object_not_found')
+    def handle
+      client.emit t('db.object_not_found')
+    end
 
 And one that takes an argument:
 
-    ruby t('describe.desc_set', :name => "Bob")
+    def handle
+      client.emit t('describe.desc_set', :name => "Bob")
+    end

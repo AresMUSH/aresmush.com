@@ -26,11 +26,15 @@ There are some other folders, like engine (for the engine code) and install (for
 
 The plugin folders all follow a standard structure.  The folders should be pretty self-explanatory (commands is where the command files live, help is where the help files live, etc.) with a few exceptions:
 
-* The plugin module definition will always been in the root folder.  For example:  `aresmush/plugins/tinker/tinker.rb`
-* Helpers contain shared utilities used across several commands/events within the same plugin.  For example: a lot of description-related commands share a single error check:  `Describe.can_describe?(enactor, model)`.  You'll usually find these in a file in the root directory.  For example:  `aresmush/plugins/describe/helpers.rb`.  
-* Public interfaces will be found in the `public` folder.  This includes methods that other plugins rely on, as well as database models.
+
+| File/Folder | Purpose |
+| ---- | 
+| yourpluginname.rb | This file tells the game engine basic information about the plugin. Every plugin has one, and the name always matches the plugin folder. |
+| helpers.rb | Often you'll find that many commands in a plugin require similar error checks and/or actions. Helpers let you put that code in one place so that it can be shared throughout the plugin. This lets you avoid duplication, so if you need to change it later you only have to change one place.  For example:  `aresmush/plugins/describe/helpers.rb` contains a common error check to see whether the enactor has permissions to describe the thing:  `Describe.can_describe?(enactor, model)`. A few plugins have multiple helper files named by category. |
+| public/* | APIs let plugins talk to each other - getting information or taking actions. They also define the database models and fields available. For example: `Mail.send_mail` is an API in the mail plugin that allows any plugin to send mail. They are basically cross-plugin helpers. |
 
 For more details on plugin directories, see [Plugins](/tutorials/code/plugins.html) when you're ready.
+
 
 ## Ares-Webportal Directory
 

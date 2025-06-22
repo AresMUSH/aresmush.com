@@ -6,7 +6,7 @@ quickstartTutorial: true
 tutorialName: Code Quickstart
 tutorialIndex: tutorials/code/quickstart
 prevstep: db-intro
-nextstep: next-steps
+nextstep: ruby-cmd
 tags:
 - code
 - code-quickstart
@@ -29,9 +29,11 @@ APIs generally expect that permissions will be checked by the calling command ha
 
 ## Try It!
 
-Let's use the jobs API to create a test job.
+Let's use the jobs API to create a test job. Change the tinker handle method as shown below:
 
-    ruby Jobs.create_job("REQ", "A Test Job", "This is a test job.", enactor)
+    def handle
+      Jobs.create_job("REQ", "A Test Job", "This is a test job.", enactor)
+    end
 
 ## Common APIs
 
@@ -41,8 +43,7 @@ Here are a few other common APIs you may use in your own code.
 
     Jobs.create_job(category, title, description, author)
 
-There are some APIs like `Jobs.request_category` to find the right category to use.
-You can use `Game.master.system_character` to make the author "System" instead of a specific character.
+You can use `Jobs.request_category` for the category to make it a request and `Game.master.system_character` to make the author "System" instead of a specific character.
 
 ### Send Mail
 

@@ -48,6 +48,14 @@ Create a [DigitalOcean](http://www.digitalocean.com/?refcode=5c07173bc1f2) accou
 5. Select an SSH key for logging in (if you don't know what that is, just select the password option) and any other options desired.
 6. Do **NOT** enable IPv6; Ares does not support dual IP versions, and many PCs can still only access v4.
 
+## Getting a Host Name
+
+You can host a game using the raw IP address, but most games will want a domain name. See [Getting a Hostname]({{site.baseurl}}/tutorials/install/getting-a-hostname.html) if if you want to request a `yourgame.aresmush.com` subdomain or set up a custom domain.
+
+{% note %}
+If using a domain name, make sure it's set up before continuing with the installation. The game won't be able to run until the hostname is recognized.
+{% endnote %}
+
 ## Connect to the Server Shell
 
 To connect to your game, you will use the IP address/host name and a tool that supports Secure Shell (SSH) connections:

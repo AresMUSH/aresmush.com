@@ -48,7 +48,7 @@ You may have noticed that this version will not find "Faraday" if you typed "far
 
 Since searching by name is so common, there's a utility method to help you with these things.  Change the `char = ` line in the handle method to this:
 
-    char = Character.find_one_by_name(cmd.args)
+    char = Character.named(cmd.args)
 
 Now try the searches again with aliases and different capitalization.  It works much better.
 
@@ -56,15 +56,15 @@ There are some other query helpers, which you can read about in the advanced [da
 
 ## Try It! - Updates
 
-Once you have the database object, you can use the `update` method to change its fields.  Here's how we can change Guest-1's alias to "guest":
+Once you have the database object, you can use the `update` method to change its fields.  Here's how we can change the System character's alias:
 
     def handle
-      char = Character.find_one_by_name('Guest-1')
-      char.update(alias: "guest")
+      char = Character.named('System')
+      char.update(alias: "sys")
       client.emit "Done!"
     end
 
 {% note %} 
-Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the database.  Always call `update` to save database changes.
+Just setting the class attribute (like `char.alias = 'guest'`) will change the local copy of the object, but it doesn't update the database.  Always call `update` to make database changes.
 {% endnote %}
 
