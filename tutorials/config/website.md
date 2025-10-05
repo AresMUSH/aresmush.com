@@ -34,23 +34,21 @@ To change the colors on the web portal:
 2. Select Edit Theme Colors.
 3. Use the color widgets to select the desired colors.
 
-You can alternately edit the colors.scss config file (via Admin -> Setup -> Text Files) and enter colors manually using [HTML color codes](https://htmlcolorcodes.com/).
-
-Here are the available colors:
-
-* Background color - The main page background.
-* Text color - The main text color.
-* Primary color - Headings and table headers.
-* Primary outline color - Border around the primary headings.
-* Primary words color - The words inside something that uses the primary color.
-* Secondary color - Links and contrast colors.
-* Gutter color - The gutter borders on the left and right side of the page.
-* Border color - Boxes and lines around things.
-* Faded text color - Hints and subtle headings, like the sidebar headings.
-
 {% note %} 
 After changing the colors, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
 {% endnote %}
+
+You can alternately edit the colors.scss config file (via Admin -> Setup -> Text Files) and enter colors manually using [HTML color codes](https://htmlcolorcodes.com/).
+
+These colors control various standard AresMUSH controls, and you can also use them in your own custom styles:
+
+```
+.my-widget {
+  color: $primary-color;
+}
+```
+
+Custom styles can also utilize the standard rainbow colors, such as `$lightest-gray` and `$muted-blue`. View rainbow.scss (also accessible via Admin -> Setup -> Text Files) to see a complete list.
 
 ## Images
 
@@ -213,16 +211,27 @@ Beyond the colors, you can add custom CSS styles that will override the Web Port
 After changing the custom CSS style, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
 {% endnote %}
 
-### Changing the Font
+## Changing the Font
 
-Many games want to change the text font.  You can easily use a Google font by adding the following to your custom CSS style:
+The fonts.scss file (accessible via Admin -> Setup -> Text Files) lets you easily customize your website's fonts.
 
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
-    body {    
-      font-family: 'Roboto', sans-serif;
-    }    
+To add a [Google Font](https://fonts.google.com/), first get the import statement from Google for the font(s) you want to use:
 
-### Icons
+{% include pretty_image.html file="google-font.png" %}
+
+Then copy the import statement into fonts.scss and configure which fonts to use for your body, primary (main titles) and secondary (secondary titles):
+
+```
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$body-font: "Roboto", sans-serif;
+$primary-font: "Manufacturing Consent", sans-serif;
+$secondary-font: "EB Garamond", sans-serif;
+```
+
+This only controls the font family. You will need to use custom styles to adjust other font properties like size and weight.
+
+## Icons
 
 [FontAwesome](http://fontawesome.io/icons/) icons are used throughout the site and available for your use in custom HTML.
 

@@ -24,7 +24,21 @@ This option controls whether each top-level area in the web portal locations dir
 
 ## icon_types
 
-You can assign icons to rooms so they show up highlighted on the locations directory. By default, a 'star' icon is available to designated featured hangouts. You can expand this with additional icon types if desired, to distinguish bars, parks, etc. Just give each icon type a name and a [Font Awesome](https://fontawesome.com/?from=io) icon code.
+You can assign icons to rooms so they show up highlighted on the locations directory. By default, a 'star' icon is available to designated featured hangouts. You can expand this with additional icon types if desired, to distinguish bars, parks, etc. Just give each icon type a name and a [Font Awesome](https://fontawesome.com/?from=io) icon code. For example:
+
+```
+star: fas fa-star
+house: fas fa-home
+```
+
+## icon_legend
+
+If you are using `icon_types`, you can create a legend to show what they mean. This list will be a hash with the icon name (matching `icon_types` and description). For example:
+
+```
+star: "RP Hangout"
+house: "Residential Area"
+```
 
 ## room_lock_cron
 

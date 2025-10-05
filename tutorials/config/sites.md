@@ -1,5 +1,5 @@
 ---
-title: Configuring Banned and Suspect Sites
+title: Configuring Banned Sites
 layout: page
 tags:
 - siteban
@@ -14,19 +14,14 @@ To learn more about how banned and suspect sites work and what other options you
 
 {% include toc.html %}
 
-## Banned and Suspect Sites
+## Banned Sites
 
 To configure banned and suspect sites:
 
-1. Select Admin -> Setup
-2. Edit `sites.yml`.
+1. Select Admin -> Manage.
+2. Select "Manage Bans".
 
-Add IP addresses or host names to the banned or suspects list, one per line with dashes.  For example:
-
-    - 123.45.678
-    - verizon.com
-
-To make the list empty, enter empty brackets, like so:  `[]`
+You can either ban a specific player (and all their alts), or a site hostname or IP.
 
 ### Findsite
 
@@ -49,3 +44,6 @@ To enable the proxy site ban, set `ban_proxies` to true.
 Enabling this feature requires either a game restart, or a coder character doing `ruby Login.update_blacklist` to initialize the proxy blacklist.  After the initial load, it will be periodically updated.
 {% endnote %}
 
+## max_connections
+
+Limits the number of simultaneous connections from a single host/IP.

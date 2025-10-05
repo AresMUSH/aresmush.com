@@ -84,7 +84,7 @@ For original settings or settings with multiple tech levels, it's best to be exp
 The following sections will guide you in determining your Abilities.
 
 {% fs3tip %}
-The ability lists and limits given here are just examples from the default FS3 configuration.  Individual games will customize these.
+The ability lists and limits given here are just examples from the default FS3 configuration.  Individual games will often customize these. You can see your game's specific limits by using the /fs3-limits URL in the game's web portal. For example: [Demo Game FS3 Limits](https://mush.aresmush.com/fs3-limits).
 {% endfs3tip %}
 
 
@@ -184,7 +184,7 @@ You automatically get the *Everyman* rating in each Action Skill for free.  Each
 
 If you have a specialized ability higher than Fair, you must choose a specialty.  The first one is free.  Every additional specialty costs **1 AP**.
 
-You may spend at most **40 APs** on Action Skills.  
+You may spend at most **28 APs** on Action Skills.  
 
 You may have at most **3 Action Skills rated 5+**, **2 rated 6+** and **1 rated 7+**.  These limits are cumulative, so if you have a 6 and a 7, that counts as both 1 at 7+ and 2 at 6+.
 

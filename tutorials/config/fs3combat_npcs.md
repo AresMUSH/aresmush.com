@@ -35,6 +35,10 @@ This is a total dice pool, encompassing skill plus attribute.  So if you want a 
     Boss:
         Default: 8
 
+{% note %} 
+When the system needs an attribute (e.g., Brawn or Reflexes), it will use **half** the default rating. So a Goon in the above example would have a Brawn of 2.
+{% endnote %}
+
 ### Fine-Tuning Skills
 
 You can also fine-tune dice pools for specific skills.  This is helpful if you want to make a Boss tough to take down without making them extraordinarily deadly (or vice-versa).  You can also make specialist NPCs who are good with some weapons but not others.

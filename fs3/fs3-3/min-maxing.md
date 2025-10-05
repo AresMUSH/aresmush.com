@@ -48,7 +48,11 @@ Fast-forward six months.  Mary has been pumping XP into Firearms and Melee, but 
 
 ## Method to the Madness
 
-The first thing to realize here is that the Bob/Mary example is working exactly as designed.  "Wait, what?"  It's true.
+The first thing to realize here is that the Bob/Mary example is working exactly as designed.  
+
+"Wait, what?"  
+
+It's true.
 
 If FS3 were a level-based game, the admin of the Bob/Mary example basically allowed Bob to start off at level 5 while Mary was still back at level 2.  It doesn't matter how Bob and Mary spend their XP.  If they're earning XP at the same rate **Mary will never catch up to Bob** because she started behind him from the get-go.
 

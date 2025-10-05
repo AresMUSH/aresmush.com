@@ -23,10 +23,13 @@ You can find contributions on AresCentral:
 
 You can install a plugin directly from the game using `plugin/install <github url>`. For example:  `plugin/install https://github.com/AresMUSH/ares-prefs-plugin`.
 
-{% note %} 
 1. Make sure the plugin is compatible with your version of AresMUSH.  Most require the latest version.
 2. Many plugins require some additional manual install steps.  Be sure to check the README file in each plugin's folder for detailed information on installation and configuration.
 3. Use community plugins at your own risk. They are not officially supported (unless otherwise specified).
+
+
+{% note %} 
+If you have a custom code fork, you will need to add the plugin files to your fork **before** running plugin/install. Otherwise you will get a merge conflict when you try to pull in your changes.
 {% endnote %}
 
 ## Installing Themes

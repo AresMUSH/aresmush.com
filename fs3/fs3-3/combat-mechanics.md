@@ -19,6 +19,12 @@ You can get 3 extra initiative dice by spending luck.  You also get 3 dice for s
 
 # Attacks
 
+Attacks are fundamentally an opposed roll of the attacker's skill (based on their weapon) against the defender's skill (based on THEIR weapon/vehicle - see [defense](#defense) for details). 
+
+The number of **net successes** on the attack roll influences the effectiveness of the attack, from hit location to damage.
+
+If the attacker gets zero or fewer net successes, they miss. In other words - ties go to the defender.
+
 ## Aim
 
 Aiming givs a +3 bonus to attack the next turn. Spending more than one turn aiming does not increase the modifier, and the modifier is lost if you switch targets.
@@ -87,7 +93,7 @@ For example:  Erson is fighting Britt.  Erson has a sword (skill: Blades) and Br
 
 Another example:  This time Gray is attacking Britt.  He has a rifle and she has her staff.  Even though Britt has a melee weapon, she doesn't get to use it against a firearm.  She defends with the base defense skill (typically Reflexes).  He also uses the base defense skill when she attacks him back.
 
-The default "Defense" skill is Reflexes by default--an attribute rather than an actual skill. This is because there really isn't a skill to dodging bullets or shrapnel. The Reflexes roll is mostly just a randomizer.
+The default "Defense" skill is Reflexes by default--an attribute rather than an actual skill. This is because there really isn't a skill to dodging bullets or shrapnel. By using an attribute, the number of dice is lower and the Reflexes roll is mostly just a randomizer.
 
 Note: No matter which passenger in a vehicle is targeted, the defense roll is always based on the *pilot's* piloting skill.
 
@@ -241,8 +247,9 @@ Notice that more of the bullseye now falls on dead air, increasing the chance of
 | Attacker Net Successes | Location |
 | ---- |
 | >= 3 | Exactly Where Aimed |
-| 1-2 | Random roll with the bullseye centered on a different location  |
-| 0 (tie) | Near Miss |
+| 2 | Random roll with the bullseye centered on a different location  |
+| 1 | Near Miss |
+| 0 or fewer | Miss |
 
 So each location has its own hit location chart for use in called shots. 
 

@@ -47,6 +47,7 @@ These articles detail all of the config settings available in the game.
 * [Configuring the OOC Time System](/tutorials/config/ooctime.html)
 * [Configuring the Page System](/tutorials/config/page.html)
 * [Configuring the Places System](/tutorials/config/places.html)
+* [Configuring the Profile System](/tutorials/config/profile.html)
 * [Configuring the Ranks System](/tutorials/config/ranks.html)
 * [Configuring Restricted Names](/tutorials/config/names.html)
 * [Configuring the Roles System](/tutorials/config/roles.html)

@@ -47,6 +47,10 @@ Any hit location not listed will have a protection of 0, meaning no armor. That 
 
 Armor can impact defense compared to an un-armored person.  Clunky platemail might give a defense penalty, while agile power armor might give a defense bonus.
 
+{% note %}
+Defense does not apply to vehicle armor. Use the vehicle's `dodge` property instead.
+{% endnote %}
+
 ## Armor Specials
 
 Like weapon specials, armor specials allow you to define 'extras' that can augment armor.  Common specials might be helmets or shields.  
@@ -67,4 +71,6 @@ Specials can provide a bonus or penalty (if the value is negative) to protection
 
 ## Vehicle Armor
 
-Vehicles can have armor.  It works the same way as personal armor, but it is automatically 'worn' by the vehicle; you don't have to use a separate command to apply it.
+Vehicles can have armor.  Unless otherwise specified above, the modifiers work the same way as personal armor. 
+
+Vehicle armor is automatically 'worn' by the vehicle. You don't have to use a separate command to apply it, and in fact _cannot_ change the vehicle's armor type.
