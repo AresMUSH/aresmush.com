@@ -41,4 +41,4 @@ The engine provides some common models, like characters and rooms.  Plugins may 
 
 ## Web Portal
 
-The Web Portal is the game's website, allowing players to manage scenes, character profiles, wiki pages [and more](/web-portal).  The Web Portal consists of an EmberJS web application running on top of a standard web server like nginx (the Ares standard) or Apache.  Players connect to the portal through their web browser.
+The Web Portal is the game's website, allowing players to manage scenes, character profiles, wiki pages [and more](/web-portal).  The Web Portal consists of an EmberJS web application running on top of a standard web server (nginx is the Ares standard).  Players connect to the portal through their web browser.

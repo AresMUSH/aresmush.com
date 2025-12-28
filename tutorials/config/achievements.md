@@ -20,6 +20,16 @@ You can configure what achievement types exist and what their icon is.  Standard
 Don't erase the existing types, because they're used by various plugins. You can change their icons.
 {% endtip %}
 
+## notification_forum, notification_cron, and notification_days
+
+These three config settings work together to control the forum post announcing achievements. By default, it happens daily and announces the achievements earned in the past day. You can control:
+
+* `notification_forum` - Which forum category it posts to.
+* `notification_days` - How many days of achievements it posts (default 1).
+* `notification_cron` - When the announcement happens (default daily).
+
+Leave `notification_forum` blank to disable the announcement entirely.
+
 ## Defining Custom Achievements
 
 Custom achievements must be defined in a plugin's configuration file.

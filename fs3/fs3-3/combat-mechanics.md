@@ -97,6 +97,23 @@ The default "Defense" skill is Reflexes by default--an attribute rather than an 
 
 Note: No matter which passenger in a vehicle is targeted, the defense roll is always based on the *pilot's* piloting skill.
 
+# Stance
+
+Stances are a quick way to give attack and defense modifiers based on common situations. For example, the "Evasive" stance reflects someone who's putting their all into dodging and weaving. This makes it much harder to hit, while also making it much harder for them to attack. Games can configure their own stances, but the built-in ones are:
+
+| Stance | Attack Mod | Defense Mod | 
+| ---- | 
+| Aggressive | 2 | -2 |
+| Reckless | 4 | -4 |
+| Normal (default) | 0 | 0 |
+| Defensive | -2 | 2 |
+| Evasive | -4 | 4 |
+
+In addition, there are two special stances: 
+
+* Cover - Hits have a chance of hitting the cover instead of them. See [Cover](#cover) for details.
+* Hidden - Will not be auto-targeted by NPCs. (They can still be manually targeted.)
+
 <a name="stress">
 
 # Stress

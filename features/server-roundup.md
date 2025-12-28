@@ -26,7 +26,7 @@ Ares, Evennia and Rhost are great modern platforms for making a MU. PennMUSH and
 
 ## Why *Not* Ares?
 
-MUSH servers are like LEGOs. Many servers come with some basic building blocks and a pile of bricks for you to do your own thing. Ares isn't like that. It's more of a pre-built LEGO castle, all ready to move in and play. You can customize the interior quite a bit, maybe even add on a new tower or two, but you can't easily change the walls and foundation. 
+I like to describe MU servers using a LEGO analogy. Many servers come with some basic building blocks and a pile of bricks for you to do your own thing. Ares is more of a pre-built LEGO castle, all ready to move in and play. You can customize the interior quite a bit, maybe even add on a new tower or two, but you can't easily change the walls and foundation. 
 
 For many games that's perfect. It lets them get up and running quickly with no coding needed.
 
@@ -34,11 +34,13 @@ But if your game vision requires you to start ripping out the castle's walls, it
 
 Some reasons why you might want to think twice about using Ares for your game:
 
-* You prefer everyone to RP on the grid in open scenes. (Ares offers more flexible RP using scenes and temp rooms. Private and asynchronous RP are not stigmatized.)
-* You like immersive IC code: elevators, gossip bots, pose-scrambling language code, radios, etc. (These systems really don't mesh with Ares' scene system and web portal.)
-* You prefer OOC obfuscation of information - hidden plots, hidden rooms, etc. and minimal OOC interaction. (Ares is designed to be more transparent and community-driven.)
-* You hate game wikis.  (Ares' web portal is an integral part of the game.)
-* You can't live without multi-word character names. (Ares just doesn't support this, though there's a nickname system that might be an acceptable substitute.)
+| Reasons Ares might not be the right choice | Why? |
+| ---- |
+| You prefer everyone to RP on the grid in open scenes. | Ares offers more flexible RP using scenes and temp rooms. Private and asynchronous RP are not stigmatized. |
+| You like immersive IC code: elevators, gossip bots, pose-scrambling language code, radios, etc. | These systems don't mesh easily with Ares' scene system and web portal. |
+| You prefer OOC obfuscation of information - hidden plots, hidden rooms, etc. and minimal OOC interaction. | Ares is designed to be more transparent and community-driven. |
+| You hate game wikis. | Ares' web portal is an integral part of the game. |
+| You can't live without multi-word character names. | Ares just doesn't support this, though there's a nickname system that might be an acceptable substitute. |
 
 ## Basic Systems
 
@@ -133,10 +135,12 @@ Several servers have community contributions for skill systems.  This list only 
 |---- |
 |[FS3, 3rd Edition](/fs3/fs3-3) |AresMUSH ||
 |[FS3, 2nd Edition](http://lynnfaraday.github.io/MUSH/) |PennMUSH |No longer in active development. |
-|Cortex |AresMUSH |An old, unsupported version also exists for Penn/Tiny. |
-|Fate |AresMUSH | |
-|FFG Genesys / Star Wars |AresMUSH | |
+|Cortex |AresMUSH (plugin) |An old, unsupported version also exists for Penn/Tiny. |
+|Fate |AresMUSH (plugin) | |
+|FFG Genesys / Star Wars |AresMUSH (plugin) | |
 |Dahan's Star Wars Sagas |PennMUSH, RhostMUSH |Probably also works on TinyMUX. |
+| D6 Adventure | AresMUSH (plugin) | |
+| Pendragon | AresMUSH (plugin) | | 
 |[Dahan's Star Wars / WEG D6 System](http://www.mushcode.com/File/Dahans-D6-Skills) |PennMUSH |Probably also works on TinyMUX and RhostMUSH.|
 |[Thenomain's Chronicles of Darkness (WoD)](https://github.com/thenomain/GMCCG/) |TinyMUX |Probably also works on PennMUSH and RhostMUSH. |
 

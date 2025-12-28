@@ -82,6 +82,10 @@ You can configure where guests are allowed and customize the message shown if th
 | `allow_web_tour` | Whether players can use the Tour feature from the web portal. | `tour_not_allowed_message` |
 | `allow_game_tour` | Whether players can use the Tour feature from the `tour` or `connect guest` commands. | `tour_not_allowed_message` |
 
+{% note %}
+To enable tours, you must also enable character registration (since a guest character is created the same way a regular one is.)
+{% endnote %}
+
 ### tour_welcome_message
 
 This message is sent via mail when someone creates a temporary guest character and will include the `%{name}` and `%{password}` variables to tell them their temporary name and password.

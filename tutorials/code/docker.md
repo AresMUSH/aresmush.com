@@ -19,7 +19,7 @@ This setup is only intended for local development only, and is **not** suitable 
 
 To set up the container for the first time:
 
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop).
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop). Depending on your OS, you may also need to install [command line extensions](https://docs.docker.com/engine/cli/completion/) and/or update your PATH manually.
 
 2. Clone the [ares-docker](https://github.com/aresmush/ares-docker) repository to your local PC/Mac. You can use [GitHub Desktop](https://desktop.github.com/) or any other GitHub tool.
 
@@ -39,14 +39,14 @@ To set up the container for the first time:
 
 ```   
     cd YOUR_ARES_DOCKER_DIRECTORY
-    docker-compose up
+    docker compose up
 ```
 
 {:start="6"}
-6. In a **new** PowerShell/Terminal window, use this command to launch a shell connected to the container. Your docker image may be different than `ares-docker_game_1` depending on how Docker names it:
+6. In a **new** PowerShell/Terminal window, use this command to launch a shell connected to the container. Your docker image may be different than `ares-docker-game-1` depending on how Docker names it:
  
 ```
-     docker exec -it ares-docker_game_1 /bin/bash -l
+     docker exec -it ares-docker-game-1 /bin/bash -l
 ```
 
 {:start="7"}
@@ -74,35 +74,33 @@ If you still have the ares container and shell running from the initial setup, y
  
 ```
     cd YOUR_ARES_DOCKER_DIRECTORY
-    docker-compose up
+    docker compose up
 ```
 
-2. In a **new** PowerShell/Terminal window, launch a shell connected to the container. Your docker image may be different than `ares-docker_game_1` depending on how Docker names it:
+2. In a **new** PowerShell/Terminal window, launch a shell connected to the container. Your docker image may be different than `ares-docker-game-1` depending on how Docker names it:
 
 ```
-    docker exec -it ares-docker_game_1 /bin/bash -l
+    docker exec -it ares-docker-game-1 /bin/bash -l
 ```
 
 3.  Within the **docker shell** you just launched, run these commands to start the game:
  
 ```
     cd aresmush
-    bundle install
-    bundle exec rake startares[disableproxy]
+    bin/devstart
 ```
 
 3. In a **new** PowerShell/Terminal window, launch another shell connected to the container:
  
 ```
-    docker exec -it ares-docker_game_1 /bin/bash -l
+    docker exec -it ares-docker-game-1 /bin/bash -l
 ```
 
 5. In the **second docker shell** you just launched, start the web portal:
 
 ```
     cd ares-webportal
-    npm install --no-audit --no-fund
-    ember serve
+    bin/devportal
 ```
 
 You should now be able to connect to your game on localhost:4201 and connect to the web portal at http://localhost:4200.
@@ -135,4 +133,4 @@ Sometimes permissions issues can mess up this automatic code mirroring. If this 
 
 Your database will be saved in `data/dump.rdb`.
 
-The database saves every few minutes. If you want to ensure it's saved before stopping the container, just use the `db/save` command.
+The database saves every few minutes. If you want to ensure it's saved before stopping the container, just use the `db/save` command from a MU client.

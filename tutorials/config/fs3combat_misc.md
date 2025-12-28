@@ -103,3 +103,9 @@ You can configure what stances are available in combat and the attack/defense mo
 {% note %} 
 If you change/remove the names of any of the built-in stances, you'll want to check the code too.  Some of the stances have special effects (notably Cover and Hidden) in addition to the stance modifiers.
 {% endnote %}
+
+```
+    Defensive:
+      attack_mod: -2
+      defense_mod: 2
+```

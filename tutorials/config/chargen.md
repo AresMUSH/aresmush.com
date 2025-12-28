@@ -12,7 +12,6 @@ To configure the Chargen plugin:
 
 {% include toc.html %}
 
-## Messages
 
 You can configure the messages that are put into the approval job when characters are approved or rejected.  Commonly you will edit the approval message to tell new players anything special they need to know to get started.
 
@@ -42,10 +41,13 @@ You can use `%{name}` in the message where you want the char's name to go.  You 
 Make sure the groups used in the welcome message actually exist, or you'll get an error when you try to approve someone. 
 {% endnote %}
 
+<a name="blurbs"></a>
+
 ## Web Chargen Blurbs
 
 You can also configure the character creation instructions that appear in the Web Chargen.
 
+* `intro_blurb` - At the top of the chargen screen.
 * `bg_blurb` - Background instructions.
 * `hooks_blurb` - RP Hook instructions.
 * `desc_blurb` - Description instructions.
@@ -86,6 +88,8 @@ You can configure whether RP hooks must be set in chargen or not.
 
 Used to specify a maximum length of a background, in characters. Set it to 0 to allow bgs of unlimited length. Note: This is not a hard stop, but shows up in app review during chargen.
 
+<a name="stages"></a>
+
 ## stages
 
 Character creation is done as a series of 'stages'.  For each stage, you can choose to display either a help file, a title and text, or both.
@@ -123,3 +127,16 @@ Backgrounds are private by default. Characters may copy their BG (or an abridged
 
 If you want backgrounds to be visible to everyone automatically, just give everyone the `view_bgs` permission. See [Roles and Permissions](/tutorials/manage/roles.html) for details.
 
+<a name="disabling-chargen"></a>
+
+## Disabling Chargen
+
+On games with pre-generated roster characters, you may be tempted to disable chargen, or even disable new character registration entirely. Ares isn't really set up for this. Registration is needed for guests/tours and player bits, chargen is still needed for the roster chars themselves, and "chargen" is not a single command but a zillion ones from a dozen different plugins. 
+
+So what can you do to avoid new players accidentally wandering into chargen?
+
+1. Remove the "Create a Character" menu item from the [web navbar]({{site.baseurl}}/tutorials/config/website.html#changing-the-navbar). The page will still exist (important for generating your roster chars), but people will be less likely to stumble into it. You could even replace it in the menu with a link to a "Where's Chargen?" wiki page explaining your roster system.
+2. Make the first step in the [chargen stages](#stages) guide explain the roster system. 
+3. Update the [blurb text](#blurbs) to indicate that chargen is for roster chars only.
+
+## Messages

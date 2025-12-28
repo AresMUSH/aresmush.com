@@ -107,3 +107,4 @@ These are advanced customization settings that most games won't need to alter.
 * [Troubleshooting YAML](/tutorials/code/troubleshooting-yaml.html) - Dealing with YAML configuration problems.
 * [Recovering from Config Errors](/tutorials/config/config-errors.html) - Rolling back defaults if your config gets messed up.
 * [Setting up HTTPS Web Portal](/tutorials/install/https.html) - Setting up a security certificate on your web portal.
+* [Adding a New Config File](/tutorials/config/add-config-file.html) - Create a new config file.
