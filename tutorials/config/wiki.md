@@ -34,6 +34,22 @@ You can create aliases for redirects or commonly-misspelled wiki page names to a
     main: home
     
 
+## public_wiki_folders
+
+Normally, players can only upload to the folder that matches their name, and admins can upload to any folder. You can optionally create other shared public folders that anyone can upload to. In the default installation, the `misc` folder is public.
+
+    public_wiki_folders:
+    - misc
+    
+## default_public_folder
+
+This is the folder that the wiki file upload screen defaults to when you're uploading from the Files section. (When uploading files from a character page, it defaults to that character's folder.)
+
+This should be a public folder from `public_wiki_folders`.
+
+    default_public_folder: misc
+
+
 ## uploadable_extensions
 
-Regular players who are not wiki admins can only upload images to the wiki by default.  You can configure the specific allowable file extensions with this setting.  They all must be in the format `*.jpg` or `*.png`.
+Regular players who are not wiki admins can only upload images to the wiki by default.  You can configure the specific allowable file extensions with this setting.  They all must be in the format `*.jpg` or `*.png`. 

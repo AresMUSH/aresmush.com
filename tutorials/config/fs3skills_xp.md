@@ -56,33 +56,49 @@ High skills take a long time to improve, but since you earn XP each week, you st
 
 When you have spent the total number of XP needed for the new ability rating, your rating rises.  
 
-{% note %} 
-The first rating point (e.g. "Everyman" or "Interest") always costs 1XP and raises immediately.  You cannot change this.
-{% endnote %}
+### Costs for First Rating
 
-You can configure how many XP are needed for subsequent ratings after the first.
+The first rating point (e.g. "Everyman" or "Interest") always costs 1XP and raises immediately.  **You cannot change this.**
 
-Consider the following example configuration: 
 
-        language:
-            1: 4
-            2: 12
+### Costs for Subsequent Ratings
+
+You can configure how many XP are needed for subsequent ratings after the first. The format is:
+
+    ability_type:
+      current rating: cost
+      current rating: cost
+    
+
+For example:
+
+    language:
+        1: 4
+        2: 12
+  
+Raising a Language from 1 (Beginner) to 2 (Conversational) costs 4 XP and going from 2 (Conversational) to 3 (Fluent) costs 12 XP.  Assuming a 1-month cooldown between raises, it will take 4 months to become Conversational and 12 to become Fluent.
+
+
+Here's another example:
+
         action:
             1: 1
             2: 2
+            ... etc.
 
-Raising a Language from 1 (Beginner) to 2 (Conversational) costs 4 XP and going from 2 (Conversational) to 3 (Fluent) costs 12 XP.  Assuming a 1-month cooldown between raises, it will take 4 months to become Conversational and 12 to become Fluent.
 
 Raising an Action Skill in that example is much easier.  It takes only 1 XP to go from 1 (Everyman) to 2 (Fair) and 2 XP to go from 2 (Fair) to 3 (Competent).  After that, though, the costs go up rapidly.  
 
-If you don't want folks to advance beyond a certain skill level with XP, simply omit subsequent ratings from the costs chart.  For example, 
+### XP Skill Caps
+
+If you don't want folks to advance beyond a certain skill level with XP, simply omit subsequent ratings from the costs chart.  For example:
 
         action:
             ...
             4: 6
             5: 8
 
-It will take 8 XP to go from 5 to 6, but you can't advance beyond that because there are no entries for 6 and 7 in the table.  6 is effectively the maximum action skill rating.
+Since there are entries for 6 and 7 in the table, you can't advance beyond level 6 using XP alone. It would require a staff member to manually assign the skill.
 
 ## xp_cron
 

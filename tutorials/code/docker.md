@@ -12,7 +12,7 @@ You can use a [Docker](https://www.docker.com) container to run an Ares developm
 
 
 {% note %}
-This setup is only intended for local development only, and is **not** suitable for a real production game.
+Docker setup can vary across platforms. The instructions below should get you started, but you may have to tinker a bit to get things working. Docker is only intended for local development only, and is **not** suitable for a real production game.
 {% endnote %}
 
 ## Initial Setup

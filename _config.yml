@@ -20,6 +20,8 @@ github_username: lynnfaraday
 markdown: kramdown
 theme: minima
 paginate: 12
+exclude: 
+  - "_archive"
 paginate_path: "/blog/:num/"
 plugins:
 - jekyll-feed

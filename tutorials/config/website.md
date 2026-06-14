@@ -211,9 +211,17 @@ Beyond the colors, you can add custom CSS styles that will override the Web Port
 After changing the custom CSS style, you'll usually need to do a force-refresh on your browser to make it reload the page.  This is a browser thing, not an Ares thing.
 {% endnote %}
 
-## Changing the Font
+<a name="changing-the-font"></a>
+
+## Customizing Fonts
 
 The fonts.scss file (accessible via Admin -> Setup -> Text Files) lets you easily customize your website's fonts.
+
+* `$body-font` is used throughout the main text of the web portal.
+* `$primary-font` is used on main headings and most things that use the `primary-color` CSS style.
+* `$secondary-font` is not actually used in the default theme, but is used for secondary headers in some of the community themes.
+
+You can also use these font definitions in your custom CSS styles, and even add your own variables.
 
 To add a [Google Font](https://fonts.google.com/), first get the import statement from Google for the font(s) you want to use:
 

@@ -131,7 +131,7 @@ Use the same type (`:mail`) and reference ID (`message.id`) that you used when c
 Web data notifications are used to update info on the web portal _without_ emitting to the game, like adding a pose to a scene or a chat message to a channel.
 
 {% note %}
-Adding new web data notifications will require changes to the web portal code to properly handle them and do the necessary updates. This is probably the most complex code in the entire system, so it's not for the faint of heart.  If you're adventurous enough to give it a try, look for `new_combat_activity` in both the plugin and portal code for an example you can follow.
+Adding new web data notifications will require changes to the web portal code to properly handle them and do the necessary updates. This is probably the most complex code in the entire system, so it's not for the faint of heart.  If you're adventurous enough to give it a try, look for `new_combat_turn` in both the plugin and portal code for an example you can follow.
 {% endnote %}
 
 As with the global notifier, we can limit the notification to only certain characters.  Here we're only sending it to characters on a channel:

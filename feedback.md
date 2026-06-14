@@ -6,9 +6,7 @@ layout: page
 
 There are a variety of ways to stay connected with Ares.
 
-<i class="fas fa-comment-alt-lines fa-2x" aria-hidden="true"></i> Ask questions, report problems, discuss Ares, and stay up to date on the latest releases on the <a href="https://forum.aresmush.com">Discussion Forums</a>.
-
-<i class="fas fa-comments fa-2x" aria-hidden="true"></i> Get help and discuss Ares on the <a href="discord.html">Discord server</a>.
+<i class="fas fa-comments fa-2x" aria-hidden="true"></i> Get help and discuss Ares on the <a href="/discord.html">Discord server</a>.
 
 <i class="fal fa-envelope-open-text fa-2x" aria-hidden="true"></i> Email Faraday at [faraday@aresmush.com](mailto:faraday@aresmush.com).
 

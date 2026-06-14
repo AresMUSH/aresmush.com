@@ -21,4 +21,4 @@ How is open beta different from what was there before?
 * I will be following a more disciplined release process, including release notes and database migrations.
 * I have tested the installation process and automated as much as humanly possible.
 
-You can get help and follow beta updates on the [Ares Forums](https://forum.aresmush.com).
+You can get help and follow beta updates on the [Ares Forums](/feedback.html).

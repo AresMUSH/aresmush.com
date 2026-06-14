@@ -43,11 +43,16 @@ To get started:
 
 1. Go to the [AresMUSH 1-click droplet image](https://marketplace.digitalocean.com/apps/aresmush?refcode=5c07173bc1f2) in the DigitalOcean Marketplace.
 2. Click "Create Droplet" and use the following options:
-  * Select a "Shared CPU" and "**Basic**" droplet.
-  * The 2GB/1CPU droplet will suit most Ares games. Giant games may need more RAM, but you can always upgrade later. Below 2GB is not supported.
-  * Don't add block storage.
-  * Select a region. New York is a good choice unless your players are predominately from outside the US.
-  * Select an SSH key for logging in (if you don't know what that is, just select the password option) and any other options desired.
+  * Image: AresMUSH image.
+  * Droplet Plan:
+    * **Basic (Shared CPU)**
+    * **Regular Droplet** (you don't need the premium ones)
+    * 2GB / 1CPU  (below 2GB is not supported and will not work; you can always upgrade RAM later if you need to. 
+  * Don't add volumes block storage.
+  * Choose whether to enable automated backups. It's extra peace of mind for a few extra dollars a month. 
+    * If you do not choose this option, be sure to back up your game manually.
+  * Select an SSH key for logging in if you wish to.
+    * If you don't know what that is, switch to the Password tab and enter a root password.
   * Do **NOT** enable IPv6; Ares does not support dual IP versions, and many PCs can still only access v4.
   {% include pretty_image.html file='/install-ares/install-droplet-2.png' %}
 
@@ -126,9 +131,9 @@ Your game should be up and running.  Check out [Next Steps](/tutorials/install/n
 If at any point you need to start over with your oneclick image:
 
 1. Open the Digital Ocean droplet management dashboard.
-2. Go to Destroy -> Rebuild Droplet. 
+2. Go to Settings -> Rebuild.
 3. Select the AresMUSH image from the image list. (You may need to search for 'aresmush' if it doesn't show up automatically.)
-4. Click "Rebuild".
+4. Enter the droplet name for security and click "Rebuild".
 
 It will take a few minutes, but then your droplet will be restored to the original oneclick image and you can start the install all over again. This will not affect the droplet's size/region/etc. and shouldn't impact its IP address or domain either.
 

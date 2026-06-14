@@ -57,6 +57,13 @@ The exact day it shifts ahead to will vary due to months having different length
 
 The IC date defaults to using the game's locale language for its month and day names.  If your game uses a different calendar, you can change the month and day names.  The system uses a 7-day week and 12-month year, same as RL.
 
+For example, my old Mars game used Latin-inspired days of the week for timekeeping in the Mars colonies, so the `day_names` config would have been:
+
+    - Sol Solis
+    - Sol Lunae
+    - Sol Ares
+    etc.
+
 ## time_ratio and game_start_date
 
 The default time ratio is 1, meaning that IC time passes at a 1:1 ratio compared to RL time.  For every day that passes in the real world, a day passes in the game world.  

@@ -109,3 +109,9 @@ If you change/remove the names of any of the built-in stances, you'll want to ch
       attack_mod: -2
       defense_mod: 2
 ```
+
+## gear_blurb
+
+This optional markdown text will be shown at the top of the Gear page. For example, you could use it to link to a wiki article explaining your theme's gear, or policies for what weapons are available when.
+
+      gear_blurb: "This list shows all possible gear. See [Weapons](/wiki/weapons) for more info."

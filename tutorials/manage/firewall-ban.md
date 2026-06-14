@@ -14,7 +14,7 @@ sudo ufw insert 1 deny from BAD_IP_GOES_HERE
 
 (the "insert 1" puts the rule above other "allow" rules)
 
-If you aren't sure of the IP, you can use the `findsite` command in-game or check their connections in the debug log. If they are currently connected, you can also use the following command in the server shell to show connections to the game port. Be sure to check both the MU client port (e.g., 4201) and the websocket port (from server.yml - usually 4202).
+If you aren't sure of the IP, you can use the `findsite` command in-game or check their connections in the debug log. If you are experiencing a denial of service style attack with someone making a bazillion connections, you can also use the following command in the server shell to show connections to the game port and look for a ton from a particular IP. You can check both the MU client port (e.g., 4201) and the websocket/webportal ports (from server.yml - usually 4202 and 4203).
 
 ```
 ss -tapn | grep 4201

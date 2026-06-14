@@ -10,7 +10,7 @@ tags:
 Participation in AresMUSH community features requires adherence to the following code of Conduct. 
 
 {% note %}
-Note that this code applies to the central community features (discord/forum/AresC/etc.) shared across all AresMUSH games; individual games will obviously set their own rules (though they are welcome to adopt these).
+Note that this code applies to the central community features (discord/AresC/etc.) shared across all AresMUSH games; individual games will obviously set their own rules (though they are welcome to adopt these).
 {% endnote %}
 
 An account may be suspended at any time at AresMUSH admin's sole discretion. Egregious behavior on individual games or outside venues may be considered when evaluating conduct, on a case-by-case basis.
@@ -35,7 +35,7 @@ If someone is making you uncomfortable, please report them. We promise that we d
 
 ## Reporting
 
-AresMUSH games have a variety of [tools]({{site.baseurl}}/tutorials/manage/trolls.html) to help you report inappropriate behavior. The Ares forum has a built-in way to flag posts, and on the discord you can simply tag or PM an administrator to bring something to their attention. You can also [contact]({{site.baseurl}}/feedback.html) admin directly.
+AresMUSH games have a variety of [tools]({{site.baseurl}}/tutorials/manage/trolls.html) to help you report inappropriate behavior. The Ares discord lets you flag posts or PM an administrator to bring something to their attention. You can also [contact]({{site.baseurl}}/feedback.html) admin directly.
 
 If you know of a friend who's having problems, please encourage them to come forward. It's hard to take action when you only get vague, uncorroborated, second-hand reports.
 

@@ -122,7 +122,7 @@ In order to be compatible with the automated theme installer, a theme must follo
 
 ## Sharing Other Things
 
-Code snippets, config files, and other things that are neither plugins nor themes can be posted on the [Forum](https://forum.aresmush.com) or contributed to the [Ares Extras](https://github.com/AresMUSH/ares-extras) repo.
+Code snippets, config files, and other things that are neither plugins nor themes can be posted on the [Discord](/feedback.html) or contributed to the [Ares Extras](https://github.com/AresMUSH/ares-extras) repo.
 
 ## Submitting Patches
 
