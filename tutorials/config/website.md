@@ -97,6 +97,7 @@ And in narrow browsers, including mobile, the height will be scaled down to be 2
 
 You can pick a different focal point (other than center) and scale the image in different ways, as explained in the [W3Schools](https://www.w3schools.com/css/css_background.asp) tutorial on background positioning.  This can be done using [Custom CSS](#custom-css-style), explained below.
 
+<a name="navbar" class="anchor"></a>
 ## Changing the Navbar
 
 The `top_navbar` setting lets you customize your web portal's navigation bar. Note that the "Account" items (notifications, mail, etc.) will automatically move to the front of the navbar on small browsers.

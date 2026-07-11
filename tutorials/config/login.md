@@ -113,6 +113,16 @@ This cron job controls how often the site blacklist is updated.  By default it's
 
 This cron job controls how often the old notifications are cleared out.  By default it's monthly.  You shouldn't need to change this. You can also configure how long old notifications are kept before they're deleted.
 
+### cleanup_guests_cron and idle_guest_days
+
+This cron job controls how often idle guests (from the guests name list) are cleaned up, and the configuration shows how long they need to be idle before being recycled.  By default the cron runs weekly and the guest timeout is 14 days. 
+
+{% note %}
+Remember that with Ares' guest system (unlike traditional MUs), guests are assigned to a player as a temporary char that be converted to a real one. So don't make the idle day limit too short, or they won't have a chance to do that.
+{% endnote %}
+
+This feature is in addition to the regular idle purge. It's separate because most games only idle purge monthly or so, and you probably want to clean up your guests a bit more often than that.
+
 ### boot_timeout_seconds
 
 Controls how long someone is in timeout after being booted. This is meant as a short deterrent to discourage trolls, and is not meant as a long-term penalty. Remember that in the default configuration, all approved players are allowed to boot (to protect each other from disruptive guests/newbies), so you probably don't want to make it more than a few minutes.

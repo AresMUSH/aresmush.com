@@ -24,7 +24,7 @@ We recommend the third option. Version control is just good practice for all kin
 
 AresMUSH uses [GitHub](https://github.com/). When you first install Ares, you will have the option to create your own version-controlled copy of the code. This is called a "fork" in GitHub lingo, like a fork in the road. Your code goes off one way, the main Ares code goes off in another, but they share a common path up until that point.
 
-{% include pretty_image.html file='postpics/fork.png' max-width="200px" %}
+{% include pretty_image.html file='postpics/fork.png' width="xs" %}
 
 Using GitHub gives you a central place to store your game's code. Any of your coders can download the code to their hard drive, change it, and upload it back to GitHub.
 

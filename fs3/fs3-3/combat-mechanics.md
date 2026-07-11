@@ -243,7 +243,7 @@ If a KOed character is treated or rallied, they can make a KO roll again at +3 t
 
 FS3 uses a custom hit location system.  First choose a hit location you're aiming at.  Typically this is the center of mass (chest for humans) unless you're doing a called shot.  Imagine an archery target with rings superimposed over this hit location.
 
-{% include pretty_image.html file='hitloc_chest.jpg' max-width='400px' %}
+{% include pretty_image.html file='hitloc_chest.jpg' width="md" %}
 
 The better you roll, the closer you'll get to the bullseye.
 
@@ -255,16 +255,16 @@ Hit location is determined by rolling a random number from 1-10, then adding the
 
 When you target a hit location *other than the center of mass*, it shifts the bullseye to that location.
 
-{% include pretty_image.html file='hitloc_head.jpg'  max-width='400px' %}
+{% include pretty_image.html file='hitloc_head.jpg'  width="md" %}
 
-{% include pretty_image.html file='hitloc_hand.jpg'  max-width='400px'  %}
+{% include pretty_image.html file='hitloc_hand.jpg'  width="md"  %}
 
 Notice that more of the bullseye now falls on dead air, increasing the chance of a miss.  With a called shot, consider the attacker's net successes.
 
 | Attacker Net Successes | Location |
 | ---- |
 | >= 3 | Exactly Where Aimed |
-| 2 | Random roll with the bullseye centered on a different location  |
+| 2 | Random roll with the bullseye centered on the selected location. You might still hit the selected location, or hit nearby, or miss.  |
 | 1 | Near Miss |
 | 0 or fewer | Miss |
 

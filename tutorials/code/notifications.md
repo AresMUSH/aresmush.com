@@ -36,7 +36,7 @@ Browser alerts are transient messages that appear in the bottom-right corner of 
 
 {% include pretty_image.html file='notif-browser.png' %}
 
-{% include pretty_image.html file='notif-pc.png' max-width="400px" %}
+{% include pretty_image.html file='notif-pc.png' width="sm" %}
 
 
 For a player to see these notifications in their computer's notification center:
@@ -51,7 +51,7 @@ For a player to see these notifications in their computer's notification center:
 
 Low-priority messages are sent to the game announcements channel rather than directly to players. This allows players to mute/leave the channel when they don't want to be bothered.  This channel is named "Game" by default, though individual games can configure which channel is used.
 
-{% include pretty_image.html file='notif-game.png' max-width="400px" %}
+{% include pretty_image.html file='notif-game.png' width="lg" %}
 
 ### Web Data Updates
 

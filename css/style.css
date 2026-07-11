@@ -797,10 +797,30 @@ figure {
     max-width: 100%;
 }
 
-.figure-contents img {
-  width: 700px;
-  max-width: 100%;
+.figure-contents, .figure-contents img {
+    width: 100%;
 }
+
+.image-width-xs {
+    width: 200px;
+}
+
+.image-width-sm {
+    width: 400px;
+}
+
+.image-width-md {
+    width: 600px;
+}
+
+.image-width-lg {
+    width: 900px;
+}
+
+.image-width-mobile {
+    width: 250px;
+}
+
 
 p img {
   width: 700px;

@@ -67,12 +67,20 @@ Learn how to add things - in this case, the character goals from Tutorial #3 - t
 {% include add_web_tutorial.html %}
 </div>
 
+## Troubleshooting
+
+* [Troubleshooting Issues](/tutorials/code/troubleshooting.html)
+* [Mismatched Game Versions](/tutorials/code/troubleshooting-versions.html)
+* [YAML Errors](/tutorials/code/troubleshooting-yaml.html)
+* [Debug Mode](/tutorials/code/debug-mode.html)
+* [Debugging Custom Web Requests](/tutorials/code/web-debug.html)
+* [Fixing GitHub Conflicts](/tutorials/code/git-conflicts.html)
+
 ## Custom Code Hooks
 
 Normally, modifying the base Ares code exposes you to *merge conflicts*.  This is an annoying process that forces you to reconcile your changes with the base code changes whenever you upgrade. There are, however, several places that are designed with **custom code hooks**, which let you hook in custom code without actually touching the core code.
 
 {% include custom_hooks.md %}
-
 
 ## Advanced Coding Topics
 
@@ -154,12 +162,6 @@ It's suggested that you refer to these as you need them rather than trying to le
 * [Web Request Handling](/tutorials/code/web-requests.html)
 * [Navigation](/tutorials/code/web-nav.html)
 * [Wiki Extensions](/tutorials/code/wiki-extensions.html)
-
-### Troubleshooting
-
-* [Troubleshooting Issues](/tutorials/code/troubleshooting.html)
-* [Debug Mode](/tutorials/code/debug-mode.html)
-* [Debugging Custom Web Requests](/tutorials/code/web-debug.html)
 
 ## FS3
 

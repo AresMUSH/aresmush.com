@@ -21,6 +21,7 @@ Add the button itself to `ares-webportal/app/components/live-scene-custom-scenep
 
 To handle the button action, add code to `ares-webportal/app/components/live-scene-custom-scenepose.js`.
 
+```
       gameApi: service(),
       flashMessages: service(),
       actions: {
@@ -28,6 +29,9 @@ To handle the button action, add code to `ares-webportal/app/components/live-sce
            // Code to send the text.
            }
         }
+```
+
+If you need data for your custom buttons, see [Custom Scene Data](#custom-data).
 
 ## Play Menu Buttons
 
@@ -41,6 +45,7 @@ Add the menu item itself to `ares-webportal/app/components/live-scene-custom-pla
 
 To handle the menu action, add code to `ares-webportal/app/components/live-scene-custom-play.js`.
 
+```
       gameApi: service(),
       flashMessages: service(),
       actions: {
@@ -48,6 +53,50 @@ To handle the menu action, add code to `ares-webportal/app/components/live-scene
            // Code to give cookies.
            }
         }
+```
+
+If you need data for your custom buttons, see [Custom Scene Data](#custom-data).
+        
+## Play Menu Buttons
+
+You can also add new menu items to the live scene's "Play" menu with custom code. You might do this if you're designing a new "extra" for a skill system, for instance.
+
+Add the menu item itself to `ares-webportal/app/components/live-scene-custom-play.hbs`.  
+
+<pre>
+&lt;li><a href="#" &#x7b;&#x7b;action 'giveCookies'}}>Give Cookies</a></li> 
+</pre>
+
+To handle the menu action, add code to `ares-webportal/app/components/live-scene-custom-play.js`.
+
+```
+      gameApi: service(),
+      flashMessages: service(),
+      actions: {
+        giveCookies() {
+           // Code to give cookies.
+           }
+        }
+```
+
+If you need data for your custom buttons, see [Custom Scene Data](#custom-data).
+
+## Play Menu Sidebar
+
+You can add custom contents to the bottom of the play screen sidebar.
+
+Add the sidebar display to `ares-webportal/app/components/play-sidebar-custom.hbs`.  
+
+For example, to add a 
+<pre>
+&lt;li><a href="/wiki/scenes" &#x7b;&#x7b;>Scene Guidelines</a></li> 
+</pre>
+
+Any action handler code can go in `ares-webportal/app/components/play-sidebar-custom.js`.  
+
+If you need data for your custom buttons, see [Custom Scene Data](#custom-data).
+
+<a name="custom-data" class="anchor"></a>
 
 ## Custom Scene Data
 
@@ -58,3 +107,4 @@ Custom scene data is available through `this.custom` in the following components
 * live-scene-custom-play
 * live-scene-custom-scenepose
 * char-card-custom
+* play-custom-sidebar (as this.model.custom)

@@ -13,7 +13,7 @@ This article provides an overview of the main components that make up an Ares ga
 
 The following image shows all the different Ares components and how they fit together at a high level.  Each component is described in more detail below.  It's not expected that you'll absorb it all at once, but you can refer back to this as you learn more about the system.
 
-{% include pretty_image.html file='architecture.png' %}
+{% include pretty_image.html file='architecture.png' width="lg" %}
 
 {% include toc.html %}
 

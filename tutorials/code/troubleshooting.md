@@ -126,26 +126,9 @@ Shutting down and restarting the game engine usually fixes this.  If not, just g
 
 Sometimes you'll do an upgrade and you'll see mismatched versions between the game and the web portal (on the bottom of all portal pages):
 
-    AresMUSH game v0.70, portal v0.69
+    AresMUSH game v1.12.0, portal v1.11.0
 
-The web portal and game engine always have to have the same version.  If they don't, you will get unpredictable errors.
-
-There are several possible causes:
-
-1. **Browser Cache** - Try to open the web portal in a private/incognito browser window.  Sometimes your browser is stubbornly holding onto the old Javascript and needs a kick.
-2. **Deploy Failed** - Try to re-deploy the website using the `website/deploy` command in-game or by running `bin/deploy` from the ares-webportal directory on the server shell.  This will tell you if you missed any weird errors when the website was published.
-3. **Update Fork** - If your own private code fork, make sure you updated the webportal code too.  Sometimes folks forget and only update the game engine code.
-4. **Restart Server** - Try restarting your entire server as described [here](https://aresmush.com/tutorials/manage/reboot.html).
-
-A successful website deploy will end with a list of files, like this:
-
-```
-Built project successfully. Stored in "dist/".
-File sizes:
- - dist/assets/ares-webportal-5d9f5985e1460779a552cf47f222971d.css: 143.77 KB (23.25 KB gzipped)
- - dist/assets/ares-webportal-7d7c53430414e59c856937e57e284827.js: 894.15 KB (98.25 KB gzipped)
-etc.
-```
+See [Troubleshooting Mismatched Versions](/tutorials/code/troubleshooting-versions.html).
 
 ### Key Not Found Error on Approval or Roster Claim
 

@@ -38,7 +38,7 @@ Plugin repos must follow a particular folder structure:
 
 For example:
 
-{% include pretty_image.html file='code/extras-dir.png' max-width="300px" %}
+{% include pretty_image.html file='code/extras-dir.png' width="sm" %}
 
 All folders are optional, so just omit any that don't apply to your plugin.
 

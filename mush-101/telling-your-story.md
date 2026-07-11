@@ -46,7 +46,7 @@ It takes at least two people to play a scene, so you'll need to coordinate with 
 
 Figuring out what to play can be the hardest part.  Sometimes it will be obvious, like if your character is injured and the other character is a doctor.   Other times it can feel like the lead-in to a bad joke:  "So a schoolteacher, an outlaw and a barber walk into a bar…" Be creative!  Sometimes the best scenes come from the most random collection of characters.
 
-{% include pretty_image.html file='postpics/bar-joke.jpg' max-width='400px' caption='Image by Maury Aaseng' %}
+{% include pretty_image.html file='postpics/bar-joke.jpg' width="sm" caption='Image by Maury Aaseng' %}
 
 ### Pick a Location
 

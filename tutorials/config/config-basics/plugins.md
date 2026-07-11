@@ -30,3 +30,7 @@ If you disable the chargen system, you'll have to replace it with your own custo
 {% endtip %}
 
 If a plugin is not listed on this screen, that means it cannot be disabled without custom code changes. For more information about this, and to learn what happens behind-the-scenes when you disable a plugin, see [Enabling and Disabling Plugins](/tutorials/config/plugins.html).
+
+## Navbar
+
+If you disable plugins, particularly FS3, you will also want to review your [Web Portal menu](/tutorials/config/website.html#navbar) to remove any navigation items related to that system.

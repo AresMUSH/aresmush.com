@@ -6,7 +6,11 @@ prev-article: choosing-fs3.html
 next-article: min-maxing.html
 ---
 
-This article gives some tips to game designers for customizing and Customizing FS3.
+This article gives some tips to game designers for customizing FS3.
+
+{% tip %}
+This guide is about concepts. For specific FS3-related game configuration options, see the [Config Tutorial]({{site.baseurl}}/tutorials/config).
+{% endtip %}
 
 {% include toc.html %}
 

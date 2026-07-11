@@ -10,7 +10,7 @@ tags:
 - storytelling
 ---
 
-{% include pretty_image.html file='postpics/collage.jpg' max-width='400px' %}
+{% include pretty_image.html file='postpics/collage.jpg' width="sm" %}
 
 Virtual reality and 3D games may be the next big thing, but for almost thirty years, players have been creating their own online worlds using nothing but words and their imaginations on MUSHes. A **MUSH** is a text-based online multi-player game that blends creative writing, improv acting, and role-playing into a unique interactive storytelling experience. 
 
